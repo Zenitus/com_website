@@ -32,7 +32,7 @@
             <a class="nav-link" href="#ホーム">ホーム</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#About">私たちについて</a>
+            <a class="nav-link" href="#AboutUs">私たちについて</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Service">サービス内容</a>
@@ -55,7 +55,7 @@
   <!-- .........................................home............................................. -->
   <section id="ホーム">
   <div class="container-fluid min-vh-100 bg-cover d-flex">
-    <div class="row justify-content-center">
+    <div class="container position-relative aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
         <div class="col-lg-12 col-sm-6 col-md-12">
             <h1 class="zenitus">Zenitus</h1>
             <h2 class="Technologies">Technologies</h2>
@@ -63,16 +63,14 @@
             <h6 class="Home_Para">若いITコンサルティングおよびソフトウェア開発会社 <br>
               の技術的ニーズに応えることに重点を置いています。<br>
               日本のお客様。</h6>
-                 <div class="text-center">
-                  <a href="#私たちについて" class="btn-get-started get">始めましょう</a>
-                </div>
+                  <a href="#AboutUs" class="btn-get-started get ctn">始めましょう</a>
             </div>
     </div>
   </div>
 </section>
     <!-- ........................................tokyo............................................. -->
 
-    <section class="Line" id="About">
+    <!-- <section class="Line" id="About">
       <div class="container"><br><br><br>
       <div class="row align-items-center justify-content-center">
         <div class="col-lg-4 d-flex align-items-stretch">
@@ -101,8 +99,30 @@
             </div>
             </div>
     </div>
-  </section>
+  </section> -->
+  <section class="Line" id="AboutUs">
+    <div class="how-section1">
+      <div class="row align-items-center justify-content-center">
+          <div class="col-md-6 how-img">
+              <img src="./Images/Tokyo.png" class="" alt=""/>
+          </div>
+          <div class="col-md-6">
+              <h4><div class="box">
+                <div class="content">
+                  <h1 class="heading">私たちについて</h1>
+                </div>
+                <div class="imgBx"> 
+                  <img class="miniLogo" src="./Images/Slogo.png" alt="">                          
+                </div></h4>
+                          <h2 class="subheading">イノベーションとクリエイティビティ</h2>
+          <p class="text-muted">“イノベーションとクリエイティビティを通じて「お客様のニーズを第一に」".</p>
+          <p>日本のお客様へのコンサルティングおよびソフトウェア開発を中心に取り組んでいる若い企業です。
+            <br><br>
 
+            私たちの目的は、テクノロジーを通じてシームレス化を図り、お客様のビジネスに変化を生み出すことです。顧客中心主義の企業として、私たちはすべてをシンプルにし、かつ透明性を保つよう努力しております。プロジェクトのすべての面において、戦略的な思考、設計の洞察、実用性を適用し、システム導入の成功を目標にサポートいたします。</p>
+          </div>
+      </div>
+  </section>
     <!-- .........................................service............................................. -->
 
     <section id="Service">
@@ -117,8 +137,8 @@
         <div class="container d-flex justify-content-center">
         <div class="row g-5" style="padding: 0 5% 0 5%;">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="card japanservice-box" style="width: 20rem;">
-              <img class="card-img-top" src="./Images/ServiceImage1.png" alt="Card image cap">
+            <div class="card japanservice-box">
+              <img class="card-img-top" src="./Images/Serviceimage1.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">オフショア開発サービス</h5>
                 <p class="card-text">Web/モバイルアプリ開発に関しては効率的で費用効果の高いオフショアサービスを提供することを目指しています。契約形態は請負、準委任、ラボチームに対応しております。
@@ -127,8 +147,8 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="card japanservice-box" style="width: 20rem;">
-              <img class="card-img-top" src="./Images/ServiceImage2.png" alt="Card image cap">
+            <div class="card japanservice-box">
+              <img class="card-img-top" src="./Images/Serviceimage2.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">自社製品およびソリューション</h5>
                 <p class="card-text">Zenitusの製品とソリューションは、テクノロジーを使用する方法を変えることで組織が運用効率を高められることを目的としています。</p> 
@@ -141,8 +161,8 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="card japanservice-box" style="width: 20rem;">
-              <img class="card-img-top" src="./Images/ServiceImage3.png" alt="Card image cap">
+            <div class="card japanservice-box">
+              <img class="card-img-top" src="./Images/Serviceimage3.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">コンサルティングおよびアウトソーシング</h5>
                 <p class="card-text">Zenitusは、IT業界のニーズに応じてさまざまな技術プラットフォーム（SAP、Web、モバイルなど）でバ
@@ -151,8 +171,8 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="card japanMaintenance-box" style="width: 20rem;">
-              <img class="card-img-top" src="./Images/ServiceImage4.png" alt="Card image cap">
+            <div class="card japanMaintenance-box">
+              <img class="card-img-top" src="./Images/Serviceimage4.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">保守サービス</h5>
                 <p class="card-text">当社の強力なバイリンガル技術エンジニアは、24時間年中無休でお客様のアプリの保守要件をサポート（オンサイト、オフショア）する準備ができております。</p>
@@ -160,8 +180,8 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="card japanMaintenance-box" style="width: 20rem;">
-              <img class="card-img-top" src="./Images/ServiceImage5.png" alt="Card image cap">
+            <div class="card japanMaintenance-box">
+              <img class="card-img-top" src="./Images/Serviceimage5.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">テストサービス</h5>
                 <p class="card-text">Zenitusはアプリのテスト（ブラックボックス、グレーボックス、ホワイトボックス）、ウェブアプリのセキュリティ脆弱性チェック、報告、解決方法をサービスとして提供しております。テスト能力、
@@ -170,8 +190,8 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="card japanMaintenance-box" style="width: 20rem;">
-              <img class="card-img-top" src="./Images/ServiceImage6.png" alt="Card image cap">
+            <div class="card japanMaintenance-box">
+              <img class="card-img-top" src="./Images/Serviceimage6.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">トレーニング</h5>
                 <p class="card-text">才能のある若いエンジニアたちを採用し、日本語、技術的なスキル、日本の文化、マナーなどの研修を行っております。</p>

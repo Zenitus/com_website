@@ -1,690 +1,620 @@
-
 /* .........................................box-sizing rules..................................... */
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
+*::after {
+  box-sizing: border-box;
 }
 /* .........................................box-sizing rules..................................... */
 
-*{
-    margin: 0;
-    padding: 0;
-    font: inherit;
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
-html:focus-within{
-    scroll-behavior: smooth;
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
-html,body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
-img,picture,svg{
-    max-width: 100%;
-    display: block;
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 /* ...................................................navbar................................ */
-.navbar{
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+.navbar {
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
-.ZenitusLogo{
-    height: 50px;
+.ZenitusLogo {
+  height: 50px;
 }
-.nav-link{
-    color: hsl(212, 90%, 33%);
-    font-weight: bold;
-    margin-left: 20px;
+.nav-link {
+  color: hsl(212, 90%, 33%);
+  font-weight: bold;
+  margin-left: 20px;
 }
-.nav-link:hover{
-    color: #FA7E00;
+.nav-link:hover {
+  color: #fa7e00;
 }
 
 /* .........................................home..................................... */
 
-.zenitus{
-    color: hsl(212, 90%, 33%);
-    font-size: 7vw;
-    font-weight: bold;
-    margin-top: 7vw;
-    margin-left: 7vw;
-    line-height: 5vw;
+.zenitus {
+  color: hsl(212, 90%, 33%);
+  font-size: 7vw;
+  font-weight: bold;
+  margin-top: 14vw;
+  line-height: 5vw;
 }
-.Technologies{
-    font-size: 5vw;
-    font-weight: bold;
-    margin-left: 7vw;
-    line-height: 5.6vw;
-        background-color: #f3ec78;
-        background-image: linear-gradient(45deg, #FA7E00, #C73327);
-        background-size: 100%;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-text-fill-color: transparent;
+.Technologies {
+  font-size: 5vw;
+  font-weight: bold;
+  line-height: 5.6vw;
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #fa7e00, #c73327);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-.IT{
-    font-size: 4vw;
-    font-weight: bold;
-    margin-left: 7vw;
+.IT {
+  font-size: 4vw;
+  font-weight: bold;
 }
-.Home_Para{
-    font-size: 1.5vw;
-    margin-left: 7vw;
-    color: #7A7A7A;
+.Home_Para {
+  font-size: 1.5vw;
+  color: #7a7a7a;
 }
-.ctn{
-    padding: 8px 15px;
-    background-image: linear-gradient(to right, #FA7E00 , #FF6456);
-    border-radius: 30px;
-    color: whitesmoke;
-    font-weight: bold;
-    line-height: 4vw;
-    margin-right: 24vw;
+.ctn {
+  padding: 8px 15px;
+  background-image: linear-gradient(to right, #fa7e00, #ff6456);
+  border-radius: 30px;
+  color: whitesmoke;
+  font-weight: bold;
+  line-height: 4vw;
 }
-.bg-cover{
-    background-image: url(../Images/HomeBG@2x.png);
-    background-position: bottom !important;
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    width: 100vw;
+.bg-cover {
+  background-image: url(../Images/homeB@2x.png);
+  /* background-position: bottom !important; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+  /* background-attachment: fixed; */
+  height: auto;
+  position: relative;
 }
+/* #hero{
+    width: 100%;
+height: 100%;
+position: relative;
+background: url("../Images/brownhome@2x.png") top center;
+  background-attachment: scroll;
+  background-size: auto;
+background-size: cover;
+position: relative;
+} */
 /* ........................................................tokyo............................................... */
 
-.Line{
-    background-image: url(../Images/Line.png);
-    background-repeat: no-repeat;
-    background-position: bottom !important;
-    background-size: cover;
-    width: 100%;
-    height: auto;
+.Line {
+  background-image: url(../Images/Line.png);
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
-.heading{
-    color: #FA7E00;
-    font-weight: bold;
+.heading {
+  color: #fa7e00;
+  font-weight: bold;
 }
-.heading img{
-    height: 25px;
+.heading img {
+  height: 25px;
 }
-.Logo h1{
-    display: flex;
+.Logo h1 {
+  display: flex;
 }
-.customer{
-    color: #7A7A7A;
+.customer {
+  color: #7a7a7a;
 }
-p{
-color: #3C3B3B;
+p {
+  color: #3c3b3b;
 }
-.Slogo{
-        vertical-align: middle;
-        float: right;
-    }
-.miniLogo{
-    width:40px;
-    height:40px;
-    margin-right:0px;
-    }
-    
-    .heading {
-        display:inline-block;
-     }
-     .about{
-        margin-left: 4vw;
-     }
+.Slogo {
+  vertical-align: middle;
+  float: right;
+}
+.miniLogo {
+  width: 40px;
+  height: 40px;
+  margin-right: 0px;
+}
 
+.heading {
+  display: inline-block;
+}
+.about {
+  margin-left: 4vw;
+}
+.how-section1{
+  margin-top:-10%;
+  padding: 10% 15% 4% 15%;
+}
+.how-section1 h4{
+  color: #fa7e00;
+  font-weight: bold;
+  font-size: 30px;
+}
+.how-section1 .subheading{
+  color: black;
+  font-size: 24px;
+}
+.how-section1 .row
+{
+  margin-top: 10%;
+}
+.how-img 
+{
+  text-align: center;
+}
+.how-img img{
+  width: 80%;
+}
 
 /* .......................................................service............................................... */
-.intro{
-    text-align: center;
+.intro {
+  text-align: center;
 }
-.service-box{
-    border-radius: 14px;
-    box-shadow: 0px 0px 0px 0px #9B9B9B,
-            0 3px 0px 0 blue,
-            0 3px 2px 0 #9B9B9B;
+.service-box {
+  border-radius: 14px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 2px 0 #9b9b9b;
 }
-.Maintenance-box{
-    border-radius: 14px;
-    box-shadow: 0px 0px 0px 0px #9B9B9B,
-            0 3px 0px 0 blue,
-            0 3px 2px 0 #9B9B9B;
+.Maintenance-box {
+  border-radius: 14px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 2px 0 #9b9b9b;
 }
-.solutions-para{
-    text-align: left;
-    font-size: 14px;
+.solutions-para {
+  text-align: left;
+  font-size: 14px;
 }
-.service-box p{
-    color: #7A7A7A;
+.service-box p {
+  color: #7a7a7a;
 }
-.Maintenance-box p{
-    color: #7A7A7A;
+.Maintenance-box p {
+  color: #7a7a7a;
 }
-#Service{
-    background-image: url(../Images/ServiceBG.png);
-    background-repeat: no-repeat;
-    background-position: bottom !important;
-    background-size: cover;
-    width: 100%;
-    height: auto;
+#Service {
+  background-image: url(../Images/ServiceBG.png);
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
 
 /* .......................................................product............................................... */
 
-.ClaimZ-box{
-    border-radius: 10px;
-    box-shadow: 0px 0px 0px 0px #9B9B9B,
-            0 3px 0px 0 blue,
-            0 3px 1px 0 #9B9B9B;
+.ClaimZ-box {
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 1px 0 #9b9b9b;
 }
-.ClaimZ-box p{
-    color: #7A7A7A;
-    text-align: left;
-    font-size: 14px;
-    margin-left: 10px;
+.ClaimZ-box p {
+  color: #7a7a7a;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 10px;
 }
-.product_line{
-    background-image: url(../Images/product_line.png);
-    background-repeat: no-repeat;
-    background-position: bottom !important;
-    background-size: cover;
-    width: 100%;
-    height: auto;
+.product_line {
+  background-image: url(../Images/product_line.png);
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
-b, strong{
-    color: #FA7E00;
+b,
+strong {
+  color: #fa7e00;
 }
 
 /* .................................join team............................ */
 
-.JoinBG{
-    background-image: url(../Images/Join_bgImage@2x.png);
-    background-repeat: no-repeat;
-    background-position: bottom !important;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    margin-top: 5vw;
+.JoinBG {
+  background-image: url(../Images/Join_bgImage@2x.png);
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin-top: 5vw;
 }
-.map-btn{
-    box-shadow: 0px 0px 1px 1px #FA7E00,
-            0 1px 1px 0 #FA7E00,
-            0 1px 1px 0 #FA7E00;
-            border-radius: 20px;
-    color: #FA7E00;
+.map-btn {
+  box-shadow: 0px 0px 1px 1px #fa7e00, 0 1px 1px 0 #fa7e00, 0 1px 1px 0 #fa7e00;
+  border-radius: 20px;
+  color: #fa7e00;
 }
 
 /* ......................................................representative.................................... */
 
-/* .downBG{
-    background-image: url(../Images/ServiceBG.png);
-    background-repeat: no-repeat;
-    background-position: bottom !important;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-} */
 
-.rep-box p{
-    color: #7A7A7A;
-}
-.rep-box{
-    margin-top: 2em;
-    padding: 1.5em 0.5em 0.5em;
-    border-radius: 0.9em;
-    text-align: center;
-    box-shadow: 0px 0px 0px 0px #9B9B9B,
-            0 3px 0px 0 blue,
-            0 3px 2px 0 #9B9B9B;
-  }
-  .repimg{
-    width: 65%;
-    border-radius: 50%;
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-
-
-
-
-/* .Claim-box{
-    border-radius: 10px;
-    box-shadow: 0px 0px 0px 0px #9B9B9B,
-            0 3px 0px 0 blue,
-            0 3px 1px 0 #9B9B9B;
-}
-.Claim-box p{
-    
-    color: #7A7A7A;
-    
-}
-.rer img{
-    width: 65%;
-    border-radius: 50%;
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  } */
-/* .ChatZ-img-2{
-    margin-top: 3vw;
-}
-.product_line{
-    background-image: url(../Images/product_line.png);
-    background-repeat: no-repeat;
-    background-position: bottom !important;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-} */
 /* .......................................................article.................................................. */
 
-.Article-box{
-    height:  725.76px;
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: 0px 0px 0px 0px #9B9B9B,
-            0 1px 0px 0 #9B9B9B,
-            0 1px 2px 0 #9B9B9B;
+.Article-box {
+  height: 725.76px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 1px 0px 0 #9b9b9b, 0 1px 2px 0 #9b9b9b;
 }
-.more img{
-    height: 20px;
-    vertical-align: middle;
-    display: flex;
+.more img {
+  height: 20px;
+  vertical-align: middle;
+  display: flex;
 }
-.more{
-    display:inline-block;
-    color: black;
-    margin-top: 10vw;
-    margin-left: 20px;
+.more {
+  display: inline-block;
+  color: black;
+  margin-top: 10vw;
+  margin-left: 20px;
 }
-.jan{
-    margin-top: 2vw;
-    margin-left: 1vw;
-    color: #000;
+.jan {
+  margin-top: 2vw;
+  margin-left: 1vw;
+  color: #000;
 }
-.customer1{
-    color: #7A7A7A;
-    margin-left: 1vw;
+.customer1 {
+  color: #7a7a7a;
+  margin-left: 1vw;
 }
-.Article-box h2{
-    margin-left: 1vw;
+.Article-box h2 {
+  margin-left: 1vw;
 }
 /* ........................................................Aboutus.......................................... */
 
-.AboutBG{
-    background-image: url(../Images/AboutBG@2x.png);
-    background-repeat: no-repeat;
-    background-position: bottom !important;
-    background-size: cover;
-    width: 100%;
-    height: auto;
+.AboutBG {
+  background-image: url(../Images/AboutBG@2x.png);
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
-.media img{
-   height: 30px; 
+.media img {
+  height: 30px;
 }
-.AboutHeading{
-    font-weight: bold;
-    font-size: 20px;
+.AboutHeading {
+  font-weight: bold;
+  font-size: 20px;
 }
-.AboutHeading img{
-    height: 30px;
+.AboutHeading img {
+  height: 30px;
 }
-#footer{
-    background-color: black;
-    color: white;
+#footer {
+  background-color: black;
+  color: white;
 }
-.bottom{
-    margin-left: 576px;
-    text-decoration: underline;
-    color: white;
+.bottom {
+  margin-left: 576px;
+  text-decoration: underline;
+  color: white;
 }
-.cookies{
-    text-decoration: underline;
-    color: white;
-    margin-left: 14.4px;
+.cookies {
+  text-decoration: underline;
+  color: white;
+  margin-left: 14.4px;
 }
-.media{
-    display: flex;
+.media {
+  display: flex;
 }
 
 /* ...................................................contact.......................................... */
 
-.careerBG{
-    background-image: url(../Images/CareerBG@2x.png);
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    width: 100vw;
-  }
-  .contact-box{
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0px 0px 0px 0px #9B9B9B,
-                0 3px 0px 0 blue,
-                0 3px 2px 0 #9B9B9B;
-  }
-.contact-box p{
-    color: #7A7A7A;
-    text-align: center;
+.careerBG {
+  background-image: url(../Images/CareerBG@2x.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  width: 100vw;
 }
-.Contact-para{
-    color: white;
-    font-size: 14px;
-    text-align: center;
-  }
-  .Contact{
-    color: white;
-    text-align: center;
-    margin-top: 9vw;
-  }
-  .ClaimZ-box .imgBx{
-    flex: 0 0 40px;
-  }
-  .box{
-    display: flex;
-  }
-  .Contact-intro{
-   margin-top: -8vw;
-  }
-  .phone h5{
-    margin-top: 0.8vh;
-    margin-left: 1vw;
-  }
-  .private{
-    margin-left: 1vw;
-  }
-  .middle h4{
-    text-align: center;
-    color: #FA7E00;
-  }
-  .map-box{
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 0px 0px 0px 0px #9B9B9B,
-                0 0px 0px 0 #9B9B9B,
-                0 0px 2px 0 #9B9B9B;
-        text-align: center;
-        transition: all ease-in-out 0.3s;
-  }
+.contact-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 2px 0 #9b9b9b;
+}
+.contact-box p {
+  color: #7a7a7a;
+  text-align: center;
+}
+.Contact-para {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.Contact {
+  color: white;
+  text-align: center;
+  margin-top: 9vw;
+}
+.ClaimZ-box .imgBx {
+  flex: 0 0 40px;
+}
+.box {
+  display: flex;
+}
+.Contact-intro {
+  margin-top: -8vw;
+}
+.phone h5 {
+  margin-top: 0.8vh;
+  margin-left: 1vw;
+}
+.private {
+  margin-left: 1vw;
+}
+.middle h4 {
+  text-align: center;
+  color: #fa7e00;
+}
+.map-box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 0px 0px 0 #9b9b9b, 0 0px 2px 0 #9b9b9b;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+}
 /* ............................................................... */
 
-  .con{
-    width: 19rem;
-    margin-top: 2em;
-    padding: 1.5em 0.5em 0.5em;
-    border-radius: 1em;
-    text-align: center;
-    box-shadow: 0px 0px 0px 0px #9B9B9B,
-                0 3px 0px 0 blue,
-                0 3px 2px 0 #9B9B9B;
-  }
-  .con img {
-    width: 65%;
-    border-radius: 50%;
-    margin: 0 auto;
-  }
-  .con .card-title {
-    font-weight: 700;
-    font-size: 1.5em;
-  }
-  .con .btn {
-    border-radius: 2em;
-    box-shadow: 0px 0px 1px 1px #FA7E00,
-            0 1px 1px 0 #FA7E00,
-            0 1px 1px 0 #FA7E00;
-            border-radius: 20px;
-    color: #FA7E00;
-    padding: 0.5em 1.5em;
-  }
-  .con .btn:hover {
-    color: #FA7E00;
-    box-shadow: 0px 0px 1px 1px #FA7E00,
-            0 1px 1px 0 #FA7E00,
-            0 1px 1px 0 #FA7E00;
-            border-radius: 20px;
-  }
+.con {
+  width: 19rem;
+  margin-top: 2em;
+  padding: 1.5em 0.5em 0.5em;
+  border-radius: 1em;
+  text-align: center;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 2px 0 #9b9b9b;
+}
+.con img {
+  width: 65%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.con .card-title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.con .btn {
+  border-radius: 2em;
+  box-shadow: 0px 0px 1px 1px #fa7e00, 0 1px 1px 0 #fa7e00, 0 1px 1px 0 #fa7e00;
+  border-radius: 20px;
+  color: #fa7e00;
+  padding: 0.5em 1.5em;
+}
+.con .btn:hover {
+  color: #fa7e00;
+  box-shadow: 0px 0px 1px 1px #fa7e00, 0 1px 1px 0 #fa7e00, 0 1px 1px 0 #fa7e00;
+  border-radius: 20px;
+}
 /* ................................................career................................... */
 
-.java{
-    background-color: #F5F4FF;
-    width: 70vw;
-    text-align: left;
+.java {
+  background-color: #f5f4ff;
+  width: 70vw;
+  text-align: left;
 }
-.pinch-box{
-    text-align: center;
-    background-color: white;
-        border-radius: 10px;
-        box-shadow: 0px 0px 0px 0px #9B9B9B,
-                0 1px 0px 0 #9B9B9B,
-                0 1px 2px 0 #9B9B9B;
+.pinch-box {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 1px 0px 0 #9b9b9b, 0 1px 2px 0 #9b9b9b;
+  width: fit-content;
+  padding: 0.5em;
 }
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
-    background-image: url(../Images/dropdown@2x.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: 98%;
-  }
-  .DownArrow img{
-    height: 40px;
-    padding-left: 50vw;
-    margin-top: 7vw;
-  }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  background-image: url(../Images/dropdown@2x.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 98%;
+}
+.DownArrow img {
+  height: 40px;
+  padding-left: 50vw;
+  margin-top: 7vw;
+}
 
-  .careerDropDown {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
-    background-image: url(../Images/dropdown@2x.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: 98%;
-  }
+.careerDropDown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  background-image: url(../Images/dropdown@2x.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 98%;
+}
 
-  .career-collapse {
-    width: 70vw;
-    padding: 0.2em;
-  }
+.career-collapse {
+  width: 70vw;
+  padding: 0.2em;
+}
 /* .................................remove somethings in smallscreens............................ */
 
-@media (prefers-reduced-motion: reduce ) {
-    html:focus-within{
-        scroll-behavior: auto;
-    }
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
 
-    *,
-    *::before,
-    *::after{
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* ........................................media queri for below 1200................................... */
 
 @media screen and (max-width: 991px) {
-    .careerBG{
-        min-height: 40vh !important;
-    }
-    .bg-cover{
-        min-height: 35vh !important;
-    }
-    .zenitus{
-        margin-top: 20px !important;
-    }
-    .product_line{
-        background-image: none !important;
-    }
-    .Line{
-        background-image: none !important;
-    }
-    .rep{
-        width: auto !important;
-        margin-left: 0px !important;
-    }
-    .representative-responsive{
-        height: auto !important;
-        margin-left: 0px !important;
-    }
-    .ourrep{
-        margin-left: 0px !important;
-    }
-    .representative-box{
-        width: auto !important;
-    }
-    .Article-box{
-        height: auto !important;
-    }
-    .ClaimZ-box{
-        background-color: transparent !important;
-    }
-    .AboutBG{
-        background-image: none !important;
-    }
-    .AboutBG br {
-        content: "";
-      }
-    .bottom{
-        margin-left: 30px !important;
-    }
-    .customer br {
-        content: "";
-    }
-    .ctn{
-        padding: 6px 9px;
-        font-size: 16px;
-    }
-    .DownArrow img{
-        display: none !important;
-      }
-      #footer{
-        display: none !important;
-      }
-      .miniLogo{
-        margin-top: 2px;
-        height: 30px;
-        width: 30px;
-        }
-    .ctn{
-    margin-right: auto !important;
-        }
-    .contact-box{
-        height: auto !important;
-        }
-    .con{
-        width: 18rem;
-    }
-    .servicebg {
-        padding: 0px !important;
-    }
-    .repmd {
-        padding: 0 2em 0 2em !important;
-    }
-    .pro-img{
-        display:none;
-    }
+  .careerBG {
+    min-height: 40vh !important;
   }
-   
+  #home{
+    min-height: 10vh;
+  }
+  .product_line {
+    background-image: none !important;
+  }
+  .Line {
+    background-image: none !important;
+  }
+  .rep {
+    width: auto !important;
+    margin-left: 0px !important;
+  }
+  .representative-responsive {
+    height: auto !important;
+    margin-left: 0px !important;
+  }
+  .ourrep {
+    margin-left: 0px !important;
+  }
+  .representative-box {
+    width: auto !important;
+  }
+  .Article-box {
+    height: auto !important;
+  }
+  .ClaimZ-box {
+    background-color: transparent !important;
+  }
+  .AboutBG {
+    background-image: none !important;
+  }
+  .AboutBG br {
+    content: "";
+  }
+  .bottom {
+    margin-left: 30px !important;
+  }
+  .customer br {
+    content: "";
+  }
+  .ctn {
+    padding: 6px 9px;
+    font-size: 16px;
+  }
+  .DownArrow img {
+    display: none !important;
+  }
+  #footer {
+    display: none !important;
+  }
+  .miniLogo {
+    margin-top: 2px;
+    height: 30px;
+    width: 30px;
+  }
+  .ctn {
+    margin-right: auto !important;
+  }
+  .contact-box {
+    height: auto !important;
+  }
+  .con {
+    width: 18rem;
+  }
+  .servicebg {
+    padding: 0px !important;
+  }
+  .repmd {
+    padding: 0 2em 0 2em !important;
+  }
+  .pro-img {
+    display: none;
+  }
+}
 
-  @media only screen and (max-width: 767px) {
-    .careerBG{
-        min-height: 35vh !important;
-    }
-    .JoinBG{
-        margin-top: 0px !important;
-    }
-    .JoinBG br {
-        content: "";
-    }
-    .bg-cover{
-        min-height: 35vh !important;
-    }
-    .zenitus{
-        margin-left: 0px !important;
-    }
-    .Technologies{
-        margin-left: 0px !important;
-    }
-    .IT{
-        margin-left:  0px !important;
-    }
-    .Home_Para{
-        margin-left:  0px !important;
-    }
-    .Contact{
-        margin-top: 0px !important;
-
-      }
-    .Contact-para{
-        font-size: 10px !important;
-      }
-      .contact-box{
-        height: auto !important;
-    }
-      .ctn{
-        padding: 6px 9px;
-        font-size: 8px;
-    }
-  } 
-  
-
-
-
+@media only screen and (max-width: 767px) {
+  .careerBG {
+    min-height: 35vh !important;
+  }
+  .JoinBG {
+    margin-top: 0px !important;
+  }
+  #AboutUs{
+    margin-top: -70vh !important;
+  }
+  .JoinBG br {
+    content: "";
+  }
+  /* .bg-cover {
+    min-height: 35vh !important;
+  } */
+  .zenitus {
+    margin-left: 0px !important;
+  }
+  .Technologies {
+    margin-left: 0px !important;
+  }
+  .IT {
+    margin-left: 0px !important;
+  }
+  .Home_Para {
+    margin-left: 0px !important;
+  }
+  .Contact {
+    margin-top: 0px !important;
+  }
+  .Contact-para {
+    font-size: 10px !important;
+  }
+  .contact-box {
+    height: auto !important;
+  }
+  .ctn {
+    padding: 6px 9px;
+    font-size: 8px;
+  }
+}
 
 /* ........................................leader card............................................................ */
 
 .leadercard {
-    padding-left: 20px;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    box-shadow: 0px 0px 0px 0px #9B9B9B,
-            0 3px 0px 0 blue,
-            0 3px 0px 0 #9B9B9B;
-  }
-  .leadercard-title {
-    font-weight: bold;
-  }
-  .leadercard img {
-    border-radius: 50%;
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 25%;
-   }
-   .leadercard-body h6{
-    font-size: 15px;
-   }
-   .leadercard-body img{
-    margin-left: 90%;
-   }
-  .leadercard p{
-    color: #7A7A7A;
-  }
-  /* @media only screen and (max-width: 768px) {
-    .leadercard-body {
-      padding: 0.5em 1.2em;
-    }
-    .leadercard-body .leadercard-text {
-      margin: 0;
-    }
-    .leadercard img {
-      width: 50%;
-    }
-    .leadercard p{
-        color: #7A7A7A;
-      }
-  }
-  @media only screen and (max-width: 1200px) {
-    .leadercard img {
-      width: 40%;
-    }
-    .leadercard p{
-        color: #7A7A7A;
-      }
-  } */
+  padding-left: 20px;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 0px 0 #9b9b9b;
+}
+.leadercard-title {
+  font-weight: bold;
+}
+.leadercard img {
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 25%;
+}
+.leadercard-body h6 {
+  font-size: 15px;
+}
+.leadercard-body img {
+  margin-left: 90%;
+}
+.leadercard p {
+  color: #7a7a7a;
+}
+
+
+
+

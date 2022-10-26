@@ -16,15 +16,7 @@ html:focus-within{
 }
 
 /* ..................................home............................. */
-.get{
-        padding: 8px 15px;
-        background-image: linear-gradient(to right, #FA7E00 , #FF6456);
-        border-radius: 30px;
-        color: whitesmoke;
-        font-weight: bold;
-        line-height: 4vw;
-        margin-right: 21vw;
-    }
+
     /* ..................................tokyo............................. */
 .イノベーション{
        font-size: 14px;
