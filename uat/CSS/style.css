@@ -46,19 +46,16 @@ a {
 }
 
 /* .........................................home..................................... */
-
 .zenitus {
   color: hsl(212, 90%, 33%);
   font-size: 7vw;
   font-weight: bold;
-  margin-top: 14vw;
-  line-height: 5vw;
+  margin-top: -5vw;
+  line-height: 2vw;
 }
 .Technologies {
   font-size: 5vw;
   font-weight: bold;
-  line-height: 5.6vw;
-  background-color: #f3ec78;
   background-image: linear-gradient(45deg, #fa7e00, #c73327);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -69,6 +66,7 @@ a {
 .IT {
   font-size: 4vw;
   font-weight: bold;
+  line-height: 2vw;
 }
 .Home_Para {
   font-size: 1.5vw;
@@ -92,16 +90,7 @@ a {
   height: auto;
   position: relative;
 }
-/* #hero{
-    width: 100%;
-height: 100%;
-position: relative;
-background: url("../Images/brownhome@2x.png") top center;
-  background-attachment: scroll;
-  background-size: auto;
-background-size: cover;
-position: relative;
-} */
+
 /* ........................................................tokyo............................................... */
 
 .Line {
@@ -141,9 +130,6 @@ p {
 .heading {
   display: inline-block;
 }
-.about {
-  margin-left: 4vw;
-}
 .how-section1{
   margin-top:-10%;
   padding: 10% 15% 4% 15%;
@@ -174,11 +160,11 @@ p {
   text-align: center;
 }
 .service-box {
-  border-radius: 14px;
+  border-radius: 15px;
   box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 2px 0 #9b9b9b;
 }
 .Maintenance-box {
-  border-radius: 14px;
+  border-radius: 15px;
   box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 2px 0 #9b9b9b;
 }
 .solutions-para {
@@ -243,6 +229,33 @@ strong {
 }
 
 /* ......................................................representative.................................... */
+
+
+.leadercard {
+  padding-left: 20px;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 0px 0 #9b9b9b;
+}
+.leadercard-title {
+  font-weight: bold;
+}
+.leadercard img {
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 25%;
+}
+.leadercard-body h6 {
+  font-size: 15px;
+}
+.leadercard-body img {
+  margin-left: 90%;
+}
+.leadercard p {
+  color: #7a7a7a;
+}
 
 
 /* .......................................................article.................................................. */
@@ -322,15 +335,6 @@ strong {
   background-size: 100vw;
   width: 100vw;
 }
-.contact-box {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 2px 0 #9b9b9b;
-}
-.contact-box p {
-  color: #7a7a7a;
-  text-align: center;
-}
 .Contact-para {
   color: white;
   font-size: 14px;
@@ -341,15 +345,12 @@ strong {
   text-align: center;
   margin-top: 9vw;
 }
-.ClaimZ-box .imgBx {
-  flex: 0 0 40px;
-}
 .box {
   display: flex;
 }
-.Contact-intro {
+/* .Contact-intro {
   margin-top: -8vw;
-}
+} */
 .phone h5 {
   margin-top: 0.8vh;
   margin-left: 1vw;
@@ -371,17 +372,9 @@ strong {
 /* ............................................................... */
 
 .con {
-  width: 19rem;
-  margin-top: 2em;
-  padding: 1.5em 0.5em 0.5em;
   border-radius: 1em;
   text-align: center;
   box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 2px 0 #9b9b9b;
-}
-.con img {
-  width: 65%;
-  border-radius: 50%;
-  margin: 0 auto;
 }
 .con .card-title {
   font-weight: 700;
@@ -392,7 +385,6 @@ strong {
   box-shadow: 0px 0px 1px 1px #fa7e00, 0 1px 1px 0 #fa7e00, 0 1px 1px 0 #fa7e00;
   border-radius: 20px;
   color: #fa7e00;
-  padding: 0.5em 1.5em;
 }
 .con .btn:hover {
   color: #fa7e00;
@@ -411,7 +403,7 @@ strong {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 0px 0px #9b9b9b, 0 1px 0px 0 #9b9b9b, 0 1px 2px 0 #9b9b9b;
-  width: fit-content;
+  /* width: fit-content; */
   padding: 0.5em;
 }
 select {
@@ -463,6 +455,19 @@ select {
 }
 
 /* ........................................media queri for below 1200................................... */
+@media (min-width: 2100px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 2100px;
+    }
+    .mobile{
+      float: right;
+      width:800px;
+      height:800px;
+      margin-left:15px;
+    }
+
+}
+
 
 @media screen and (max-width: 991px) {
   .careerBG {
@@ -510,8 +515,7 @@ select {
     content: "";
   }
   .ctn {
-    padding: 6px 9px;
-    font-size: 16px;
+   display: none;
   }
   .DownArrow img {
     display: none !important;
@@ -523,9 +527,6 @@ select {
     margin-top: 2px;
     height: 30px;
     width: 30px;
-  }
-  .ctn {
-    margin-right: auto !important;
   }
   .contact-box {
     height: auto !important;
@@ -551,9 +552,6 @@ select {
   .JoinBG {
     margin-top: 0px !important;
   }
-  #AboutUs{
-    margin-top: -70vh !important;
-  }
   .JoinBG br {
     content: "";
   }
@@ -561,16 +559,11 @@ select {
     min-height: 35vh !important;
   } */
   .zenitus {
-    margin-left: 0px !important;
+    margin-top: -18vw;
+    line-height: 1vw;
   }
-  .Technologies {
-    margin-left: 0px !important;
-  }
-  .IT {
-    margin-left: 0px !important;
-  }
-  .Home_Para {
-    margin-left: 0px !important;
+  .IT{
+    line-height: 0.2vw;
   }
   .Contact {
     margin-top: 0px !important;
@@ -581,40 +574,88 @@ select {
   .contact-box {
     height: auto !important;
   }
-  .ctn {
-    padding: 6px 9px;
-    font-size: 8px;
+}
+
+/* ....................................................home....................................................... */
+#hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /*background: url("../img/hero-bg.jpg") top center;*/
+  /* background: url("../img/sitebg.png") top center; */
+  background: url("../Images/homeBG@2x.png") center center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  /*background: rgba(255, 255, 255, 0.8);*/
+  /* background: rgba(255, 255, 255, 0.6); */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  padding-top: 80px;
+}
+.mobile{
+  float: right;
+  width:600px;
+  height:600px;
+  margin-left:15px;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+  .mobile{
+    float: right;
+    width:500px;
+    height:500px;
+    margin-left:15px;
   }
 }
 
-/* ........................................leader card............................................................ */
-
-.leadercard {
-  padding-left: 20px;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 0px 0 #9b9b9b;
+@media (max-width: 992px), (max-height: 500) {
+  #hero {
+    height: auto;
+  }
+  .mobile{
+    float: right;
+    width:200px;
+    height:200px;
+    margin-left:15px;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
-.leadercard-title {
-  font-weight: bold;
+@media (max-width: 766px), (max-height: 500) {
+  #hero {
+    height: auto;
+  }
+  .mobile{
+    float: right;
+    width:150px;
+    height:150px;
+    margin-left:15px;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
-.leadercard img {
-  border-radius: 50%;
-  margin: 0 auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 25%;
-}
-.leadercard-body h6 {
-  font-size: 15px;
-}
-.leadercard-body img {
-  margin-left: 90%;
-}
-.leadercard p {
-  color: #7a7a7a;
-}
-
-
-
-
