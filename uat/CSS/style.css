@@ -81,7 +81,7 @@ a {
   line-height: 4vw;
 }
 .bg-cover {
-  background-image: url(../Images/homeB@2x.png);
+  background-image: url(../Images/HomeB@2x.png);
   /* background-position: bottom !important; */
   background-repeat: no-repeat;
   background-size: 100%;
@@ -583,7 +583,7 @@ select {
   position: relative;
   /*background: url("../img/hero-bg.jpg") top center;*/
   /* background: url("../img/sitebg.png") top center; */
-  background: url("../Images/homeBG@2x.png") center center;
+  background: url("../Images/HomeBG@2x.png") center center;
   background-size: cover;
   position: relative;
 }
