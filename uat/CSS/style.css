@@ -80,6 +80,19 @@ a {
   font-weight: bold;
   line-height: 4vw;
 }
+<<<<<<< HEAD
+=======
+.bg-cover {
+  background-image: url(../Images/HomeB@2x.png);
+  /* background-position: bottom !important; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+  /* background-attachment: fixed; */
+  height: auto;
+  position: relative;
+}
+>>>>>>> e8236f01faeba081ed726113104e531ab609c97c
 
 /* ........................................................tokyo............................................... */
 
@@ -572,6 +585,11 @@ select {
   width: 100%;
   height: 100vh;
   position: relative;
+<<<<<<< HEAD
+=======
+  /*background: url("../img/hero-bg.jpg") top center;*/
+  /* background: url("../img/sitebg.png") top center; */
+>>>>>>> e8236f01faeba081ed726113104e531ab609c97c
   background: url("../Images/HomeBG@2x.png") center center;
   background-size: cover;
   position: relative;
