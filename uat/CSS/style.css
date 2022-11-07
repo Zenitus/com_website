@@ -80,16 +80,6 @@ a {
   font-weight: bold;
   line-height: 4vw;
 }
-.bg-cover {
-  background-image: url(../Images/homeB@2x.png);
-  /* background-position: bottom !important; */
-  background-repeat: no-repeat;
-  background-size: 100%;
-  
-  /* background-attachment: fixed; */
-  height: auto;
-  position: relative;
-}
 
 /* ........................................................tokyo............................................... */
 
@@ -429,7 +419,7 @@ select {
   text-overflow: "";
   background-image: url(../Images/dropdown@2x.png);
   background-repeat: no-repeat;
-  background-size: 30px;
+  background-size: 20px;
   background-position: 98%;
 }
 
@@ -465,6 +455,10 @@ select {
       height:800px;
       margin-left:15px;
     }
+    .break br{
+      content: "";
+    }
+
 
 }
 
@@ -555,9 +549,6 @@ select {
   .JoinBG br {
     content: "";
   }
-  /* .bg-cover {
-    min-height: 35vh !important;
-  } */
   .zenitus {
     margin-top: -18vw;
     line-height: 1vw;
@@ -581,17 +572,13 @@ select {
   width: 100%;
   height: 100vh;
   position: relative;
-  /*background: url("../img/hero-bg.jpg") top center;*/
-  /* background: url("../img/sitebg.png") top center; */
-  background: url("../Images/homeBG@2x.png") center center;
+  background: url("../Images/HomeBG@2x.png") center center;
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  /*background: rgba(255, 255, 255, 0.8);*/
-  /* background: rgba(255, 255, 255, 0.6); */
   position: absolute;
   bottom: 0;
   top: 0;
