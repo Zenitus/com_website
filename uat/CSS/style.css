@@ -4,6 +4,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 /* .........................................box-sizing rules..................................... */
 
 * {
@@ -20,30 +21,37 @@ html,
 body {
   height: 100%;
 }
+
 img,
 picture,
 svg {
   max-width: 100%;
   display: block;
 }
+
 a {
   text-decoration: none;
 }
+
 /* ...................................................navbar................................ */
 .navbar {
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
+
 .ZenitusLogo {
   height: 50px;
 }
+
 .ZenitusLogo1 {
   height: 120px;
 }
+
 .nav-link {
   color: hsl(212, 90%, 33%);
   font-weight: bold;
   margin-left: 20px;
 }
+
 .nav-link:hover {
   color: #fa7e00;
 }
@@ -56,6 +64,7 @@ a {
   margin-top: -5vw;
   line-height: 2vw;
 }
+
 .Technologies {
   font-size: 5vw;
   font-weight: bold;
@@ -66,15 +75,18 @@ a {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
 .IT {
   font-size: 4vw;
   font-weight: bold;
   line-height: 2vw;
 }
+
 .Home_Para {
   font-size: 1.5vw;
   color: #7a7a7a;
 }
+
 .ctn {
   padding: 8px 15px;
   background-image: linear-gradient(to right, #fa7e00, #ff6456);
@@ -94,26 +106,33 @@ a {
   width: 100%;
   height: auto;
 }
+
 .heading {
   color: #fa7e00;
   font-weight: bold;
 }
+
 .heading img {
   height: 25px;
 }
+
 .Logo h1 {
   display: flex;
 }
+
 .customer {
   color: #7a7a7a;
 }
+
 p {
   color: #3c3b3b;
 }
+
 .Slogo {
   vertical-align: middle;
   float: right;
 }
+
 .miniLogo {
   width: 40px;
   height: 40px;
@@ -123,28 +142,32 @@ p {
 .heading {
   display: inline-block;
 }
-.how-section1{
-  margin-top:-10%;
+
+.how-section1 {
+  margin-top: -10%;
   padding: 10% 15% 4% 15%;
 }
-.how-section1 h4{
+
+.how-section1 h4 {
   color: #fa7e00;
   font-weight: bold;
   font-size: 30px;
 }
-.how-section1 .subheading{
+
+.how-section1 .subheading {
   color: black;
   font-size: 24px;
 }
-.how-section1 .row
-{
+
+.how-section1 .row {
   margin-top: 10%;
 }
-.how-img 
-{
+
+.how-img {
   text-align: center;
 }
-.how-img img{
+
+.how-img img {
   width: 80%;
 }
 
@@ -152,24 +175,30 @@ p {
 .intro {
   text-align: center;
 }
+
 .service-box {
   border-radius: 15px;
   box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 2px 0 #9b9b9b;
 }
+
 .Maintenance-box {
   border-radius: 15px;
   box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 2px 0 #9b9b9b;
 }
+
 .solutions-para {
   text-align: left;
   font-size: 14px;
 }
+
 .service-box p {
   color: #7a7a7a;
 }
+
 .Maintenance-box p {
   color: #7a7a7a;
 }
+
 #Service {
   background-image: url(../Images/ServiceBG.png);
   background-repeat: no-repeat;
@@ -185,12 +214,14 @@ p {
   border-radius: 10px;
   box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 1px 0 #9b9b9b;
 }
+
 .ClaimZ-box p {
   color: #7a7a7a;
   text-align: left;
   font-size: 14px;
   margin-left: 10px;
 }
+
 .product_line {
   background-image: url(../Images/product_line.png);
   background-repeat: no-repeat;
@@ -199,6 +230,7 @@ p {
   width: 100%;
   height: auto;
 }
+
 b,
 strong {
   color: #fa7e00;
@@ -215,6 +247,7 @@ strong {
   height: auto;
   margin-top: 5vw;
 }
+
 .map-btn {
   box-shadow: 0px 0px 1px 1px #fa7e00, 0 1px 1px 0 #fa7e00, 0 1px 1px 0 #fa7e00;
   border-radius: 20px;
@@ -223,7 +256,6 @@ strong {
 
 /* ......................................................representative.................................... */
 
-
 .leadercard {
   padding-left: 20px;
   flex-direction: row;
@@ -231,25 +263,29 @@ strong {
   width: 100%;
   box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 0px 0 #9b9b9b;
 }
+
 .leadercard-title {
   font-weight: bold;
 }
+
 .leadercard img {
   border-radius: 50%;
   margin: 0 auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 25%;
 }
+
 .leadercard-body h6 {
   font-size: 15px;
 }
+
 .leadercard-body img {
   margin-left: 90%;
 }
+
 .leadercard p {
   color: #7a7a7a;
 }
-
 
 /* .......................................................article.................................................. */
 
@@ -259,29 +295,35 @@ strong {
   border-radius: 30px;
   box-shadow: 0px 0px 0px 0px #9b9b9b, 0 1px 0px 0 #9b9b9b, 0 1px 2px 0 #9b9b9b;
 }
+
 .more img {
   height: 20px;
   vertical-align: middle;
   display: flex;
 }
+
 .more {
   display: inline-block;
   color: black;
   margin-top: 10vw;
   margin-left: 20px;
 }
+
 .jan {
   margin-top: 2vw;
   margin-left: 1vw;
   color: #000;
 }
+
 .customer1 {
   color: #7a7a7a;
   margin-left: 1vw;
 }
+
 .Article-box h2 {
   margin-left: 1vw;
 }
+
 /* ........................................................Aboutus.......................................... */
 
 .AboutBG {
@@ -292,6 +334,7 @@ strong {
   width: 100%;
   height: auto;
 }
+
 #footer {
   background-image: url(../Images/ServiceBG.png);
   color: rgb(0, 0, 0);
@@ -305,19 +348,23 @@ strong {
   background-size: 100vw;
   width: 100vw;
 }
+
 .Contact-para {
   color: white;
   font-size: 14px;
   text-align: center;
 }
+
 .Contact {
   color: white;
   text-align: center;
   margin-top: 9vw;
 }
+
 .box {
   display: flex;
 }
+
 /* .Contact-intro {
   margin-top: -8vw;
 } */
@@ -325,13 +372,16 @@ strong {
   margin-top: 0.8vh;
   margin-left: 1vw;
 }
+
 .private {
   margin-left: 1vw;
 }
+
 .middle h4 {
   text-align: center;
   color: #fa7e00;
 }
+
 .map-box {
   background-color: white;
   border-radius: 15px;
@@ -339,6 +389,7 @@ strong {
   text-align: center;
   transition: all ease-in-out 0.3s;
 }
+
 /* ............................................................... */
 
 .con {
@@ -346,21 +397,25 @@ strong {
   text-align: center;
   box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 2px 0 #9b9b9b;
 }
+
 .con .card-title {
   font-weight: 700;
   font-size: 1.5em;
 }
+
 .con .btn {
   border-radius: 2em;
   box-shadow: 0px 0px 1px 1px #fa7e00, 0 1px 1px 0 #fa7e00, 0 1px 1px 0 #fa7e00;
   border-radius: 20px;
   color: #fa7e00;
 }
+
 .con .btn:hover {
   color: #fa7e00;
   box-shadow: 0px 0px 1px 1px #fa7e00, 0 1px 1px 0 #fa7e00, 0 1px 1px 0 #fa7e00;
   border-radius: 20px;
 }
+
 /* ................................................career................................... */
 
 .java {
@@ -368,6 +423,7 @@ strong {
   width: 70vw;
   text-align: left;
 }
+
 .pinch-box {
   text-align: center;
   background-color: white;
@@ -376,6 +432,7 @@ strong {
   /* width: fit-content; */
   padding: 0.5em;
 }
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -386,6 +443,7 @@ select {
   background-size: 30px;
   background-position: 98%;
 }
+
 .DownArrow img {
   height: 40px;
   padding-left: 50vw;
@@ -407,6 +465,7 @@ select {
   width: 70vw;
   padding: 0.2em;
 }
+
 /* .................................remove somethings in smallscreens............................ */
 
 @media (prefers-reduced-motion: reduce) {
@@ -425,95 +484,122 @@ select {
 }
 
 /* ........................................media queri for below 1200................................... */
-@media (min-width: 2100px){
-.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+@media (min-width: 2100px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
     max-width: 2100px;
-    }
-    .mobile{
-      float: right;
-      width:800px;
-      height:800px;
-      margin-left:15px;
-    }
-    .break br{
-      content: "";
-    }
+  }
 
+  .mobile {
+    float: right;
+    width: 800px;
+    height: 800px;
+    margin-left: 15px;
+  }
 
+  .break br {
+    content: "";
+  }
 }
-
 
 @media screen and (max-width: 991px) {
   .careerBG {
     min-height: 40vh !important;
   }
-  #home{
+
+  #home {
     min-height: 10vh;
   }
+
   .product_line {
     background-image: none !important;
   }
+
   .Line {
     background-image: none !important;
   }
+
   .rep {
     width: auto !important;
     margin-left: 0px !important;
   }
+
   .representative-responsive {
     height: auto !important;
     margin-left: 0px !important;
   }
+
   .ourrep {
     margin-left: 0px !important;
   }
+
   .representative-box {
     width: auto !important;
   }
+
   .Article-box {
     height: auto !important;
   }
+
   .ClaimZ-box {
     background-color: transparent !important;
   }
+
   .AboutBG {
     background-image: none !important;
   }
+
   .AboutBG br {
     content: "";
   }
+
   .bottom {
     margin-left: 30px !important;
   }
+
   .customer br {
     content: "";
   }
+
   .ctn {
-   display: none;
+    display: none;
   }
+
   .DownArrow img {
     display: none !important;
   }
+
   #footer {
     display: none !important;
   }
+
   .miniLogo {
     margin-top: 2px;
     height: 30px;
     width: 30px;
   }
+
   .contact-box {
     height: auto !important;
   }
+
   .con {
     width: 18rem;
   }
+
   .servicebg {
     padding: 0px !important;
   }
+
   .repmd {
     padding: 0 2em 0 2em !important;
   }
+
   .pro-img {
     display: none;
   }
@@ -523,25 +609,32 @@ select {
   .careerBG {
     min-height: 35vh !important;
   }
+
   .JoinBG {
     margin-top: 0px !important;
   }
+
   .JoinBG br {
     content: "";
   }
+
   .zenitus {
     margin-top: -18vw;
     line-height: 1vw;
   }
-  .IT{
+
+  .IT {
     line-height: 0.2vw;
   }
+
   .Contact {
     margin-top: 0px !important;
   }
+
   .Contact-para {
     font-size: 10px !important;
   }
+
   .contact-box {
     height: auto !important;
   }
@@ -569,58 +662,69 @@ select {
 #hero .container {
   padding-top: 80px;
 }
-.mobile{
+
+.mobile {
   float: right;
-  width:600px;
-  height:600px;
-  margin-left:15px;
+  width: 600px;
+  height: 600px;
+  margin-left: 15px;
 }
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
-  .mobile{
+
+  .mobile {
     float: right;
-    width:500px;
-    height:500px;
-    margin-left:15px;
+    width: 500px;
+    height: 500px;
+    margin-left: 15px;
   }
 }
 
-@media (max-width: 992px), (max-height: 500) {
+@media (max-width: 992px),
+(max-height: 500) {
   #hero {
     height: auto;
   }
-  .mobile{
+
+  .mobile {
     float: right;
-    width:200px;
-    height:200px;
-    margin-left:15px;
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
   }
+
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
   }
+
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
   }
 }
-@media (max-width: 766px), (max-height: 500) {
+
+@media (max-width: 766px),
+(max-height: 500) {
   #hero {
     height: auto;
   }
-  .mobile{
+
+  .mobile {
     float: right;
-    width:150px;
-    height:150px;
-    margin-left:15px;
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
   }
+
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
   }
+
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
