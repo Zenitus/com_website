@@ -36,6 +36,9 @@ a {
 .ZenitusLogo {
   height: 50px;
 }
+.ZenitusLogo1 {
+  height: 120px;
+}
 .nav-link {
   color: hsl(212, 90%, 33%);
   font-weight: bold;
@@ -282,39 +285,16 @@ strong {
 /* ........................................................Aboutus.......................................... */
 
 .AboutBG {
-  background-image: url(../Images/AboutBG@2x.png);
+  background-image: url(../Images/ServiceBG.png);
   background-repeat: no-repeat;
   background-position: bottom !important;
   background-size: cover;
   width: 100%;
   height: auto;
 }
-.media img {
-  height: 30px;
-}
-.AboutHeading {
-  font-weight: bold;
-  font-size: 20px;
-}
-.AboutHeading img {
-  height: 30px;
-}
 #footer {
-  background-color: black;
-  color: white;
-}
-.bottom {
-  margin-left: 576px;
-  text-decoration: underline;
-  color: white;
-}
-.cookies {
-  text-decoration: underline;
-  color: white;
-  margin-left: 14.4px;
-}
-.media {
-  display: flex;
+  background-image: url(../Images/ServiceBG.png);
+  color: rgb(0, 0, 0);
 }
 
 /* ...................................................contact.......................................... */
