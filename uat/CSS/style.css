@@ -466,6 +466,13 @@ select {
   padding: 0.2em;
 }
 
+.whatsApp{
+  margin-left: 10px;
+}
+
+.li{
+  margin-left: 70px;
+}
 /* .................................remove somethings in smallscreens............................ */
 
 @media (prefers-reduced-motion: reduce) {
@@ -550,12 +557,12 @@ select {
     background-color: transparent !important;
   }
 
-  .AboutBG {
-    background-image: none !important;
-  }
-
   .AboutBG br {
     content: "";
+  }
+
+  .li{
+    margin-left: 0px !important;
   }
 
   .bottom {
@@ -574,9 +581,9 @@ select {
     display: none !important;
   }
 
-  #footer {
+  /* #footer {
     display: none !important;
-  }
+  } */
 
   .miniLogo {
     margin-top: 2px;
