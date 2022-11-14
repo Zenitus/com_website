@@ -518,11 +518,13 @@ select {
   .careerBG {
     min-height: 40vh !important;
   }
-
-  #home {
-    min-height: 10vh;
+  #hero br{
+    content: "";
   }
-
+  #Service br{
+    content: "";
+  }
+ 
   .product_line {
     background-image: none !important;
   }
@@ -581,10 +583,6 @@ select {
     display: none !important;
   }
 
-  /* #footer {
-    display: none !important;
-  } */
-
   .miniLogo {
     margin-top: 2px;
     height: 30px;
@@ -627,7 +625,7 @@ select {
 
   .zenitus {
     margin-top: -18vw;
-    line-height: 1vw;
+    line-height: 0.1vw;
   }
 
   .IT {
