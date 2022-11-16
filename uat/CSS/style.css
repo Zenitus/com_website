@@ -61,7 +61,7 @@ a {
   color: hsl(212, 90%, 33%);
   font-size: 7vw;
   font-weight: bold;
-  margin-top: -5vw;
+  /* margin-top: -5vw; */
   line-height: 2vw;
 }
 
@@ -365,9 +365,6 @@ strong {
   display: flex;
 }
 
-/* .Contact-intro {
-  margin-top: -8vw;
-} */
 .phone h5 {
   margin-top: 0.8vh;
   margin-left: 1vw;
@@ -579,6 +576,11 @@ select {
     display: none;
   }
 
+  .zenitus {
+    margin-top: 7vw;
+    line-height: 0.1vw;
+  }
+
   .DownArrow img {
     display: none !important;
   }
@@ -624,7 +626,7 @@ select {
   }
 
   .zenitus {
-    margin-top: -18vw;
+    margin-top: 7vw;
     line-height: 0.1vw;
   }
 
