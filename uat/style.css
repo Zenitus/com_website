@@ -9,7 +9,7 @@
 
 * {
   margin: 0;
-  padding: 0px 0px 3px 0px;
+  padding: 0px 0px 1px 0px;
   font: inherit;
 }
 
@@ -337,7 +337,7 @@ strong {
   border-radius: 50%;
   /* margin: 0 auto; */
   margin-right: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   width: auto;
   max-width: 25%;
 }
@@ -462,16 +462,16 @@ strong {
 }
 
 .tech_card img {
-  width: 38%;
-  height: 20%;
+  width: 45%;
+  height: 80%;
   margin-top: 5%;
-  margin-left: 31%;
+  margin-left: 30%;
 }
 
 .tech_body img {
-  margin-left: 40%;
-  width: 25%;
-  height: 50%;
+  margin-left: 37%;
+  width: 27%;
+  height: 45%;
 }
 
 .tcard_two {
@@ -479,15 +479,32 @@ strong {
 }
 
 .t_text {
-  padding-top: 1px;
-  padding-left: 25px;
+  padding-top: 5px;
   text-align: center;
 }
 
 .tech_body_ctn {
-  /* display: flex; */
   justify-content: center;
   flex-direction: row;
+}
+
+.tech_body_two {
+  width: 45%;
+  height: 50%;
+  margin-left: 28%;
+  margin-top: 20px;
+}
+.tech_body_three {
+  width: 30%;
+  height: 40%;
+  margin-left: 37%;
+  margin-top: 20px;
+}
+.tech_card_five_six img {
+  width: 38%;
+  height: 30%;
+  margin-top: 5%;
+  margin-left: 30%;
 }
 
 .mb_img img {
