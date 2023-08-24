@@ -468,8 +468,8 @@ strong {
   margin-left: 30%;
 }
 .tech_card_ts img {
-  width: 65%;
-  height: 30%;
+  width: 70%;
+  height: 35%;
   margin-top: 5%;
   margin-left: 15%;
 }
@@ -509,8 +509,9 @@ strong {
 .tech_card_five_six img {
   width: 38%;
   height: 25%;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-left: 30%;
+  padding-top: 30px;
 }
 
 .mb_img img {
