@@ -606,6 +606,10 @@ strong {
   transition: all ease-in-out 0.3s;
 }
 
+.imgBx {
+  padding-right: 10px;
+}
+
 /* ............................................................... */
 
 .con {
