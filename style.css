@@ -149,7 +149,7 @@ section {
 /* --------------------------------------------------- Tokyo --------------------------------------------------- */
 
 .Line {
-  background-image: url(./assets/Images/Line.png);
+  background-image: url(./assets/images/Line.png);
   background-repeat: no-repeat;
   background-position: bottom !important;
   background-size: cover;
@@ -256,7 +256,7 @@ p {
 }
 
 #service {
-  background-image: url(./assets/Images/ServiceBG.png);
+  background-image: url(./assets/images/ServiceBG.png);
   background-repeat: no-repeat;
   background-position: bottom !important;
   background-size: cover;
@@ -279,7 +279,7 @@ p {
 }
 
 .product_line {
-  background-image: url(./assets/Images/product_line.png);
+  background-image: url(./assets/images/product_line.png);
   background-repeat: no-repeat;
   background-position: bottom !important;
   background-size: cover;
@@ -295,7 +295,7 @@ strong {
 /* --------------------------------------------------- Join Team --------------------------------------------------- */
 
 .JoinBG {
-  background-image: url(./assets/Images/Join_bgImage@2x.png);
+  background-image: url(./assets/images/Join_bgImage@2x.png);
   background-repeat: no-repeat;
   background-position: bottom !important;
   background-size: cover;
@@ -403,7 +403,7 @@ strong {
 /* ---------------------------------------------------  Aboutus ---------------------------------------------------  */
 
 .AboutBG {
-  background-image: url(./assets/Images/ServiceBG.png);
+  background-image: url(./assets/images/ServiceBG.png);
   background-repeat: no-repeat;
   background-position: bottom !important;
   background-size: cover;
@@ -558,7 +558,7 @@ strong {
 /*--------------------------------------------------- Contact ---------------------------------------------------  */
 
 .careerBG {
-  background-image: url(./assets/Images/CareerBG@2x.png);
+  background-image: url(./assets/images/CareerBG@2x.png);
   background-repeat: no-repeat;
   background-size: 100vw;
   width: 100vw;
@@ -653,7 +653,7 @@ strong {
 select {
   text-indent: 1px;
   text-overflow: "";
-  background-image: url(./assets/Images/dropdown@2x.png);
+  background-image: url(./assets/images/dropdown@2x.png);
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: 98%;
@@ -668,7 +668,7 @@ select {
 .careerDropDown {
   text-indent: 1px;
   text-overflow: "";
-  background-image: url(./assets/Images/dropdown@2x.png);
+  background-image: url(./assets/images/dropdown@2x.png);
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: 98%;
@@ -742,7 +742,7 @@ select {
   width: 100%;
   height: 110vh;
   position: relative;
-  background: url(./assets/Images/HomeBG@2x.png) center center;
+  background: url(./assets/images/HomeBG@2x.png) center center;
   background-size: cover;
   position: relative;
 }
@@ -879,7 +879,6 @@ select {
   .customer br {
     content: "";
   }
-
 
   .zenitus {
     margin-top: 7vw;
@@ -1018,5 +1017,5 @@ select {
 }
 
 .mapimage {
-	padding-bottom: 50px;
+  padding-bottom: 50px;
 }
