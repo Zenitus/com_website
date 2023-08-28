@@ -27,6 +27,7 @@ html:focus-within {
 .heading {
   text-align: center;
   padding-top: 100px;
+  padding-bottom: 50px;
 }
 .sub_heading {
   text-align: center;
@@ -150,6 +151,16 @@ html:focus-within {
   font-size: 16px;
 }
 
+.card_btn {
+  float: right;
+  padding: 5px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.right-btn {
+}
+
 @media only screen and (max-width: 480px) {
   .home_banner img {
     width: 100%;
@@ -158,5 +169,11 @@ html:focus-within {
     /* width: 48%; */
     height: 28%;
     font-weight: 600;
+  }
+  .card_btn {
+    padding: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
   }
 }
