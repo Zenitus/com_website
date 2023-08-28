@@ -519,6 +519,11 @@ strong {
   height: 50%;
   padding-right: 10px;
 }
+.mb_img_sm img {
+  width: 60%;
+  height: 45%;
+  padding-left: 10px;
+}
 
 .card__one {
   transition: transform 0.5s;
