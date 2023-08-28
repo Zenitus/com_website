@@ -158,8 +158,6 @@ html:focus-within {
   bottom: 20px;
   right: 20px;
 }
-.right-btn {
-}
 
 @media only screen and (max-width: 480px) {
   .home_banner img {
