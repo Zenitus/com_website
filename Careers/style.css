@@ -27,7 +27,7 @@ html:focus-within {
 .heading {
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .sub_heading {
   text-align: center;
@@ -35,10 +35,16 @@ html:focus-within {
   font-size: 18px;
 }
 
-.nav_txt {
-  font-size: 20px;
-  font-weight: 500;
-  padding-left: 30px;
+.nav_txt a {
+  font-size: 22px;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 20px;
+  text-decoration: none;
+  color: hsl(212, 90%, 33%);
+}
+.left-links {
+  flex: 1 1 200px;
 }
 
 .home_btn {
@@ -147,10 +153,18 @@ html:focus-within {
 }
 
 .job_info li {
-  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-bottom: 2px;
   font-size: 16px;
+  padding-left: 20px;
 }
 
+.job_info_desc ul {
+  padding-top: 18px;
+  padding-bottom: 8px;
+  font-size: 16px;
+  padding-left: 60px;
+}
 .card_btn {
   float: right;
   padding: 5px;
