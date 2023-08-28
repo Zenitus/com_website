@@ -552,7 +552,7 @@ strong {
   }
 }
 
-#techstack {
+#technology {
   background-color: #ededff;
   height: auto;
   display: flow-root;
@@ -748,7 +748,7 @@ select {
 }
 
 /* --------------------------------------------------- Home --------------------------------------------------- */
-#hero {
+#home {
   width: 100%;
   height: 110vh;
   position: relative;
@@ -757,7 +757,7 @@ select {
   position: relative;
 }
 
-#hero:before {
+#home:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -766,7 +766,7 @@ select {
   right: 0;
 }
 
-#hero .container {
+#home .container {
   padding-top: 80px;
   padding-bottom: 20px;
 }
@@ -779,7 +779,7 @@ select {
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #home {
     background-attachment: fixed;
   }
 
@@ -831,7 +831,7 @@ select {
     min-height: 40vh !important;
   }
 
-  #hero br {
+  #home br {
     content: "";
   }
 
@@ -981,7 +981,7 @@ select {
 }
 
 @media (max-width: 992px), (max-height: 500) {
-  #hero {
+  #home {
     height: auto;
   }
 
@@ -992,19 +992,19 @@ select {
     margin-left: 15px;
   }
 
-  #hero h1 {
+  #home h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  #home h2 {
     font-size: 18px;
     line-height: 24px;
   }
 }
 
 @media (max-width: 766px), (max-height: 500) {
-  #hero {
+  #home {
     height: auto;
   }
 
@@ -1015,12 +1015,12 @@ select {
     margin-left: 15px;
   }
 
-  #hero h1 {
+  #home h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  #home h2 {
     font-size: 18px;
     line-height: 24px;
   }
