@@ -34,8 +34,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link englangmenu" href="#home">Home</a>
-                        <a class="nav-link japlangmenu" href="#home">ホーム</a>
+                        <a class="nav-link englangmenu" href="#hero">Home</a>
+                        <a class="nav-link japlangmenu" href="#hero">ホーム</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link englangmenu" href="#about">About Us</a>
@@ -46,16 +46,16 @@
                         <a class="nav-link japlangmenu" href="#service">サービス内容</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link englangmenu" href="#technology">Technology</a>
-                        <a class="nav-link japlangmenu" href="#technology">テクノロジー</a>
+                        <a class="nav-link englangmenu" href="#techstack">Technology</a>
+                        <a class="nav-link japlangmenu" href="#techstack">テクノロジー</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link englangmenu" href="#career">Careers</a>
                         <a class="nav-link japlangmenu" href="#career">キャリア</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link englangmenu" href="#contact">Contact</a>
-                        <a class="nav-link japlangmenu" href="#contact">お問合せ</a>
+                        <a class="nav-link englangmenu" href="#contact_us">Contact</a>
+                        <a class="nav-link japlangmenu" href="#contact_us">お問合せ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://www.zenitus.co.jp">日本語</a>
@@ -66,7 +66,7 @@
         </div>
     </nav>
     <!------------------------------------------------------ Home Page ------------------------------------------------------------>
-    <section id="home" class="d-flex align-items-center">
+    <section id="hero" class="d-flex align-items-center">
         <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
             <div class="englang">
                 <div class="col-lg-12 col-sm-6 col-md-12">
@@ -184,16 +184,14 @@
                                 <h5 class="card-title">Offshore Development Services</h5>
                                 <div class="box">
                                     <p class="card-text">
-                                        Zenitus aims to offer efficient and cost-effective offshore services for
-                                        web/mobile application development, as well as
-                                        an offshore laboratory team. We achieve this by leveraging our skilled bilingual
-                                        IT engineers located offshore,
-                                        supported by our experienced bilingual engineers working onsite. Our team is
-                                        meticulously trained, highly disciplined,
-                                        and committed to upholding Japanese work ethics and stringent quality processes.
-                                        These qualities empower Zenitus to
-                                        create and deliver world-class software and products while ensuring originality
-                                        in our work.
+                                        Zenitus aim at providing efficient and cost effective offshore services for
+                                        web/mobile application development, offshore laboratory team.
+                                        We achieve this through our skilled bilingual IT engineers offshore bridged by
+                                        our experienced
+                                        bilingual engineers onsite. Our team is trained, disciplined and aligned to
+                                        Japanese work ethics and
+                                        quality processes.
+                                        This enables Zenitus to develop and build world class software and products.
                                     </p>
                                 </div>
                             </div>
@@ -275,7 +273,7 @@
                     <div class="englang">
                         <div class="card h-100 service-box card__one">
                             <img class="card-img-top service_card_img"
-                                src="./assets/images/Consulting_outsourcing_2.jpg" alt="Card image cap">
+                                src="./assets/Images/Consulting_outsourcing_2.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Consulting and Outsourcing</h5>
                                 <p class="card-text">
@@ -289,7 +287,7 @@
                     <div class="japlang">
                         <div class="card h-100 service-box card__one">
                             <img class="card-img-top service_card_img"
-                                src="./assets/images/Consulting_outsourcing_2.jpg" alt="Card image cap">
+                                src="./assets/Images/Consulting_outsourcing_2.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">コンサルティングおよびアウトソーシング</h5>
                                 <p class="card-text">
@@ -302,7 +300,7 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="englang">
                         <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/maintanenance_services.jpg"
+                            <img class="card-img-top service_card_img" src="./assets/Images/maintanenance_services.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Maintenance Services</h5>
@@ -316,7 +314,7 @@
                     </div>
                     <div class="japlang">
                         <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/maintanenance_services.jpg"
+                            <img class="card-img-top service_card_img" src="./assets/Images/maintanenance_services.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title ">保守サービス</h5>
@@ -330,7 +328,7 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="englang">
                         <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/Testing_services.jpg"
+                            <img class="card-img-top service_card_img" src="./assets/Images/Testing_services.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Testing Services</h5>
@@ -343,7 +341,7 @@
                     </div>
                     <div class="japlang">
                         <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/Testing_services.jpg"
+                            <img class="card-img-top service_card_img" src="./assets/Images/Testing_services.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">テストサービス</h5>
@@ -357,12 +355,12 @@
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div class="englang">
                         <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/Training_services.jpg"
+                            <img class="card-img-top service_card_img" src="./assets/Images/Training_services.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Training</h5>
                                 <p class="card-text">
-                                    Young and talented freshers are hired and trained in Japanese language and
+                                    Young and talented engineers are hired and trained in Japanese language and
                                     technical skills.
                                 </p>
                             </div>
@@ -370,7 +368,7 @@
                     </div>
                     <div class="japlang">
                         <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/Training_services.jpg"
+                            <img class="card-img-top service_card_img" src="./assets/Images/Training_services.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">トレーニング</h5>
@@ -385,7 +383,7 @@
         </div>
     </section>
     <!------------------------------------------------------ Tech Stack Page ------------------------------------------------------>
-    <section id="technology">
+    <section id="techstack">
         <div class="container">
             <div class="row">
                 <div class="englang">
@@ -628,8 +626,8 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                     <div class="card h-100 service-box tech_card_five_six card__one">
                         <img src="./assets/images/tech_stack/database-svgrepo-com.png" alt="uiux">
-                        <div class="card-body"><br><br>
-                            <h4 class="t_card_title text-center">Database</h4>
+                        <div class="card-body">
+                            <h4 class="t_card_title text-center">Database </h4>
 
                             <div class="container tech_body_ctn" style="padding-top: 50px;">
                                 <div class="row">
@@ -648,7 +646,7 @@
                 </div>
                 <!-- Second row with 2 card -->
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card h-100 service-box tech_card_ts card__one">
+                    <div class="card h-100 service-box tech_card card__one">
                         <img src="./assets/images/tech_stack/dtopdev.jpg" alt="uiux">
                         <div class="card-body">
                             <h4 class="t_card_title text-center">
@@ -659,24 +657,24 @@
                         </div>
                         <div class="container tech_body_ctn">
                             <div class="row">
-                                <div class="col mb_img_sm">
+                                <div class="col mb_img">
                                     <img src="./assets/images/Techstack/typescript.png" alt="Angular">
                                     <p class="text-center">TypeScript</p>
                                 </div>
-                                <div class="col mb_img_sm">
+                                <div class="col mb_img">
                                     <img src="./assets/images/Techstack/python.png" alt="React">
                                     <p class="text-center">Python</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col mb_img_sm">
+                                <div class="col mb_img">
                                     <img src="./assets/images/Techstack/dt_vb.png" alt="Vue JS">
                                     <p class="text-center">
                                         Visual
                                         Basic.NET
                                     </p>
                                 </div>
-                                <div class="col mb_img_sm">
+                                <div class="col mb_img">
                                     <img src="./assets/images/Techstack/dt_flutter.png" alt="PHP">
                                     <p class="text-center">Flutter Desktop</p>
                                 </div>
@@ -687,28 +685,28 @@
                 <!-- Second row with 3 card -->
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                     <div class="card h-100 service-box tech_card_ts card__one">
-                        <img src="./assets/images/tech_stack/ts_card.webp" alt="uiux">
+                        <img src="./assets/images/tech_stack/testing.png" alt="uiux">
                         <div class="card-body">
                             <h4 class="t_card_title text-center">Software Testing</h4>
                             <div class="container tcard_two tech_body_ctn">
                                 <div class="row">
-                                    <div class="col mb_img_sm ">
+                                    <div class="col mb_img">
                                         <img src="./assets/images/Techstack/st_appium.png" alt="Angular">
                                         <p class="text-center">Appium</p>
                                     </div>
-                                    <div class="col mb_img_sm">
+                                    <div class="col mb_img">
                                         <img src="./assets/images/Techstack/st_selenium.png" alt="React">
                                         <p class="text-center">Selenium</p>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col mb_img_sm">
+                                    <div class="col mb_img">
                                         <img src="./assets/images/Techstack/st_uipath.png" alt="Vue JS">
                                         <p class="text-center">
                                             Ui Path
                                         </p>
                                     </div>
-                                    <div class="col mb_img_sm">
+                                    <div class="col mb_img">
                                         <img src="./assets/images/Techstack/st_katalan.png" alt="PHP">
                                         <p class="text-center">Katalan Studio</p>
                                     </div>
@@ -719,17 +717,17 @@
                 </div>
                 <!-- Second row with 4 card -->
                 <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card h-100 service-box tech_card_ts card__one">
+                    <div class="card h-100 service-box tech_card_five_six card__one">
                         <img src="./assets/images/tech_stack/cloud.jpg" alt="uiux">
                         <div class="card-body">
                             <h4 class="t_card_title text-center">Cloud Services</h4>
                             <div class="container tech_body_ctn" style="padding-top: 50px;">
                                 <div class="row">
-                                    <div class="col mb_img_sm">
+                                    <div class="col mb_img">
                                         <img src="./assets/images/tech_stack/aws-svgrepo-com.png" alt="Angular">
                                         <p class="text-center">AWS</p>
                                     </div>
-                                    <div class="col mb_img_sm">
+                                    <div class="col mb_img">
                                         <img src="./assets/images/tech_stack/azure-svgrepo-com.png" alt="React">
                                         <p class="text-center">Azure</p>
                                     </div>
@@ -939,7 +937,7 @@
         </div>
     </section>
     <!------------------------------------------------------ Contact Page ------------------------------------------------------->
-    <section id="contact">
+    <section id="contact_us">
         <div class="container justify-content-center">
             <div class="row Contact-intro" id="Dropd">
                 <div class="col-12 intro">
@@ -970,7 +968,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container d-flex">
+            <div class="container d-flex justify-content-center">
                 <div class="row g-5" style="padding:0 7% 0 7%">
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="card w-100 card__one con">
@@ -982,9 +980,9 @@
                                     <h5 class="card-title">インド</h5>
                                 </div>
                                 <div class="box">
-                                    <div>
+                                    <div class="imgBx">
                                         <img src="./assets/images/tech_stack/location-marker-svgrepo-com.png" alt=""
-                                            style="width:48px;">
+                                            style="width:60px;">
                                     </div>
                                     <div class="content private">
                                         <div class="englang">
@@ -1009,10 +1007,10 @@
                                         タミル・ナードゥ州チェンナイ、ショーリンガナルール、ウィプロ・ストリート、ヴィシュランティ・サバリ・モンドリアン、ブロック5、K3。
                                     </p>
                                 </div>
-                                <br>
+								<br>
                                 <div class="box">
                                     <div class="imgBx">
-                                        <img src="./assets/images/tech_stack/call-contact-multimedia-svgrepo-com.png"
+                                        <img src="./assets/Images/tech_stack/call-contact-multimedia-svgrepo-com.png"
                                             alt="" style="width:25px;height:25px;margin-right:0px;">
                                     </div>
                                     <div class="content phone">
@@ -1047,7 +1045,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="card w-100 card__one con">
                             <div class="card-body">
                                 <div class="englang">
@@ -1057,14 +1055,15 @@
                                     <h5 class="card-title">日本</h5>
                                 </div>
                                 <div class="box">
-                                    <div>
+                                    <div class="imgBx">
                                         <img src="./assets/images/tech_stack/location-marker-svgrepo-com.png" alt=""
-                                            style="width:32px;">
+                                            style="width:40px;">
                                     </div>
                                     <div class="content private">
                                         <div class="englang">
                                             <h5 class="break">
-                                                Zenitus Technologies <br>
+                                                Zenitus Technologies
+                                                <br>
                                                 株式会社
                                             </h5>
                                         </div>
@@ -1087,10 +1086,10 @@
                                         1-2-10 <br> 東洋ビル5F
                                     </p>
                                 </div>
-                                <br>
+								<br>
                                 <div class="box">
                                     <div class="imgBx">
-                                        <img src="./assets/images/tech_stack/call-contact-multimedia-svgrepo-com.png"
+                                        <img src="./assets/Images/tech_stack/call-contact-multimedia-svgrepo-com.png"
                                             alt="" style="width:25px;height:25px;margin-right:0px;">
                                     </div>
 
@@ -1127,24 +1126,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                         <div class="card w-100 card__one con">
                             <div class="card-body">
-                                <div class="englang text-center">
+                                <div class="englang">
                                     <h5 class="card-title">Singapore</h5>
                                 </div>
-                                <div class="japlang text-center">
+                                <div class="japlang">
                                     <h5 class="card-title">シンガポール</h5>
                                 </div>
                                 <div class="box">
-                                    <div>
+                                    <div class="imgBx">
                                         <img src="./assets/images/tech_stack/location-marker-svgrepo-com.png" alt=""
-                                            style="width:35px;">
+                                            style="width:40px;">
                                     </div>
                                     <div class="content private">
                                         <div class="englang">
                                             <h5 class="break">
-                                                Zenitus Technologies Pte. Ltd.
+                                                Zenitus Technologies
+                                                Pte. Ltd.
                                             </h5>
                                         </div>
                                         <div class="japlang">
@@ -1166,10 +1166,10 @@
                                         ウォータールー通り192番地<br>スカイラインビル05-03号<br>シンガポール <br> 187966
                                     </p>
                                 </div>
-                                <br>
+								<br>
                                 <div class="box">
                                     <div class="imgBx">
-                                        <img src="./assets/images/tech_stack/call-contact-multimedia-svgrepo-com.png"
+                                        <img src="./assets/Images/tech_stack/call-contact-multimedia-svgrepo-com.png"
                                             alt="" style="width:25px;height:25px;margin-right:0px;">
                                     </div>
                                     <div class="content phone">
@@ -1215,7 +1215,7 @@
     <footer class="page-footer shadow ">
         <div class="d-flex flex-wrap justify-content-between align-items-center mx-auto py-4" style="width: 80%">
             <div class="d-flex flex-wrap align-items-center">
-                <a href="#home" class="d-flex align-items-center p-0 text-dark">
+                <a href="#hero" class="d-flex align-items-center p-0 text-dark">
                     <img alt="logo" src="./assets/images/ZenitusLogo.png" width="180px">
                 </a>
             </div>
