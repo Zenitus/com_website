@@ -1,0 +1,1031 @@
+/* --------------------------------------------------- box-sizing rules ---------------------------------------------------  */
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------- box-sizing rules ---------------------------------------------------  */
+
+* {
+  margin: 0;
+  padding: 0px 0px 1px 0px;
+  font: inherit;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: initial;
+  scroll-behavior: smooth !important;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+/*--------------------------------------------------- Scroll Bar ---------------------------------------------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* -------------------------------------------------  Navbar ---------------------------------------------------------- */
+.navbar {
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.ZenitusLogo {
+  height: 50px;
+}
+
+.ZenitusLogo1 {
+  height: 120px;
+}
+
+.nav-link {
+  color: hsl(212, 90%, 33%);
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.nav-link:hover {
+  color: #fa7e00;
+}
+
+#nav_fix {
+  position: fixed;
+}
+
+/* --------------------------------------------------- Home ---------------------------------------------------  */
+.zenitus {
+  color: hsl(212, 90%, 33%);
+  font-size: 7vw;
+  font-weight: bold;
+  line-height: 2vw;
+}
+
+.Technologies {
+  font-size: 5vw;
+  font-weight: bold;
+  background-image: linear-gradient(45deg, #fa7e00, #c73327);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.IT {
+  font-size: 4vw;
+  font-weight: bold;
+  line-height: 2vw;
+}
+
+.Home_Para {
+  font-size: 1.5vw;
+  color: #7a7a7a;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background-image: linear-gradient(to right, #fa7e00, #ff6456);
+  border-radius: 30px;
+  color: whitesmoke;
+  font-weight: bold;
+  line-height: 4vw;
+}
+
+.sec_heading {
+  color: #7a7a7a;
+  text-align: center;
+}
+
+.about_img img {
+  height: 60%;
+  width: 50%;
+  padding-top: 30px;
+}
+
+.about_text h4 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.about_text p {
+  text-align: justify;
+  padding: 20px;
+}
+
+/* --------------------------------------------------- Tokyo --------------------------------------------------- */
+
+.Line {
+  background-image: url(./assets/images/Line.png);
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.heading {
+  color: #fa7e00;
+  font-weight: bold;
+  padding-top: 70px;
+}
+
+.heading img {
+  height: 25px;
+}
+
+.Logo h1 {
+  display: flex;
+}
+
+.customer {
+  color: #7a7a7a;
+  text-align: left;
+  font-size: 25px;
+  padding-top: 45px;
+}
+
+p {
+  color: #292828;
+}
+
+.Slogo {
+  vertical-align: middle;
+  float: right;
+}
+
+.miniLogo {
+  width: 40px;
+  height: 40px;
+  margin-right: 0px;
+}
+
+.heading {
+  display: inline-block;
+}
+
+.how-section1 {
+  margin-top: -15%;
+  padding: 10% 15% 4% 15%;
+}
+
+.how-section1 h4 {
+  color: #fa7e00;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.how-section1 .subheading {
+  color: black;
+  font-size: 24px;
+}
+
+.how-section1 .row {
+  margin-top: 5%;
+}
+
+.how-img {
+  text-align: center;
+}
+
+.how-img img {
+  width: 80%;
+}
+
+/* --------------------------------------------------- Service --------------------------------------------------- */
+.intro {
+  text-align: center;
+}
+
+.service-box {
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0px 4px 1px 0px blue,
+    0px 4px 1px 0px #9b9b9b;
+}
+
+.Maintenance-box {
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0px 4px 1px 0px blue,
+    0px 4px 1px 0px #9b9b9b;
+}
+
+.solutions-para {
+  text-align: left;
+  font-size: 14px;
+}
+
+.service-box p {
+  color: #7a7a7a;
+}
+
+.Maintenance-box p {
+  color: #7a7a7a;
+}
+
+#service {
+  background-image: url(./assets/images/ServiceBG.png);
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------------------------------------------------  Product ---------------------------------------------------  */
+
+.ClaimZ-box {
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 1px 0 #9b9b9b;
+}
+
+.ClaimZ-box p {
+  color: #7a7a7a;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.product_line {
+  background-image: url(./assets/images/product_line.png);
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+b,
+strong {
+  color: #fa7e00;
+}
+
+/* --------------------------------------------------- Join Team --------------------------------------------------- */
+
+.JoinBG {
+  background-image: url(./assets/images/Join_bgImage@2x.png);
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  margin-top: 5vw;
+}
+
+.JoinBG {
+  padding-top: 80px;
+}
+
+.join_row {
+  padding-top: 50px;
+  /* width: 120%; */
+}
+
+.map-btn {
+  box-shadow: 0px 0px 1px 1px #fa7e00, 0 1px 1px 0 #fa7e00, 0 1px 1px 0 #fa7e00;
+  border-radius: 20px;
+  color: #fa7e00;
+}
+
+/* --------------------------------------------------- Representative ---------------------------------------------------  */
+
+.leadercard {
+  padding: 15px;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 0px 0 #9b9b9b;
+}
+
+.leadercard-title {
+  font-weight: bold;
+}
+
+.leadercard img {
+  border-radius: 50%;
+  /* margin: 0 auto; */
+  margin-right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  width: auto;
+  max-width: 25%;
+}
+
+.leadercard-body h5 {
+  text-align: left;
+  padding-top: 10px;
+}
+
+.leadercard-body h6 {
+  font-size: 15px;
+}
+
+.leadercard-body img {
+  margin-left: 90%;
+}
+
+.leadercard p {
+  color: #7a7a7a;
+}
+
+.job_container {
+  padding-top: 130px;
+}
+
+/* --------------------------------------------------- Article ---------------------------------------------------  */
+
+.Article-box {
+  height: 725.76px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 1px 0px 0 #9b9b9b, 0 1px 2px 0 #9b9b9b;
+}
+
+.more img {
+  height: 20px;
+  vertical-align: middle;
+  display: flex;
+}
+
+.more {
+  display: inline-block;
+  color: black;
+  margin-top: 10vw;
+  margin-left: 20px;
+}
+
+.jan {
+  margin-top: 2vw;
+  margin-left: 1vw;
+  color: #000;
+}
+
+.customer1 {
+  color: #7a7a7a;
+  margin-left: 1vw;
+}
+
+.Article-box h2 {
+  margin-left: 1vw;
+}
+
+/* ---------------------------------------------------  Aboutus ---------------------------------------------------  */
+
+.AboutBG {
+  background-image: url(./assets/images/ServiceBG.png);
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.page-footer {
+  width: 100%;
+  background-color: #ededff;
+}
+
+.footer_p {
+  text-align: center;
+}
+
+/* service css */
+.p_list {
+  text-align: left;
+}
+
+.p_card_img {
+  width: 100%;
+  height: 48%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-body h5 {
+  text-align: center;
+}
+
+.card-img-top {
+  width: 100%;
+  /* height: 15vw; */
+  object-fit: contain;
+}
+
+.service_card_img {
+  width: 100;
+  height: 15vw;
+  object-fit: contain;
+}
+
+.lead_card_img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/*---------------------------------------------------  TechStack CSS ---------------------------------------------------   */
+.t_card_title {
+  color: #084fa0;
+}
+
+.tech_card img {
+  width: 45%;
+  height: 80%;
+  margin-top: 5%;
+  margin-left: 30%;
+}
+.tech_card_ts img {
+  width: 70%;
+  height: 35%;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+.tech_body img {
+  margin-left: 37%;
+  width: 27%;
+  height: 45%;
+}
+
+.tcard_two {
+  margin-top: 50px;
+}
+
+.t_text {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.tech_body_ctn {
+  justify-content: center;
+  flex-direction: row;
+}
+
+.tech_body_two {
+  width: 45%;
+  height: 50%;
+  margin-left: 28%;
+  margin-top: 20px;
+}
+.tech_body_three {
+  width: 30%;
+  height: 40%;
+  margin-left: 37%;
+  margin-top: 20px;
+}
+.tech_card_five_six img {
+  width: 38%;
+  height: 25%;
+  margin-top: 10%;
+  margin-left: 30%;
+  padding-top: 30px;
+}
+
+.mb_img img {
+  width: 55%;
+  height: 50%;
+  padding-right: 10px;
+}
+.mb_img_sm img {
+  width: 60%;
+  height: 45%;
+  padding-left: 10px;
+}
+
+.card__one {
+  transition: transform 0.5s;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    content: "";
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale3d(1.006, 1.006, 1);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+#technology {
+  background-color: #ededff;
+  height: auto;
+  display: flow-root;
+}
+
+.adjustment {
+  display: block;
+}
+/*--------------------------------------------------- Contact ---------------------------------------------------  */
+
+.careerBG {
+  background-image: url(./assets/images/CareerBG@2x.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  width: 100vw;
+}
+
+.Contact-para {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.Contact {
+  color: white;
+  text-align: center;
+  margin-top: 9vw;
+}
+
+.box {
+  display: flex;
+}
+
+.jp_map_btn {
+  padding-top: 22px;
+}
+
+.phone h5 {
+  margin-top: 0.8vh;
+  margin-left: 1vw;
+}
+
+.private {
+  margin-left: 1vw;
+}
+
+.middle h4 {
+  text-align: center;
+  color: #fa7e00;
+}
+
+.map-box {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 0px 0px 0 #9b9b9b, 0 0px 2px 0 #9b9b9b;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+}
+
+.imgBx {
+  padding-right: 10px;
+}
+
+/* ............................................................... */
+
+.con {
+  border-radius: 1em;
+  text-align: center;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0px 4px 1px 0px blue,
+    0px 4px 1px 0px #9b9b9b;
+}
+
+.con .card-title {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.con .btn {
+  border-radius: 2em;
+  box-shadow: 0px 0px 1px 1px #fa7e00, 0 1px 1px 0 #fa7e00, 0 1px 1px 0 #fa7e00;
+  border-radius: 20px;
+  color: #fa7e00;
+}
+
+.con .btn:hover {
+  color: #fa7e00;
+  box-shadow: 0px 0px 1px 1px #fa7e00, 0 1px 1px 0 #fa7e00, 0 1px 1px 0 #fa7e00;
+  border-radius: 20px;
+}
+
+/* --------------------------------------------------- Career ---------------------------------------------------  */
+
+.java {
+  background-color: #f5f4ff;
+  width: 70vw;
+  text-align: left;
+}
+
+.pinch-box {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 0px #9b9b9b, 0 1px 0px 0 #9b9b9b, 0 1px 2px 0 #9b9b9b;
+  /* width: fit-content; */
+  padding: 0.5em;
+}
+
+select {
+  text-indent: 1px;
+  text-overflow: "";
+  background-image: url(./assets/images/dropdown@2x.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 98%;
+}
+
+.DownArrow img {
+  height: 40px;
+  padding-left: 50vw;
+  margin-top: 7vw;
+}
+
+.careerDropDown {
+  text-indent: 1px;
+  text-overflow: "";
+  background-image: url(./assets/images/dropdown@2x.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 98%;
+}
+
+.career-collapse {
+  width: 70vw;
+  padding: 0.2em;
+}
+
+.whatsApp {
+  margin-left: 10px;
+}
+
+.li {
+  margin-left: 70px;
+}
+
+.heximage {
+  background-color: #fff;
+  padding: 30px;
+  margin: 1px;
+  border-radius: 40px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 25px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  outline: none;
+  background-color: #fa7e00;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#myBtn:hover {
+  background-color: hsl(212, 90%, 33%);
+}
+/* .................................Remove somethings in smallscreens............................ */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ........................................Media queries for below 1200................................... */
+
+.copy {
+  margin-left: 300px;
+}
+
+/* --------------------------------------------------- Home --------------------------------------------------- */
+#home {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+  background: url(./assets/images/HomeBG@2x.png) center center;
+  background-size: cover;
+  position: relative;
+}
+
+#home:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#home .container {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.mobile {
+  float: right;
+  width: 600px;
+  height: 600px;
+  margin-left: 15px;
+}
+
+@media (min-width: 1024px) {
+  #home {
+    background-attachment: fixed;
+  }
+
+  .mobile {
+    float: right;
+    width: 500px;
+    height: 500px;
+    margin-left: 15px;
+  }
+
+  .adjustment {
+    display: block;
+  }
+}
+
+@media (min-width: 2100px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 2100px;
+  }
+
+  .mobile {
+    float: right;
+    width: 800px;
+    height: 800px;
+    margin-left: 15px;
+  }
+
+  .break br {
+    content: "";
+  }
+
+  .adjustment {
+    display: none;
+  }
+}
+
+@media (max-width: 1070px) {
+  .adjustment {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .careerBG {
+    min-height: 40vh !important;
+  }
+
+  #home br {
+    content: "";
+  }
+
+  #Service br {
+    content: "";
+  }
+
+  .product_line {
+    background-image: none !important;
+  }
+
+  .Line {
+    background-image: none !important;
+    overflow-y: auto;
+  }
+
+  .rep {
+    width: auto !important;
+    margin-left: 0px !important;
+  }
+
+  .representative-responsive {
+    height: auto !important;
+    margin-left: 0px !important;
+  }
+
+  .ourrep {
+    margin-left: 0px !important;
+  }
+
+  .representative-box {
+    width: auto !important;
+  }
+
+  .Article-box {
+    height: auto !important;
+  }
+
+  .ClaimZ-box {
+    background-color: transparent !important;
+  }
+
+  .AboutBG br {
+    content: "";
+  }
+
+  .li {
+    margin-left: 0px !important;
+  }
+
+  .bottom {
+    margin-left: 30px !important;
+  }
+
+  .customer br {
+    content: "";
+  }
+
+  .zenitus {
+    margin-top: 7vw;
+    line-height: 0.1vw;
+  }
+
+  .DownArrow img {
+    display: none !important;
+  }
+
+  .miniLogo {
+    margin-top: 2px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .contact-box {
+    height: auto !important;
+  }
+
+  .con {
+    width: 18rem;
+  }
+
+  .servicebg {
+    padding: 0px !important;
+  }
+
+  .repmd {
+    padding: 0 2em 0 2em !important;
+  }
+
+  .pro-img {
+    display: none;
+  }
+
+  .container-fluid {
+    border: 0px solid red;
+  }
+
+  .gallery {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card-img-top {
+    width: 100%;
+    height: 75vw;
+    object-fit: contain;
+  }
+
+  .lead_card_img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .careerBG {
+    min-height: 35vh !important;
+  }
+
+  .JoinBG {
+    margin-top: 0px !important;
+  }
+
+  .JoinBG br {
+    content: "";
+  }
+
+  .zenitus {
+    margin-top: 7vw;
+    line-height: 0.1vw;
+  }
+
+  .IT {
+    line-height: 0.2vw;
+  }
+
+  .Contact {
+    margin-top: 0px !important;
+  }
+
+  .Contact-para {
+    font-size: 10px !important;
+  }
+
+  .contact-box {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 992px), (max-height: 500) {
+  #home {
+    height: auto;
+  }
+
+  .mobile {
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin-left: 15px;
+  }
+
+  #home h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #home h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 766px), (max-height: 500) {
+  #home {
+    height: auto;
+  }
+
+  .mobile {
+    float: right;
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+  }
+
+  #home h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #home h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.mapimage {
+  padding-bottom: 50px;
+}
