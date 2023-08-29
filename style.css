@@ -721,6 +721,10 @@ select {
   font-weight: 500;
 }
 
+.mapimage {
+  padding-bottom: 50px;
+}
+
 #myBtn:hover {
   background-color: hsl(212, 90%, 33%);
 }
@@ -1024,8 +1028,13 @@ select {
     font-size: 18px;
     line-height: 24px;
   }
-}
 
-.mapimage {
-  padding-bottom: 50px;
+  .customer {
+    color: #7a7a7a;
+    text-align: left;
+    font-size: 18px;
+    padding-top: 45px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }

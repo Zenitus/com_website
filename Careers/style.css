@@ -43,9 +43,9 @@ html:focus-within {
   text-decoration: none;
   color: hsl(212, 90%, 33%);
 }
-.left-links {
+/* .left-links {
   flex: 1 1 200px;
-}
+} */
 
 .home_btn {
   /* width: 30%; */
@@ -187,5 +187,8 @@ html:focus-within {
     position: absolute;
     bottom: 5px;
     right: 5px;
+  }
+  .nav_txt a {
+    float: right;
   }
 }
