@@ -587,7 +587,10 @@ strong {
 }
 
 .jp_map_btn {
-  padding-top: 22px;
+  padding-top: 48px;
+}
+.sg_map_btn {
+  padding-top: 28px;
 }
 
 .phone h5 {
