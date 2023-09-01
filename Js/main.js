@@ -19,23 +19,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-document.getElementById("homesec").onclick = function () {
-  location.href = "#home";
-};
-document.getElementById("aboutussec").onclick = function () {
-  location.href = "#about";
-};
-document.getElementById("servicesec").onclick = function () {
-  location.href = "#service";
-};
-document.getElementById("technologysec").onclick = function () {
-  location.href = "#technology";
-};
-
-document.getElementById("careersec").onclick = function () {
-  location.href = "#career";
-};
-document.getElementById("contactsec").onclick = function () {
-  location.href = "#contact";
-};
