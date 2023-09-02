@@ -23,15 +23,19 @@ $(function () {
   $(".englanglink").on("click", function () {
     $(".englang").each(function (id) {
       $(this).hide();
+      $(this).css("display", "none");
     });
     $(".japlang").each(function (id) {
       $(this).show();
+      $(this).css("display", "block");
     });
     $(".englangmenu").each(function (id) {
       $(this).hide();
+      $(this).css("display", "none");
     });
     $(".japlangmenu").each(function (id) {
       $(this).show();
+      $(this).css("display", "flex");
     });
     return false;
   });
