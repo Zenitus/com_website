@@ -93,7 +93,7 @@ html:focus-within {
   }
 }
 .card_head h5 {
-  color: #d71515;
+  color: hsl(212, 90%, 33%);
 }
 
 .job_desc {
@@ -171,6 +171,13 @@ html:focus-within {
   position: absolute;
   bottom: 20px;
   right: 20px;
+}
+
+.footer_lang {
+  padding-top: 4px;
+  font-size: smaller;
+  font-weight: bold;
+  color: #d71515;
 }
 
 @media only screen and (max-width: 480px) {
