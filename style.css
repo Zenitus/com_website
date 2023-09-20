@@ -744,6 +744,20 @@ select {
 #myBtn:hover {
   background-color: hsl(212, 90%, 33%);
 }
+/* Testimonials and moments */
+/* Slide Pictures  */
+.slide_img {
+  padding-top: 10px;
+  width: 50%;
+}
+#carouselMultiItemExample {
+  padding-top: 3.5rem;
+}
+
+.testimonial_controls {
+  padding-top: 2rem;
+}
+
 /* .................................Remove somethings in smallscreens............................ */
 
 @media (prefers-reduced-motion: reduce) {
@@ -955,7 +969,7 @@ select {
 
   .about_img img {
     height: 50%;
-    width: 30%;
+    width: 48%;
     padding-top: 30px;
   }
   .join_us_img img {
@@ -1076,11 +1090,4 @@ select {
   .social_icons {
     padding-left: 12px;
   }
-}
-
-/* Slide Pictures  */
-.slide_img {
-  padding-top: 10px;
-  /* height: 600px; */
-  width: 50%;
 }
