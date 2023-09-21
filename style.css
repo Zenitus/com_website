@@ -86,6 +86,10 @@ section {
   position: fixed;
 }
 
+.social_icons {
+  padding-left: 30px;
+}
+
 /* --------------------------------------------------- Home ---------------------------------------------------  */
 .zenitus {
   color: hsl(212, 90%, 33%);
@@ -457,6 +461,13 @@ strong {
 }
 
 /*---------------------------------------------------  TechStack CSS ---------------------------------------------------   */
+.customer_img img {
+  height: 75%;
+  width: 90%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
 .t_card_title {
   color: #084fa0;
 }
@@ -718,10 +729,12 @@ select {
   background-color: #fa7e00;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 12px;
   font-size: 15px;
   font-weight: 500;
+  width: 48px;
+  height: 49px;
 }
 
 .mapimage {
@@ -731,6 +744,20 @@ select {
 #myBtn:hover {
   background-color: hsl(212, 90%, 33%);
 }
+/* Testimonials and moments */
+/* Slide Pictures  */
+.slide_img {
+  padding-top: 10px;
+  width: 50%;
+}
+#carouselMultiItemExample {
+  padding-top: 3.5rem;
+}
+
+.testimonial_controls {
+  padding-top: 2rem;
+}
+
 /* .................................Remove somethings in smallscreens............................ */
 
 @media (prefers-reduced-motion: reduce) {
@@ -939,9 +966,26 @@ select {
   .gallery {
     padding-left: 0px;
   }
+
+  .about_img img {
+    height: 50%;
+    width: 48%;
+    padding-top: 30px;
+  }
+  .join_us_img img {
+    width: 80%;
+    padding-top: 30px;
+    padding-left: 120px;
+  }
+  #myBtn {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
+  #myBtn {
+    display: none;
+  }
   .card-img-top {
     width: 100%;
     height: 75vw;
@@ -1008,6 +1052,9 @@ select {
     font-size: 18px;
     line-height: 24px;
   }
+  .social_icons {
+    padding-left: 12px;
+  }
 }
 
 @media (max-width: 766px), (max-height: 500) {
@@ -1039,5 +1086,8 @@ select {
     padding-top: 45px;
     padding-left: 18px;
     padding-right: 18px;
+  }
+  .social_icons {
+    padding-left: 12px;
   }
 }
