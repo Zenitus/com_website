@@ -758,6 +758,13 @@ select {
   padding-top: 2rem;
 }
 
+.link_testimonial_two {
+  padding-top: 22px;
+}
+.link_testimonial_three {
+  padding-top: 38px;
+}
+
 /* .................................Remove somethings in smallscreens............................ */
 
 @media (prefers-reduced-motion: reduce) {
