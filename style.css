@@ -313,7 +313,7 @@ strong {
 }
 
 .join_row {
-  padding-top: 50px;
+  padding-top: 30px;
   /* width: 120%; */
 }
 
@@ -973,9 +973,13 @@ select {
     padding-top: 30px;
   }
   .join_us_img img {
-    width: 80%;
-    padding-top: 30px;
-    padding-left: 120px;
+    width: 100%;
+    padding-top: 34px;
+    padding-left: 0px;
+  }
+
+  .linked_in_logo {
+    padding-top: 100px;
   }
   #myBtn {
     display: none;
