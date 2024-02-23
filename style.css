@@ -573,6 +573,11 @@ strong {
   height: auto;
   display: flow-root;
 }
+#leadership {
+  background-color: #ededff;
+  height: auto;
+  display: flow-root;
+}
 
 .adjustment {
   display: block;
