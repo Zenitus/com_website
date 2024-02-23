@@ -339,6 +339,7 @@ strong {
 
 .leadercard img {
   border-radius: 50%;
+  flex-direction: row;
   /* margin: 0 auto; */
   margin-right: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -921,6 +922,13 @@ select {
   }
 }
 @media screen and (max-width: 991px) {
+  .leadercard {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px #9b9b9b, 0 3px 0px 0 blue, 0 3px 0px 0 #9b9b9b;
+  }
   .careerBG {
     min-height: 40vh !important;
   }
