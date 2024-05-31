@@ -29,7 +29,14 @@ picture,
 svg {
   max-width: 100%;
 }
+.certification_section {
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
 
+.certification_section img {
+  margin: 0 auto; /* Ensure images are centered within their columns */
+}
 a {
   text-decoration: none;
 }
@@ -423,6 +430,8 @@ strong {
 
 .footer_p {
   text-align: center;
+  font-weight: bold;
+  padding-top: 3px;
 }
 
 /* service css */
@@ -609,10 +618,10 @@ strong {
 }
 
 .jp_map_btn {
-  padding-top: 47px;
+  padding-top: 24px;
 }
 .sg_map_btn {
-  padding-top: 28px;
+  padding-top: 25px;
 }
 
 .phone h5 {
