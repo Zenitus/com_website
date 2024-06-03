@@ -185,7 +185,7 @@ section {
 .customer {
   color: #7a7a7a;
   text-align: left;
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 45px;
 }
 
@@ -558,7 +558,7 @@ strong {
     transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
       0 6px 20px 0 rgba(0, 0, 0, 0.15);
-    content: "";
+    content: '';
     opacity: 0;
     z-index: -1;
   }
@@ -696,7 +696,7 @@ strong {
 
 select {
   text-indent: 1px;
-  text-overflow: "";
+  text-overflow: '';
   background-image: url(./assets/images/dropdown@2x.png);
   background-repeat: no-repeat;
   background-size: 30px;
@@ -711,7 +711,7 @@ select {
 
 .careerDropDown {
   text-indent: 1px;
-  text-overflow: "";
+  text-overflow: '';
   background-image: url(./assets/images/dropdown@2x.png);
   background-repeat: no-repeat;
   background-size: 20px;
@@ -862,7 +862,7 @@ select {
 }
 
 #home:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   top: 0;
@@ -917,7 +917,7 @@ select {
   }
 
   .break br {
-    content: "";
+    content: '';
   }
 
   .adjustment {
@@ -943,11 +943,11 @@ select {
   }
 
   #home br {
-    content: "";
+    content: '';
   }
 
   #Service br {
-    content: "";
+    content: '';
   }
 
   .product_line {
@@ -986,7 +986,7 @@ select {
   }
 
   .AboutBG br {
-    content: "";
+    content: '';
   }
 
   .li {
@@ -998,7 +998,7 @@ select {
   }
 
   .customer br {
-    content: "";
+    content: '';
   }
 
   .zenitus {
@@ -1087,7 +1087,7 @@ select {
   }
 
   .JoinBG br {
-    content: "";
+    content: '';
   }
 
   .zenitus {
@@ -1171,4 +1171,30 @@ select {
   .social_icons {
     padding-left: 12px;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .boxone {
+    margin-left: 30px;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .contentone {
+    margin-top: 10px;
+  }
+
+  .imgBxone {
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+}
+
+.lineBg {
+  background-image: url(./assets/images/BGProduct.png);
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
