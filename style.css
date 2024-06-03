@@ -36,6 +36,7 @@ svg {
 
 .certification_section img {
   margin: 0 auto; /* Ensure images are centered within their columns */
+  padding-right: 12px;
 }
 a {
   text-decoration: none;
@@ -619,9 +620,6 @@ strong {
 
 .jp_map_btn {
   padding-top: 24px;
-}
-.sg_map_btn {
-  padding-top: 25px;
 }
 
 .phone h5 {
@@ -1215,7 +1213,7 @@ select {
   .boxone {
     flex-direction: row; /* stack elements vertically on small screens */
     align-items: center;
-    padding-right: 20px;
+    /* padding-right: 20px; */
   }
 
   .imgBxone {
