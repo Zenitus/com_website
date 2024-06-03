@@ -628,11 +628,6 @@ strong {
   margin-top: 0.8vh;
   margin-left: 1vw;
 }
-
-.private {
-  margin-left: 1vw;
-}
-
 .middle h4 {
   text-align: center;
   color: #fa7e00;
@@ -916,9 +911,9 @@ select {
     margin-left: 15px;
   }
 
-  .break br {
+  /* .break br {
     content: "";
-  }
+  } */
 
   .adjustment {
     display: none;
@@ -1175,7 +1170,7 @@ select {
 
 @media screen and (max-width: 600px) {
   .boxone {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     flex-direction: row;
     text-align: center;
   }
@@ -1202,7 +1197,7 @@ select {
 .boxone {
   display: flex;
   align-items: center;
-  padding: 10px;
+  /* padding: 10px; */
   justify-content: center; /* add this to center align horizontally */
 }
 
