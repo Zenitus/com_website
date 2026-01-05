@@ -884,3 +884,95 @@ html {
     font-size: 0.95rem;
   }
 }
+
+/* Enhanced Light Leadership Section */
+.zen-leadership-light {
+  background-color: #fcfcfc;
+  padding: 100px 0;
+}
+
+.zen-leader-card-light {
+  background-color: #ffffff !important;
+  border: 1px solid #f0f0f0 !important;
+  border-radius: 24px !important; /* Slightly rounder for modern look */
+  padding: 40px 25px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.zen-leader-card-light:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12) !important;
+  border-color: #ff8c00 !important;
+}
+
+/* Bigger Profile Image Container */
+.zen-profile-ring {
+  width: 160px; /* Increased from 130px */
+  height: 160px; /* Increased from 130px */
+  margin: 0 auto 25px auto;
+  border: 8px solid #ffffff; /* Thicker white ring */
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.zen-profile-ring img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.zen-leader-card-light:hover .zen-profile-ring img {
+  transform: scale(1.1); /* Subtle zoom on hover */
+}
+
+.zen-name-dark {
+  font-size: 1.4rem; /* Slightly larger text */
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 8px;
+}
+
+.zen-title-muted {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.zen-role-tag-light {
+  font-size: 0.8rem;
+  color: #0077b5;
+  text-transform: uppercase;
+  text-align: right;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+/* LinkedIn Button */
+.zen-link-btn-light {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  background: #f8fafc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0077b5 !important;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.zen-link-btn-light:hover {
+  background: #0077b5;
+  color: #ffffff !important;
+  transform: rotate(-5deg);
+}
