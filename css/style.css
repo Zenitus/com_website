@@ -1,0 +1,886 @@
+.logo {
+  height: 50px;
+}
+
+body {
+  padding-top: 90px; /* matches navbar height */
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.navbar {
+  height: 90px;
+}
+
+.navbar-toggler {
+  border: none;
+  padding-right: 15px; /* Ensures it doesn't touch the very edge */
+}
+
+.navbar-toggler:focus {
+  box-shadow: none; /* Removes the ugly blue outline on click */
+}
+
+/* Ensure smooth transition and no jumping */
+.navbar-collapse {
+  transition: height 0.3s ease;
+}
+
+section {
+  padding-top: clamp(60px, 8vw, 120px);
+  padding-bottom: clamp(60px, 8vw, 120px);
+  scroll-margin-top: 90px; /* EXACT navbar height */
+  overflow: hidden;
+}
+
+.nav-link {
+  color: #084fa0 !important;
+  font-weight: 600;
+  margin-left: 20px;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: #fa7e00 !important;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Ensure no other hidden states are forcing the width */
+.nav-link:not(.active):not(:hover)::after {
+  width: 0 !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #fa7e00;
+  transition: width 0.2s ease-in-out;
+}
+
+.btn-outline-primary {
+  border-color: #084fa0;
+  color: #084fa0;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+  background-color: #084fa0;
+  border-color: #084fa0;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .nav-item.d-flex {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: flex-start; /* Aligns link to the left with other items */
+  }
+}
+
+#home {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/images/home_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #home {
+    background-position: center center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .zenitus-text {
+    font-size: 2.5rem !important;
+  }
+
+  .gradient-text {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-img {
+    max-width: 70%;
+    margin: 30px auto;
+  }
+
+  #home .row {
+    flex-direction: column-reverse;
+  }
+}
+
+.zenitus-text {
+  color: #084fa0;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #fa7e00, #c73327);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-custom {
+  background: linear-gradient(45deg, #fa7e00, #c73327);
+  color: rgb(255, 255, 255);
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(250, 126, 0, 0.3);
+  color: white;
+}
+
+.hero-img {
+  max-width: 80%;
+  height: auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+@media (max-width: 991px) {
+  #home {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero-img {
+    max-width: 60%;
+    margin-top: 20px;
+  }
+
+  .zenitus-text {
+    font-size: 3rem;
+  }
+
+  .gradient-text {
+    font-size: 2.2rem;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#about {
+  background-color: #ffffff;
+  background-image: url("../assets/images/Line.png");
+  background-repeat: no-repeat;
+  background-position: bottom !important;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.about-img {
+  max-width: 85%;
+  height: 570px;
+  width: 55%;
+  padding-top: 30px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.03);
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(45deg, #fa7e00, #c73327);
+  border-radius: 2px;
+}
+
+.text-black {
+  color: #000000 !important;
+  line-height: 1.6;
+}
+
+#about h2.display-6 {
+  color: #000000;
+}
+
+/* Enhances readability for the larger text */
+#about p.fs-5 {
+  font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  #about {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .about-img {
+    max-width: 70%;
+    margin-bottom: 30px; /* Space between image and text when stacked */
+  }
+}
+
+@media (max-width: 576px) {
+  .about-img {
+    max-width: 90%;
+  }
+}
+
+#service {
+  background-color: #f8f9fa !important; /* Slight contrast from About section */
+}
+
+.service-card {
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid transparent !important;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+  border-bottom: 3px solid #fa7e00 !important; /* Matches your branding */
+}
+
+.service-icon-box {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 79, 160, 0.05); /* Light blue background for icon */
+  border-radius: 50%;
+}
+
+.service-icon {
+  width: 40px;
+  height: auto;
+}
+
+/* Ensure headings in cards are solid black */
+.service-card h4 {
+  color: #000000;
+}
+
+@media (max-width: 991px) {
+  /* Ensures the active link stays orange in the mobile menu */
+  .navbar-nav .nav-link.active {
+    color: #fa7e00 !important;
+  }
+
+  .navbar-nav .nav-link.active::after {
+    width: 100% !important;
+  }
+}
+
+.tech-card {
+  background: #ffffff;
+  border: 1px solid #f0f0f0 !important;
+  transition: all 0.3s ease;
+}
+
+.tech-card:hover {
+  border-color: #fa7e00 !important;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Container for the list - centers the block but items inside are left-aligned */
+.tech-list {
+  display: table; /* Shrinks container to fit the widest text */
+  margin: 0 auto; /* Centers the container within the card */
+  padding-left: 0;
+}
+
+.tech-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Left align the content */
+  font-size: 0.95rem;
+  padding: 8px 0;
+  white-space: nowrap; /* Keeps items on one line */
+  color: #444;
+}
+
+.tech-list i {
+  width: 30px; /* Fixed width ensures all text starts at the same spot */
+  font-size: 1.2rem;
+  margin-right: 12px;
+  text-align: center;
+}
+
+.tech-card h5 {
+  color: #084fa0;
+  letter-spacing: 0.5px;
+}
+
+.tech-card {
+  border: 1px solid #f0f0f0 !important;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.tech-card:hover {
+  border-color: #fa7e00 !important;
+  transform: translateY(-5px);
+}
+
+.career-benefits li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #084fa0, #00b4db);
+}
+
+#careers .card {
+  transition: transform 0.3s ease;
+}
+
+#careers .card:hover {
+  transform: translateY(-10px);
+}
+
+/* For the Apply Now button to match your theme */
+.btn-custom.w-100 {
+  text-align: center;
+}
+
+/* Red Location Marker */
+.text-danger {
+  color: #e63946 !important; /* Professional Red */
+}
+
+/* Country Underline */
+.location-header h4 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.btn-map-small:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(250, 126, 0, 0.4);
+}
+
+/* Card Improvements */
+.contact-card {
+  border-top: 3px solid #084fa0 !important; /* Added a blue top border for corporate feel */
+}
+
+.contact-card:hover {
+  border-top: 3px solid #fa7e00 !important; /* Changes to orange on hover */
+}
+
+.footer {
+  /* Deep Corporate Blue that allows color logos to stand out */
+  background: #063a75;
+  color: #ffffff;
+}
+
+/* Force all footer text to be white/off-white */
+.footer h5,
+.footer .footer-logo-text {
+  color: #ffffff !important;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.85); /* Brightened for better readability */
+  line-height: 1.8;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: #fa7e00; /* Zenitus Orange */
+  transform: translateX(5px);
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: white !important;
+  transition: 0.3s;
+  text-decoration: none !important;
+}
+
+.social-icons a:hover {
+  background: #fa7e00;
+  text-decoration: none !important;
+}
+
+#certifications {
+  border-top: 1px solid #f0f0f0;
+}
+
+.cert-logo {
+  max-height: 250px; /* Limits height so logos of different shapes look balanced */
+  width: 250px;
+
+  transition: all 0.3s ease;
+}
+
+.cert-item:hover .cert-logo {
+  filter: grayscale(0%); /* Brings back color on hover */
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.certification_section .col-lg-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leader-card-horizontal {
+  transition: transform 0.3s ease;
+  border: 1px solid #f0f0f0 !important;
+}
+
+.leader-card-horizontal:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Circular Image Styling */
+.leader-img-circle {
+  width: 100px; /* Adjust size to make it smaller/larger */
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leader-img-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.x-small {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.linkedin-link-sm {
+  color: #0077b5;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.linkedin-link-sm:hover {
+  color: #fa7e00;
+}
+
+/* Fix for mobile stacking */
+@media (max-width: 576px) {
+  .card-body {
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+  }
+  .leader-img-circle {
+    margin-bottom: 1.5rem;
+    margin-right: 0 !important;
+  }
+}
+
+.testimonial-focus-card {
+  max-width: 700px; /* This makes the card smaller than the full screen width */
+  background: #ffffff !important;
+  border: 1px solid #f0f0f0 !important;
+  position: relative;
+  text-align: center;
+}
+
+.testimonial-content {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555 !important;
+}
+
+.text-orange {
+  color: #fa7e00;
+}
+
+.text-linkedin-icon {
+  color: #0077b5;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.text-linkedin-icon:hover {
+  color: #fa7e00;
+}
+
+/* Star colors */
+.stars .fa-star {
+  color: #ffc107; /* Standard Gold Star Color */
+  margin: 0 2px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fa7e00 !important;
+}
+
+/* This prevents the "stacking" look */
+.single-testimonial-slider {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; /* This hides the cards that aren't active */
+  position: relative;
+}
+
+.single-testimonial-slider .swiper-wrapper {
+  display: flex; /* Forces them into a horizontal line */
+  flex-direction: row;
+}
+
+.single-testimonial-slider .swiper-slide {
+  width: 100%;
+  flex-shrink: 0; /* Prevents cards from squishing */
+}
+
+.testimonial-focus-card {
+  max-width: 650px; /* Limits width for a professional look */
+  background: #ffffff !important;
+}
+
+/* Fixes stacking if the JS loads slow */
+.swiper-wrapper {
+  display: flex;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999; /* Higher z-index to stay above all sections */
+  width: 10px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fa7e00;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  /* Initial State: Hidden and shifted down */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease-in-out;
+}
+
+/* State when scrolled down */
+#btn-back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#btn-back-to-top:hover {
+  background-color: #333; /* Darker on hover */
+  transform: scale(1.1);
+}
+
+/* Preloader Background Overlay */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000; /* Stays above your navbar (9999) */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* This creates the smooth fade */
+}
+
+/* Container for Logo + Spinner */
+.loader-container {
+  text-align: center;
+}
+
+.loader-logo {
+  height: 80px; /* Slightly larger for the loader */
+  margin-bottom: 20px;
+  display: block;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* The actual spinner circle */
+.loader-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(8, 79, 160, 0.1);
+  border-top: 3px solid #fa7e00; /* Your brand orange */
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+/* Classes to trigger the fade out */
+.preloader-hidden {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Animations */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ===============================
+   GLOBAL RESPONSIVE TYPOGRAPHY
+================================ */
+
+html {
+  font-size: clamp(14px, 1vw + 0.5rem, 18px);
+}
+
+/* Headings scale smoothly */
+h1 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+}
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+}
+h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+}
+h4 {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+}
+p {
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+}
+
+/* Hero text scaling */
+.zenitus-text {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.gradient-text {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+/* Universal image safety */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero image */
+.hero-img {
+  width: clamp(250px, 35vw, 480px);
+}
+
+/* About image */
+.about-img {
+  width: clamp(220px, 30vw, 420px);
+}
+
+/* Universal section padding */
+section {
+  padding-top: clamp(60px, 8vw, 120px);
+  padding-bottom: clamp(60px, 8vw, 120px);
+}
+
+/* Navbar height scaling */
+.navbar {
+  padding-top: clamp(10px, 1.5vw, 5px);
+  padding-bottom: clamp(10px, 1.5vw, 5px);
+}
+
+.nav-link {
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+}
+
+/* Buttons */
+.btn,
+.btn-custom {
+  font-size: clamp(0.9rem, 1vw, 1.05rem);
+  padding: clamp(10px, 1.5vw, 14px) clamp(24px, 3vw, 36px);
+}
+
+/* Cards spacing */
+.card {
+  padding: clamp(16px, 3vw, 30px);
+}
+
+/* Ultra small phones */
+@media (max-width: 360px) {
+  .hero-img {
+    width: 85%;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-img {
+    width: 60%;
+  }
+}
+
+/* Large desktops / 4K */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* =========================================
+   CAREERS PAGE – RESPONSIVE ENHANCEMENTS
+========================================= */
+
+/* Fluid base scaling */
+html {
+  font-size: clamp(14px, 1vw + 0.5rem, 18px);
+}
+
+/* Header scaling */
+.job-header {
+  padding: clamp(15px, 3vw, 30px) 0;
+}
+
+/* Accordion button text */
+.accordion-button {
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  padding: clamp(14px, 2.5vw, 22px);
+}
+
+/* Accordion body text */
+.accordion-body {
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+}
+
+/* Job description spacing */
+.accordion-body ul li {
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+}
+
+/* Info card */
+.info-card {
+  padding: clamp(16px, 3vw, 24px);
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+}
+
+/* Info card headings */
+.info-card h5 {
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+}
+
+/* Badge scaling */
+.badge-eval {
+  font-size: clamp(0.65rem, 1vw, 0.75rem);
+}
+
+/* Email apply button */
+.accordion-body .btn {
+  font-size: clamp(0.85rem, 1.1vw, 1rem);
+  padding: clamp(8px, 1.5vw, 12px) clamp(14px, 2.5vw, 22px);
+}
+
+/* Loader text */
+#loader p {
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+}
+
+/* Container width tuning */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Mobile fixes */
+@media (max-width: 768px) {
+  .accordion-body .row {
+    flex-direction: column;
+  }
+
+  .info-card {
+    margin-top: 20px;
+  }
+}
+
+/* Ultra small phones */
+@media (max-width: 360px) {
+  .accordion-button {
+    font-size: 0.95rem;
+  }
+}

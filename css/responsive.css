@@ -1,0 +1,400 @@
+@media (max-width: 768px) {
+  #home {
+    background-position: right center; /* Shifts image so the subject is visible on phones */
+    background-size: cover;
+  }
+}
+
+/* --- Global Reset & Root Scaling --- */
+:root {
+  --primary-blue: #084fa0;
+  --zenitus-orange: #fa7e00;
+  --gradient-orange: linear-gradient(45deg, #fa7e00, #c73327);
+  --text-dark: #333333;
+}
+
+html {
+  font-size: 16px; /* Base size for rem units */
+  scroll-behavior: smooth;
+}
+
+/* Dynamically scale the entire site's proportions based on screen width */
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  padding-top: 80px;
+  font-family: "Inter", sans-serif; /* Recommended professional font */
+  overflow-x: hidden; /* Prevent horizontal scroll bugs */
+}
+
+/* --- Layout Components --- */
+section {
+  padding-top: clamp(60px, 8vw, 120px);
+  padding-bottom: clamp(60px, 8vw, 120px);
+  scroll-margin-top: 90px; /* EXACT navbar height */
+  overflow: hidden;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: var(--gradient-orange);
+  border-radius: 2px;
+  margin: 10px 0;
+}
+
+/* --- Navigation --- */
+.logo {
+  height: clamp(40px, 5vh, 55px);
+  width: auto;
+}
+
+.navbar-toggler {
+  border: none;
+  padding-right: 15px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-link {
+  color: var(--primary-blue) !important;
+  font-weight: 600;
+  margin-left: 1.2rem;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--zenitus-orange) !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--zenitus-orange);
+  transition: width 0.2s ease-in-out;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* --- Hero / Home Section --- */
+#home {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  background-image: url("../assets/images/home_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.zenitus-text {
+  color: var(--primary-blue);
+  font-size: clamp(2.5rem, 4vw, 4.5rem); /* Fluid Title */
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.gradient-text {
+  background: var(--gradient-orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 550px;
+  height: 80%;
+  animation: float 6s ease-in-out infinite;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* --- About & Services --- */
+#about {
+  background-color: #ffffff;
+  background-image: url("../assets/images/Line.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.about-img {
+  max-width: 450px;
+  height: 520px;
+  width: 60%;
+  transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.03);
+}
+
+.service-card,
+.tech-card {
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0 !important;
+  background: #fff;
+}
+
+.service-card:hover,
+.tech-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+  border-color: var(--zenitus-orange) !important;
+}
+
+/* --- Leadership & Testimonials --- */
+.leader-card-horizontal {
+  border: 1px solid #f0f0f0 !important;
+  transition: transform 0.3s ease;
+}
+
+.leader-img-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f8f9fa;
+  flex-shrink: 0;
+}
+
+.leader-img-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-focus-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff !important;
+  border: 1px solid #f0f0f0 !important;
+}
+
+/* --- Buttons --- */
+.btn-custom {
+  background: var(--gradient-orange);
+  color: #fff !important;
+  padding: 0.8rem 2.2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(250, 126, 0, 0.3);
+}
+
+/* --- Mobile Fixes (Media Queries) --- */
+@media (max-width: 991px) {
+  #home .row {
+    flex-direction: column-reverse; /* Put text below image for better flow */
+    text-align: center;
+  }
+
+  .hero-img {
+    max-width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  .nav-item.d-flex {
+    margin: 10px 0;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    background-position: right center; /* Focus on graphic for narrow screens */
+  }
+
+  .leader-card-horizontal .card-body {
+    flex-direction: column;
+    text-align: center;
+    align-items: center !important;
+  }
+
+  .leader-img-circle {
+    margin-right: 0 !important;
+    margin-bottom: 1rem;
+  }
+
+  .cert-logo {
+    max-width: 180px;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding: 3.5rem 0;
+  }
+
+  .btn-custom {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* --- Footer & Extras --- */
+.footer {
+  background: #063a75;
+  color: #ffffff;
+  padding: 4rem 0 2rem;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 10px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--zenitus-orange);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+#btn-back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+/* ===== Mobile Navbar Background Fix ===== */
+@media (max-width: 991px) {
+  .navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .navbar-collapse {
+    background-color: #ffffff;
+    padding: 1rem 0;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1.2rem;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.9rem 1.2rem;
+  }
+}
+
+/* ===== Mobile Navbar Active State Fix ===== */
+@media (max-width: 991px) {
+  /* Disable hover underline */
+  .navbar-nav .nav-link:hover::after {
+    width: 0 !important;
+  }
+
+  /* Disable focus underline (important for mobile tap) */
+  .navbar-nav .nav-link:focus::after {
+    width: 0 !important;
+  }
+
+  /* Allow underline ONLY for active link */
+  .navbar-nav .nav-link.active::after {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 991px) {
+  /* This makes the background/list cover the full width of the screen */
+  .navbar .container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  /* Keep the Logo and Toggler away from the very edge while the menu is full-width */
+  .navbar-brand {
+    margin-left: 15px;
+  }
+  .navbar-toggler {
+    margin-right: 15px;
+  }
+
+  /* Ensure the background color covers the whole width when opened */
+  .navbar-collapse {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 20px; /* Internal padding for the links */
+    margin-top: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-details .badge {
+    font-size: 0.6rem !important;
+    padding: 2px 5px !important;
+  }
+}

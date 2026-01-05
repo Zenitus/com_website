@@ -1,1573 +1,977 @@
-<!doctype html>
-<html lang="en" id="top">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Language Js -->
-    <script src="./Js/jslang.js"></script>
-    <!-- Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- BootStrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <title>ZenitusTechnologies</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Zenitus Technologies provides premium IT consulting, software development, and digital transformation services globally.">
+    <meta name="keywords"
+        content="IT Consulting, Software Development, Zenitus Technologies, Tech Solutions, Careers in Tech">
 
-    <link href="favicon.ico" rel="icon">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zenitus.com/">
+    <meta property="og:title" content="Zenitus Technologies | Innovative IT Solutions">
+    <meta property="og:description"
+        content="Empowering businesses through cutting-edge technology and expert consulting.">
+    <meta property="og:image" content="./assets/images/ZenitusLogo.png">
+    <title>Zenitus Technologies</title>
+    <link href="./assets/images/favicon.ico" rel="icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <meta property="og:image" content="./image/Slogo.png">
-    <style>
-        .japlangmenu,
-        .japlang {
-            display: none;
-        }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar">
-    <!------------------------------------------------------ NavBar Section ---------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg bg-white main-navigation fixed-top" id="nav_fix">
+<body>
+    <div id="preloader">
+        <div class="loader-container">
+            <img src="./assets/images/ZenitusLogo.png" alt="Zenitus Logo" class="loader-logo">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
+
+            <!-- Logo -->
             <a class="navbar-brand" href="#">
-                <img class="img-responsive ZenitusLogo" src="./assets/images/ZenitusLogo.png" alt="NoImage">
+                <img src="./assets/images/ZenitusLogo.png" alt="Zenitus" class="logo">
             </a>
-            <button class="navbar-toggler nav_btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
-                        <a class="nav-link englangmenu homesec" id="homesec" onclick="collapseNavbar('homesec')"
-                            href="#home">Home</a>
-                        <a class="nav-link japlangmenu homesec" id="homesec" onclick="collapseNavbar('homesec')"
-                            href="#home">ホーム</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link englangmenu aboutussec" onclick="collapseNavbar('aboutussec')"
-                            id="aboutussec" href="#about">About Us</a>
-                        <a class="nav-link japlangmenu aboutussec" onclick="collapseNavbar('aboutussec')"
-                            id="aboutussec" href="#about">会社概要</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link englangmenu servicesec" onclick="collapseNavbar('servicesec')"
-                            id="servicesec" href="#service">Services</a>
-                        <a class="nav-link japlangmenu servicesec" onclick="collapseNavbar('servicesec')"
-                            id="servicesec" href="#service">サービス内容</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link englangmenu technologysec" onclick="collapseNavbar('technologysec')"
-                            id="technologysec" href="#technology">Technology</a>
-                        <a class="nav-link japlangmenu technologysec" onclick="collapseNavbar('technologysec')"
-                            id="technologysec" href="#technology">テクノロジー</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link englangmenu careersec" onclick="collapseNavbar('careersec')" id="careersec"
-                            href="#career">Careers</a>
-                        <a class="nav-link japlangmenu careersec" onclick="collapseNavbar('careersec')" id="careersec"
-                            href="#career">キャリア</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link englangmenu contactsec" onclick="collapseNavbar('contactsec')"
-                            id="contactsec" href="#contact">Contact</a>
-                        <a class="nav-link japlangmenu contactsec" onclick="collapseNavbar('contactsec')"
-                            id="contactsec" href="#contact">お問合せ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link englang englanglink japsec" onclick="collapseNavbar('japsec')" id="japsec"
-                            href="#">日本語</a>
-                        <a class="nav-link japlang japlanglink engsec" onclick="collapseNavbar('japsec')" id="japsec"
-                            href="#">English</a>
-                    </li>
-                    <!-- <li class="nav-item social_icons">
-                        <a href="https://www.linkedin.com/company/zenitus" onclick="collapseNavbar('japsec')"
-                            id="japsec" target="_blank">
-                            <button class="btn  btn-flat p-2">
-                                <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-                            </button>
+                        <a class="nav-link active" href="#home"> <span class="lang-en">Home</span>
+                            <span class="lang-jp d-none">ホーム</span>
                         </a>
-                        <a href="https://www.instagram.com/zenitus_technologies" onclick="collapseNavbar('japsec')"
-                            id="japsec" target="_blank" rel="noopener noreferrer">
-                            <button class="btn  btn-flat p-2">
-                                <i class="fa fa-instagram" style="font-size:24px"></i>
-                            </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <span class="lang-en">About Us</span>
+                            <span class="lang-jp d-none">会社概要</span>
                         </a>
-                    </li> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">
+                            <span class="lang-en">Services</span>
+                            <span class="lang-jp d-none">サービス</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technology">
+                            <span class="lang-en">Technology</span>
+                            <span class="lang-jp d-none">テクノロジー</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#careers">
+                            <span class="lang-en">Careers</span>
+                            <span class="lang-jp d-none">キャリア</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <span class="lang-en">Contact</span>
+                            <span class="lang-jp d-none">お問い合わせ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center align-items-lg-center ps-2 ps-lg-0 ms-lg-3">
+                        <a href="javascript:void(0)" class="nav-link" id="lang-toggle"
+                            onclick="toggleLanguage()">日本語</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!------------------------------------------------------ Home Page ------------------------------------------------------------>
-    <section id="home" class="d-flex align-items-center">
-        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-            <div class="englang">
-                <div class="col-lg-12 col-sm-6 col-md-12">
-                    <img class="mobile" src="./assets/images/mobileBG@2x.png" alt="">
-                    <p class="zenitus">Zenitus</p>
-                    <p class="Technologies">Technologies</p>
-                    <p class="IT">Let's take IT forward</p>
-                    <br>
-
-                    <div>
-                        <a href="#about" class="btn-get-started ctn">Get Started</a>
-                    </div>
-                </div>
-            </div>
-            <div class="japlang">
-                <div class="col-lg-12 col-sm-6 col-md-12">
-                    <img class="mobile" src="./assets/images/mobileBG@2x.png" alt="">
-                    <p class="zenitus">Zenitus</p>
-                    <p class="Technologies">Technologies</p>
-                    <p class="IT">Let's take IT forward</p>
-                    <br>
-
-                    <div>
-                        <a href="#about" class="btn-get-started ctn">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!------------------------------------------------------ About Page ----------------------------------------------------------->
-    <section class="Line" id="about">
-        <div class="row">
-            <div class="englang">
-                <div class="col-12 intro">
-                    <h1 class="heading">Who we are</h1>
-                    <h2>Customer Need First through innovation and creativity.</h2>
-                </div>
-            </div>
-            <div class="japlang">
-                <div class="col-12 intro">
-                    <h1 class="heading">会社概要</h1>
-                    <h2>イノベーション、創造性を通じて「お客様のニーズが第一」と考えます。</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-1 "></div>
-            <div class="col-lg-5 text-center about_img">
-                <img class="img-fluid" src="./assets/images/Tokyo.png" alt="">
-            </div>
-            <div class="col-lg-5 about_text englang">
-
-                <p>
-                    An IT consulting and software development company
-                    primarily focusing to serve the technology needs of
-                    Japanese and Global customers.
-                    <br>
-                    Our aim is to make a difference by enabling your Business to
-                    run seamlessly through technology. Being a customer centric
-                    company we strive to keep everything simple and transparent.
-                    We apply strategic thinking, design insight and practicality in
-                    every aspect of our projects with the goal of successful end to
-                    end implementation.
-                    <br>
-                    With talented bilingual engineers, backed by passionate founders we have the
-                    right attitude to support all your needs through our services.
-                </p>
-            </div>
-            <div class="col-lg-5 about_text japlang">
-
-                <p>
-                    日本のお客様へのコンサルティングおよびソフトウェア開発を中心に取り組んでいる企業です。
-                    <br>
-                    私たちの目的は、テクノロジーを通じてシームレス化を図り、お客様のビジネスに変化を生み出すことです。顧客中心主義の企業として、
-                    私たちはすべてをシンプルにし、かつ透明性を保つよう努力しております。プロジェクトのすべての面において、戦略的な思考、設計の洞察、実用性を適用し、システム導入の成功を目標にサポートいたします。
-                    <br>
-                    才能あるバイリンガルエンジニア、情熱的なファウンダーたちが、お客様のニーズに誠実に応えてまいります。
-                </p>
-            </div>
-            <div class="col-lg-1"></div>
-        </div>
-    </section>
-    <!------------------------------------------------------ Service Page ---------------------- ----------------------------------->
-    <section id="service">
+    <section id="home">
         <div class="container">
-            <div class="row">
-                <div class="col-12 intro englang">
-                    <h1 class="heading">What we do</h1>
-                    <h2>We enable your business</h2>
-                </div>
-                <div class="col-12 intro japlang">
-                    <h1 class="heading">サービス内容</h1>
-                    <h2>お客様のビジネスを実現します</h2>
-                </div>
-            </div>
-        </div>
-        <div class="container d-flex justify-content-center">
-            <div class="row g-5" style="padding: 0px 7% 30px 7%;">
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="englang">
-                        <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/Offshore_dev.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Offshore Development Services</h5>
-                                <div class="box">
-                                    <p class="card-text">
-                                        <br>
-                                        Zenitus aims to offer efficient and cost-effective offshore services for
-                                        web/mobile application development, as well as
-                                        an offshore laboratory team. We achieve this by leveraging our skilled bilingual
-                                        IT engineers located offshore,
-                                        supported by our experienced bilingual engineers working onsite.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="japlang">
-                        <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/Offshore_dev.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">オフショア開発サービス</h5>
-                                <div class="box">
+            <div class="row align-items-center">
 
-                                    <p class="card-text">
-                                        <br>
-                                        Web/モバイルアプリ開発に関しては効率的で費用効果の高いオフショアサービスを提供することを目指しています。契約形態は請負、準委任、ラボチームに対応しております。
-                                        実現するために、能力、経験のあるバイリンガルエンジニアがオフショア側で実装し、経験豊富なバイリンガルエンジニアがオンサイト側で橋渡いたします。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="englang">
-                        <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img " src="./assets/images/Product_solutions.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Products and Solutions</h5>
-                                <p class="card-text">
-                                    <br>
-                                    Products and solutions at Zenitus aims at making Organization more efficient and
-                                    change the way Organization use technology.
-                                </p>
-                                <p class="solutions-para">
-                                    <b>ClaimZ -</b>
-                                    Easy Insurance Claim Application
-                                    <br>
-
-                                    <b>TrackZ -</b>
-                                    Platform to track moving objects
-                                    <br>
-
-                                    <b>RecruitZ -</b>
-                                    RecruitZ is an Internal Recruitment application that helps the HR team with the
-                                    recruitment process.
-                                    <br>
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="japlang">
-                        <div class="card h-100  service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/Product_solutions.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">自社製品およびソリューション</h5>
-                                <p class="card-text">
-                                    <br>
-                                    Zenitusの製品とソリューションは、テクノロジーを使用する方法を変えることで組織が運用効率を高められることを目的としています。
-                                </p>
-                                <p class="solutions-para">
-                                    <b>ClaimZ -</b>
-                                    保険金請求の申請を簡単にするアプリ
-                                    <br>
-
-                                    <b>TrackZ -</b>
-                                    IoTを活用し、移動するオブジェクトを追跡、分析するプラットフォーム
-                                    <br>
-
-                                    <b>RecruitZ -</b>
-                                    RecruitZ は、人事チームの採用プロセスを支援する社内採用アプリケーションです。
-                                    <br>
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="englang">
-                        <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img"
-                                src="./assets/images/Consulting_outsourcing_2.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Consulting and Outsourcing</h5>
-                                <p class="card-text">
-                                    <br>
-                                    Zenitus provides bilingual software engineering services throughout Japan
-                                    on various technology platforms (SAP, Web, Mobile) both on long term and short term
-                                    basis.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="japlang">
-                        <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img"
-                                src="./assets/images/Consulting_outsourcing_2.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">コンサルティングおよびアウトソーシング</h5>
-                                <p class="card-text">
-                                    <br>
-                                    Zenitusは、IT業界のニーズに応じてさまざまな技術プラットフォーム（SAP、Web、モバイルなど）でバイリンガルソフトウェアエンジニアリングサービス（SES）を長期間または短期間で提供しております。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="englang">
-                        <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/maintanenance_services.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Maintenance Services</h5>
-                                <p class="card-text">
-                                    <br>
-                                    Our strong bilingual technical engineers are
-                                    ready to support your application maintenance requirements both onsite and offshore
-                                    24/7.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="japlang">
-                        <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/maintanenance_services.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title ">保守サービス</h5>
-                                <p class="card-text">
-                                    <br>
-                                    当社の強力なバイリンガル技術エンジニアは、24時間年中無休でお客様のアプリの保守要件をサポート（オンサイト、オフショア）する準備ができております。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="englang">
-                        <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/Testing_services.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Testing Services</h5>
-                                <p class="card-text">
-                                    <br>
-                                    A dedicated team of bilingual engineers provide application
-                                    testing(Blackbox, Greybox, Whitebox), security vulnerability testing as a service.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="japlang">
-                        <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/Testing_services.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">テストサービス</h5>
-                                <p class="card-text">
-                                    <br>
-                                    Zenitusはアプリのテスト（ブラックボックス、グレーボックス、ホワイトボックス）、ウェブアプリのセキュリティ脆弱性チェック、報告、解決方法をサービスとして提供しております。テスト能力、セキュリティ脆弱性知識を持つ優秀なバイリンガルエンジニアチームがテストサービスを実施いたします。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 d-flex align-items-stretch">
-                </div>
-                <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                    <div class="englang">
-                        <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/Training_services.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Training</h5>
-                                <p class="card-text">
-                                    <br>
-                                    Young and talented freshers are hired and trained in Japanese language and
-                                    technical skills.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="japlang">
-                        <div class="card h-100 service-box card__one">
-                            <img class="card-img-top service_card_img" src="./assets/images/Training_services.jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">トレーニング</h5>
-                                <p class="card-text">
-                                    <br>
-                                    才能のある若いエンジニアたちを採用し、日本語、技術的なスキル、日本の文化、マナーなどの研修を行っております。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    <!------------------------------------------------------ Tech Stack Page ------------------------------------------------------>
-    <section id="technology">
-        <div class="container">
-            <div class="row">
-                <div class="englang">
-                    <div class="col-12 intro">
-                        <h1 class="heading">Our technical expertise</h1>
-                        <h2>We help choose the right technology for your business</h2>
-                    </div>
-                </div>
-                <div class="japlang">
-                    <div class="col-12 intro">
-                        <h1 class="heading">当社の技術経験</h1>
-                        <h2>ビジネスニーズに合った適切な開発テクノロジーの選択をサポートします</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-1"></div>
-                <div class="japlang col-lg-5 text-center customer_img">
-                    <img class="img-fluid" src="./assets/images/manager_client.png" alt="">
-                </div>
-                <div class="col-lg-5 about_text japlang">
-                    <h4 class="t_card_title">開発担当者からのメッセージ
-                    </h4>
-                    <p class="text-center sec_heading">
-                        当社にはフロントエンドからバックエンドまで、さまざまな言語や開発ツールを使いこなすことができるエンジニアが揃っているため、お客様のご希望に合わせた技術での開発が可能です。
-                        特にご希望がない場合は、当社から最適な言語やインフラの構築について、提案いたしますので、お気軽にご要望をお聞かせください。
-                        <br><br>
-                        エンドトゥエンドのサービス提供を基本としており、要件定義から設計、開発、テスト、運用サポートまで一貫して対応可能です。セキュリティを重視し、システムの作成段階からセキュリティに配慮して安全性の高いシステムの提供に努めています。
-                        <br><br>
-                        お客様が安心して利用できるシステムの提供をお約束いたしますので、安心してご連絡くださいませ。
-                    </p>
-                </div>
-                <div class="col-lg-1"></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row g-5" style="padding: 0px 3% 20px 3%;">
-
-                <!-- First row with 1 card -->
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card h-100 service-box card__one">
-                        <div class="tech_card">
-                            <img src="./assets/images/tech_stack/uiux.png" alt="uiux">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="t_card_title text-center">UI/UX</h4>
-                            <div class="container  tech_body_ctn">
-                                <div class="row">
-                                    <div class="tech_body_three">
-                                        <img src="./assets/images/tech_stack/figma-svgrepo-com.png" alt="figma">
-                                    </div>
-                                    <div class="t_text">
-                                        <p>Figma</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="tech_body_three">
-                                        <img src="./assets/images/tech_stack/adobe-xd-logo-svgrepo-com.png" alt="figma">
-                                    </div>
-                                    <div class="t_text">
-                                        <p>Adobe XD</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="tech_body_three">
-                                        <img src="./assets/images/tech_stack/ai-svgrepo-com.png" alt="figma">
-                                    </div>
-                                    <div class="t_text">
-                                        <p>
-                                            Adobe
-                                            <br>
-                                            Illustrator
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- First row with 2 card -->
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card h-100 service-box card__one">
-                        <div class="tech_card">
-                            <img src="./assets/images/tech_stack/webdev.png" alt="uiux">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="t_card_title text-center">Web Development</h4>
-                            <div class="container tech_body_ctn">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/html-5-svgrepo-com.png" alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>HTML</p>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/css-3-logo-svgrepo-com.png"
-                                                alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>CSS</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/js-svgrepo-com.png" alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>JavaScript</p>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/angular-svgrepo-com.png" alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>Angular</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/react-svgrepo-com.png" alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>React</p>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/vue-vuejs-javascript-js-framework-svgrepo-com.png"
-                                                alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>Vue</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- First row with 3 card -->
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card h-100 service-box  card__one">
-                        <div class="tech_card">
-                            <img src="./assets/images/tech_stack/mobdev.png" alt="Web Development">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="t_card_title text-center">Mobile Development</h4>
-                            <div class="container tech_body_ctn">
-                                <h6 class="t_text">Hybrid App</h6>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/flutter-svgrepo-com.png" alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>Flutter</p>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/react-svgrepo-com.png" alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>React</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h6 class="t_text">Native App</h6>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/android-svgrepo-com.png" alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>Android</p>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/apple-logo-svgrepo-com.png"
-                                                alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>iOS</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/kotlin-svgrepo-com.png" alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>Kotlin</p>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="tech_body_two">
-                                            <img src="./assets/images/tech_stack/swift-svgrepo-com.png" alt="figma">
-                                        </div>
-                                        <div class="t_text">
-                                            <p>Swift</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- First row with 4 card -->
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card h-100 service-box  card__one">
-                        <div class="tech_card">
-                            <img src="./assets/images/tech_stack/backendprograming.png" alt="uiux">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="t_card_title text-center">Backend Development</h4>
-                            <div class="container tech_body_ctn">
-                                <div class="row">
-                                    <div class="tech_body_three">
-                                        <img src="./assets/images/tech_stack/java-svgrepo-com.png" alt="figma">
-                                    </div>
-                                    <div class="t_text">
-                                        <p>Java</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="tech_body_three">
-                                        <img src="./assets/images/tech_stack/go-svgrepo-com.png" alt="figma">
-                                    </div>
-                                    <div class="t_text">
-                                        <p>Golang</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="tech_body_three">
-                                        <img src="./assets/images/tech_stack/dotnet-svgrepo-com.png" alt="figma">
-                                    </div>
-                                    <div class="t_text">
-                                        <p>
-                                            .Net
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Second row with 1 card -->
-                <!-- <div class="col-lg-3 col-md-6 col-sm-12 mb-4 adjustment"></div> -->
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card h-100 service-box tech_card_five_six card__one">
-                        <img src="./assets/images/tech_stack/database-svgrepo-com.png" alt="uiux">
-                        <div class="card-body"><br><br>
-                            <h4 class="t_card_title text-center">Database</h4>
-
-                            <div class="container tech_body_ctn" style="padding-top: 50px;">
-                                <div class="row">
-                                    <div class="col mb_img">
-                                        <img src="./assets/images/tech_stack/mysql-logo-svgrepo-com.png" alt="MySQL">
-                                        <p class="text-center">MySQL</p>
-                                    </div>
-                                    <div class="col mb_img">
-                                        <img src="./assets/images/tech_stack/pgsql-svgrepo-com.png" alt="PostgreSQL">
-                                        <p class="text-center">PostgreSQL</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Second row with 2 card -->
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card h-100 service-box tech_card_ts card__one">
-                        <img src="./assets/images/tech_stack/dtopdev.jpg" alt="uiux">
-                        <div class="card-body">
-                            <h4 class="t_card_title text-center">
-                                Desktop App
-                                <br>
-                                Development
+                <div class="col-lg-7 text-center text-lg-start">
+                    <div class="hero-content">
+                        <h1 class="display-3 fw-bold zenitus-text">Zenitus</h1>
+                        <h1 class="display-4 fw-bold gradient-text">Technologies</h1>
+                        <h2 class="fw-bold">Let's take IT forward</h2>
+                        <div class="lang-en">
+                            <h4 class="mt-4 text-dark">
+                                Empowering businesses with cutting-edge technology solutions.
+                                Bridging the gap between vision and reality.
                             </h4>
                         </div>
-                        <div class="container tech_body_ctn">
-                            <div class="row">
-                                <div class="col mb_img_sm">
-                                    <img src="./assets/images/Techstack/typescript.png" alt="Angular">
-                                    <p class="text-center">TypeScript</p>
-                                </div>
-                                <div class="col mb_img_sm">
-                                    <img src="./assets/images/Techstack/python.png" alt="React">
-                                    <p class="text-center">Python</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col mb_img_sm">
-                                    <img src="./assets/images/Techstack/dt_vb.png" alt="Vue JS">
-                                    <p class="text-center">
-                                        Visual
-                                        Basic.NET
-                                    </p>
-                                </div>
-                                <div class="col mb_img_sm">
-                                    <img src="./assets/images/Techstack/dt_flutter.png" alt="PHP">
-                                    <p class="text-center">Flutter Desktop</p>
-                                </div>
-                            </div>
+
+                        <div class="lang-jp d-none">
+                            <h4 class="mt-4 text-dark">
+                                最先端のテクノロジーソリューションでビジネスを強化します。
+                                ビジョンと現実の架け橋となります。
+                            </h4>
+                        </div>
+
+                        <div class="mt-5">
+                            <a href="#about" class="btn-custom">Get Started</a>
                         </div>
                     </div>
                 </div>
-                <!-- Second row with 3 card -->
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card h-100 service-box tech_card_ts card__one">
-                        <img src="./assets/images/tech_stack/ts_card.webp" alt="uiux">
-                        <div class="card-body">
-                            <h4 class="t_card_title text-center">Software Testing</h4>
-                            <div class="container tcard_two tech_body_ctn">
-                                <div class="row">
-                                    <div class="col mb_img_sm ">
-                                        <img src="./assets/images/Techstack/st_appium.png" alt="Angular">
-                                        <p class="text-center">Appium</p>
-                                    </div>
-                                    <div class="col mb_img_sm">
-                                        <img src="./assets/images/Techstack/st_selenium.png" alt="React">
-                                        <p class="text-center">Selenium</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col mb_img_sm">
-                                        <img src="./assets/images/Techstack/st_uipath.png" alt="Vue JS">
-                                        <p class="text-center">
-                                            Ui Path
-                                        </p>
-                                    </div>
-                                    <div class="col mb_img_sm">
-                                        <img src="./assets/images/Techstack/st_katalan.png" alt="PHP">
-                                        <p class="text-center">Katalan Studio</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                    <img src="./assets/images/mobileBG.png" alt="Zenitus Logo" class="img-fluid hero-img">
                 </div>
-                <!-- Second row with 4 card -->
-                <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                    <div class="card h-100 service-box tech_card_ts card__one">
-                        <img src="./assets/images/tech_stack/cloud.jpg" alt="uiux">
-                        <div class="card-body">
-                            <h4 class="t_card_title text-center">Cloud Services</h4>
-                            <div class="container tech_body_ctn" style="padding-top: 50px;">
-                                <div class="row">
-                                    <div class="col mb_img_sm">
-                                        <img src="./assets/images/tech_stack/aws-svgrepo-com.png" alt="Angular">
-                                        <p class="text-center">AWS</p>
-                                    </div>
-                                    <div class="col mb_img_sm">
-                                        <img src="./assets/images/tech_stack/azure-svgrepo-com.png" alt="React">
-                                        <p class="text-center">Azure</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
-
-    <!------------------------------------------------------ Our Managers ------------------------------------------------------->
-    <section class="" id="leadership">
-        <div class=" container-fluid">
-            <br>
-            <div class="row">
-                <div class="col-12 intro">
-                    <div class="englang">
-                        <h1 class="heading">Leadership team</h1>
-                        <p class="sec_heading">
-                            Digital transformation has become an important and inevitable part of every
-                            business across the world. Using technology, we make it easier, faster and more cost
-                            effective
-                            for businesses to undertake the transformation.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="englang">
-                <div class="container container d-flex justify-content-center">
-                    <div class="row g-5">
-                        <div class="col-lg-6 col-md-12 d-flex align-items-stretch">
-                            <div class="card card__one leadercard ">
-                                <img src="./assets/images/nidhisir.jpeg" class=" lead_card_img">
-                                <div class=" leadercard-body">
-                                    <h5 class="card-title leadercard-title">Karunanidhi</h5>
-                                    <h6>Director - Products & Technology - India</h6>
-                                    <p class="card-text leadercard-text">
-                                        Have passion towards emerging technologies and find pleasure in implementing
-                                        them to
-                                        customers.
-                                        Have over 20 years of IT and business experience and a good understanding of the
-                                        Japanese culture.
-                                        Have built strong technical teams as CTO.
-                                        <br>
-                                        Be Humble, give Respect and show Trust. Genuine mistakes are still ok!
-                                    </p>
-                                    <a class="Lin" target="_blank" href="https://www.linkedin.com/in/karunanidhi-a/">
-                                        <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-lg-6 col-md-12 d-flex align-items-stretch">
-                            <div class="card card__one leadercard">
-                                <img src="./assets/images/karthiksir.png" class=" lead_card_img">
-                                <div class="leadercard-body">
-                                    <h5 class="card-title leadercard-title">Karthik</h5>
-                                    <h6>Director - Strategy, Delivery & Operation - India</h6>
-                                    <p class="card-text leadercard-text">
-                                        With over 20 years of rich experience in Leading and Driving Strategic projects,
-                                        Digital transformations and implementing solutions in the Insurance industry
-                                        across
-                                        large
-                                        organizations in Japan
-                                        and Singapore delivering large scale projects. Very passionate about Problem
-                                        Solving
-                                        and Customer
-                                        Centricity.
-                                    </p>
-                                    <br>
-                                    <a class="Lin" target="_blank"
-                                        href="https://www.linkedin.com/in/karthikeyan-subramanian-9770277/">
-                                        <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="col-lg-6 col-md-12 d-flex align-items-stretch">
-                            <div class="card card__one leadercard">
-                                <img src="./assets/images/shankarsir.png" class=" lead_card_img">
-                                <div class="leadercard-body">
-                                    <h5 class="card-title leadercard-title">Shankar</h5>
-                                    <h6>Director - Sales & Operations - Japan</h6>
-                                    <p class="card-text leadercard-text">
-                                        With Over 20 years of rich experience in Business and Technology in the
-                                        Insurance
-                                        industry in Japan.
-                                        Leading Major transformational
-                                        projects, Building High performance teams in a shorter period and driving the
-                                        growth. Fluent Japanese
-                                        speaker and playing several
-                                        roles, including strategic planner and, customer relations liaison. Experienced
-                                        in
-                                        implementing new
-                                        technology applications,
-                                        RPA and Major Insurance Packages.
-                                    </p>
-                                    <a class="Lin" target="_blank"
-                                        href="https://www.linkedin.com/in/shankar-selvam-6b352914/">
-                                        <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12 d-flex align-items-stretch">
-                            <div class="card card__one leadercard">
-                                <img src="./assets/images/yogeshsir@2x.png" class=" lead_card_img">
-                                <div class="leadercard-body">
-                                    <h5 class="card-title leadercard-title">Yogesh</h5>
-                                    <h6>Director - Projects & Technology - Japan</h6>
-                                    <p class="card-text leadercard-text">
-                                        A Technocrat with Banking/Finance industry experience with over 17 years of IT
-                                        experience spanning
-                                        across
-                                        multiple projects in different technologies and domains in Japan/India and other
-                                        countries. Believes
-                                        in
-                                        making things happen rather than waiting for things to happen. Proven expertise
-                                        in
-                                        IT Industry,
-                                        consulting and leadership. Expertise in building high performance teams, driving
-                                        growth,
-                                        conceptualizing
-                                        biz solutions for our customers.
-                                    </p>
-                                    <a class="Lin" target="_blank"
-                                        href="https://www.linkedin.com/in/yogesh-kumar-99872925/">
-                                        <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12 d-flex align-items-stretch">
-                            <div class="card card__one leadercard">
-                                <img src="./assets/images/krish_sir@2x.png" class="lead_card_img">
-                                <div class="leadercard-body">
-                                    <h5 class="card-title leadercard-title">Krish</h5>
-                                    <h6>Board Advisor - Strategy & Innovation</h6>
-                                    <p class="card-text leadercard-text">
-                                        Has over 30 years CIO/ COO experience in reputed MNCs (Indian, Irish, USA,
-                                        Japanese,
-                                        Middle East cos)
-                                        in multiple Business Domains.
-                                        A few reputed companies being CMC Ltd, Kentz Corporation, Akamai Technologies,
-                                        Hitachi Systems Micro
-                                        Clinic,
-                                        IT Matrix, Royal & Sun Alliance Insurance and Qatar Airways Group.
-                                    </p>
-                                    <a class="link" target="_blank" href="https://www.linkedin.com/in/krishnaiyer1/">
-                                        <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!----------------------------------------------------- Our Moments ---------------------------------------------------------->
-    <!-- <section class="img-responsive" id="moments">
-        <div class="row">
-            <div class="col-12 intro">
-                <div class="englang">
-                    <h1 class="heading">Our Moments</h1>
-                    <p class="">People do their best work when they feel like they’re a part of a company
-                        with strong values. Defining and expressing
-                        those values is key. <br>Here’s how you can develop and describe company's culture.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container slide_img">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 4">
-                    </button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="1000">
-                        <img src="./assets/images/moments/pic1.jfif" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/images/moments/pic2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/images/moments/pic3.jfif" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/images/moments/pic4.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/images/moments/pic5.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-
-    </section> -->
-    <!----------------------------------------------------- Testimonials ----------------------------------------------------------->
-    <section id="technology">
-        <div class="row">
-            <div class="col-12 intro">
-                <div class="englang">
-                    <h1 class="heading">Testimonials</h1>
-                    <p>We place huge value on strong relationships and have seen the benefit they bring to our business.
-                        <br>Customer feedback is vital in helping us to get it right.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <section id="about" class="py-5">
         <div class="container">
-            <div class="testimonials-content">
-                <div class="swiper testimonials-slider js-testimonials-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide testimonials-item">
-                            <div class="info">
-                                <img src="assets/images/Jan_Strom.png" alt="">
-                                <div class="text-box">
-                                    <h3 class="name">Jan Strom</h3>
-                                    <span class="job">
-                                        Founder/CEO at VojVoj AS
-                                    </span>
-                                </div>
-                            </div>
-                            <p class="text-muted">
-                                <i class="fa fa-quote-left pe-2"></i>
-                                Zenitus has done a great job taking our company’s idea, vision and developing a
-                                social media mobile app as per our niche
-                                specifications. The team is technically strong and creative. They are quick to
-                                address questions/concerns and produce
-                                quality work. We look forward to working with Zenitus in the next phase of our
-                                development.
-                            </p>
-                            <a class="link" target="_blank" href="https://www.linkedin.com/in/janstroem">
-                                <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-                            </a>
-                        </div>
-                        <div class="swiper-slide testimonials-item">
-                            <div class="info">
-                                <img src="./assets/images/Mike_Gaffney.png" alt="">
-                                <div class="text-box">
-                                    <h3 class="name">Mike Gaffney</h3>
-                                    <span class="job">
-                                        Managing Director at GID
-                                    </span>
-                                </div>
-                            </div>
-                            <p class="text-muted">
-                                <i class="fa fa-quote-left pe-2"></i>
-                                I have been very impressed with the quality of work delivered by Zenitus. I have
-                                worked with many web developers over
-                                the years, and Zenitus are the best. I would have no hesitation in recommending them
-                                to my network.
-                            </p>
-                            <br>
-                            <a class="link" target="_blank" href="https://www.linkedin.com/in/mike-gaffney-16a36513">
-                                <i class="link_testimonial_two fa fa-linkedin-square" style="font-size:24px"></i>
-                            </a>
-                        </div>
-                    </div>
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-4 fw-bold zenitus-text mb-2">
+                        <span class="lang-en">About Us</span>
+                        <span class="lang-jp d-none">会社概要</span>
+                    </h2>
+                    <div class="underline mx-auto"></div>
                 </div>
             </div>
-        </div>
 
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                    <img src="./assets/images/about_card.png" alt="About Us" class="img-fluid rounded about-img">
+                </div>
 
-        <!-- <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-bs-ride="carousel">
-            <div class="carousel-inner py-4">
-                <div class="carousel-item active">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-2"></div>
-                            <div class="col-lg-4">
-                                <img class="rounded-circle shadow-1-strong mb-4" src="./assets/images/Jan_Strom.png"
-                                    alt="avatar" style="width: 150px;" />
-                                <h5 class="mb-3">Jan Strom</h5>
-                                <p>Founder/CEO at VojVoj AS</p>
-                                <p class="text-muted">
-                                    <i class="fa fa-quote-left pe-2"></i>
-                                    Zenitus has done a great job taking our company’s idea, vision and developing a
-                                    social media mobile app as per our niche
-                                    specifications. The team is technically strong and creative. They are quick to
-                                    address questions/concerns and produce
-                                    quality work. We look forward to working with Zenitus in the next phase of our
-                                    development.
-                                </p>
-                                <a class="link" target="_blank" href="https://www.linkedin.com/in/janstroem">
-                                    <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-                                </a>
-                            </div>
-                            <div class="col-lg-4">
-                                <img class="rounded-circle shadow-1-strong mb-4" src="./assets/images/Mike_Gaffney.png"
-                                    alt="avatar" style="width: 150px;" />
-                                <h5 class="mb-3">Mike Gaffney</h5>
-                                <p>Managing Director at GID</p>
-                                <p class="text-muted">
-                                    <i class="fa fa-quote-left pe-2"></i>
-                                    I have been very impressed with the quality of work delivered by Zenitus. I have
-                                    worked with many web developers over
-                                    the years, and Zenitus are the best. I would have no hesitation in recommending them
-                                    to my network.
-                                </p>
-                                <br>
-                                <br>
-                                <a class="link" target="_blank"
-                                    href="https://www.linkedin.com/in/mike-gaffney-16a36513">
-                                    <i class="link_testimonial_two fa fa-linkedin-square" style="font-size:24px"></i>
-                                </a>
-                            </div>
-                            <div class="col-lg-2"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold text-black mb-4">
+                        <span class="lang-en gradient-text">Who We Are</span>
+                        <span class="lang-jp d-none gradient-text">私たちについて</span>
+                    </h2>
 
-    </section>
-
-    <!------------------------------------------------------ Join Team Page --------------------------------------------------------->
-    <section class="img-responsive" id="career">
-        <div class="container">
-            <div class="row">
-                <div class="englang">
-                    <div class="col-12 intro">
-                        <h1 class="heading">Join our team</h1>
-                        <h2>Join us! and start your career with us</h2>
-                    </div>
-                </div>
-                <div class="japlang">
-                    <div class="col-12 intro">
-                        <h1 class="heading">キャリア</h1>
-                        <h2>私たちと一緒にキャリアをスタートしませんか</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row join_row">
-                <div class="col-lg-5 ">
-                    <div class="row">
-                        <div class="col-12 join_us_img">
-                            <img class="img-responsive " src="./assets/images/join_team.png" alt="NoImage">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="englang">
-                        <p class="customer">
-                            Start your unique, fulfilling and meaningful career with us.
-                            Surround yourself with a dynamic team and let’s shape our future with innovation and
+                    <div class="lang-en">
+                        <h5 class="text-primary fw-bold mb-3 fs-4">Customer Need First through innovation and
                             creativity.
-                        </p>
-                        <div>
-                            <a href="./Careers/index.html" class="btn-get-started ctn">Job Openings</a>
-                        </div>
-                        <br>
+                        </h5>
+                        <p class="text-black fs-5">An IT consulting and software development company primarily focusing
+                            to
+                            serve the technology needs of Japanese and Global customers.</p>
+                        <p class="text-black fs-5">Our aim is to make a difference by enabling your Business to run
+                            seamlessly through technology. Being a customer centric company we strive to keep everything
+                            simple and transparent.</p>
+                        <p class="text-black fs-5">With talented bilingual engineers, backed by passionate founders we
+                            have
+                            the right attitude to support all your needs through our services.</p>
                     </div>
-                    <div class="japlang">
-                        <p class="customer">
-                            ダイナミックなチームに囲まれ、イノベーションと創造性で未来を変えていきましょう。
-                        </p>
-                        <div>
-                            <a href="./Careers/index.html" class="btn-get-started ctn">現在募集中の職種（英語のみ）</a>
-                        </div>
+
+                    <div class="lang-jp d-none">
+                        <h5 class="text-primary fw-bold mb-3 fs-4">イノベーションと創造性を通じて、常にお客様のニーズを第一に考えます。</h5>
+                        <p class="text-black fs-5">日本およびグローバルなお客様のテクノロジーニーズに応えることを主な目的とした、ITコンサルティングおよびソフトウェア開発会社です。</p>
+                        <p class="text-black fs-5">私たちの目的は、テクノロジーを通じてお客様のビジネスがシームレスに運営されるよう支援し、変化をもたらすことです。</p>
+                        <p class="text-black fs-5">
+                            情熱的な創設者に支えられた才能あるバイリンガルエンジニアとともに、私たちはサービスを通じてお客様のあらゆるニーズをサポートするための正しい姿勢を持っています。</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <!------------------------------------------------------ Contact Page ------------------------------------------------------->
-    <section id="contact">
-        <div class="container justify-content-center">
-            <div class="row Contact-intro" id="Dropd">
-                <div class="col-12 intro">
-                    <div class="englang">
-                        <h1 class="heading">Where we are</h1>
-                        <p class="sec_heading">
-                            The south Indian city of Chennai is a destination for information technology
-                            outsourcing
-                            due to the vast number of skilled IT engineers.
-                            People say Chennai welcomes outsiders and gives them a new lease of life. We take pride in
-                            setting our
-                            Head
-                            office at Chennai and give
-                            back what we took from it, a new life.
+    <section id="service" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-4 fw-bold zenitus-text mb-2">
+                        <span class="lang-en">What we do</span>
+                        <span class="lang-jp d-none">私たちの取り組み</span>
+                        <div class="underline mx-auto"></div>
+                    </h2>
+                    <h3 class="fw-normal text-dark mb-3">
+                        <span class="lang-en">We enable your business</span>
+                        <span class="lang-jp d-none">あなたのビジネスを支える</span>
+                    </h3>
+
+
+
+                </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4 bg-white text-center">
+                        <div class="service-icon-box mb-3">
+                            <i class="fa-solid fa-globe fa-2x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">
+                            <span class="lang-en">Offshore Development</span>
+                            <span class="lang-jp d-none">オフショア開発</span>
+                        </h4>
+                        <p class="text-secondary small">
+                            <span class="lang-en">Efficient and cost-effective web/mobile development using skilled
+                                bilingual offshore engineers supported by onsite experts.</span>
+                            <span
+                                class="lang-jp d-none">オンサイトの専門家がサポートする熟練したバイリンガルのオフショアエンジニアによる、効率的で費用対効果の高い開発を提供します。</span>
                         </p>
                     </div>
-                    <div class="japlang">
-                        <h1 class="heading">お問い合わせ</h1>
-                        <p class="sec_heading">
-                            南インドの都市チェンナイは、情報技術（IT）アウトソーシングの目的地である。
-                            アウトソーシング
-                            熟練したITエンジニアの数が多いからだ。
-                            チェンナイはアウトサイダーを歓迎し、新たな息吹を与えると言われています。私たちはチェンナイに
-                            本社
-                            チェンナイに本社を置くことに誇りを持っています。
-                            私たちはチェンナイに本社を置くことに誇りを持ち、チェンナイから得たもの、つまり新しい人生をお返しします。
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4 bg-white text-center">
+                        <div class="service-icon-box mb-3">
+                            <i class="fa-solid fa-lightbulb fa-2x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">
+                            <span class="lang-en">Products & Solutions</span>
+                            <span class="lang-jp d-none">製品とソリューション</span>
+                        </h4>
+                        <div class="text-secondary small text-start mx-auto" style="max-width: 200px;">
+                            <ul class="list-unstyled">
+                                <li><i class="fa-solid fa-check text-success me-2"></i><strong>ClaimZ</strong> -
+                                    Insurance
+                                </li>
+                                <li><i class="fa-solid fa-check text-success me-2"></i><strong>TrackZ</strong> -
+                                    Tracking
+                                </li>
+                                <li><i class="fa-solid fa-check text-success me-2"></i><strong>RecruitZ</strong> - HR
+                                    Tool
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4 bg-white text-center">
+                        <div class="service-icon-box mb-3">
+                            <i class="fa-solid fa-handshake fa-2x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">
+                            <span class="lang-en">Consulting & Outsourcing</span>
+                            <span class="lang-jp d-none">コンサルティング</span>
+                        </h4>
+                        <p class="text-secondary small">
+                            <span class="lang-en">Bilingual software engineering services throughout Japan on various
+                                platforms (SAP, Web, Mobile).</span>
+                            <span
+                                class="lang-jp d-none">SAP、Web、モバイルなど、様々なプラットフォームでのバイリンガルソフトウェアエンジニアリングサービスを提供します。</span>
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="container d-flex">
-                <div class="row g-5" style="padding:0 7% 0 7%">
-                    <div class="col-lg-4 col-md-6 d-flex">
-                        <div class="card w-100 card__one con">
-                            <div class="card-body">
-                                <div class="englang">
-                                    <h5 class="card-title">India</h5>
-                                </div>
-                                <div class="japlang">
-                                    <h5 class="card-title">インド</h5>
-                                </div>
-                                <div class="box">
-                                    <div>
-                                        <img src="./assets/images/tech_stack/location-marker-svgrepo-com.png" alt=""
-                                            style="width:35px;">
-                                    </div>
-                                    <div class="content private">
-                                        <div class="englang">
-                                            <h5 class="break">
-                                                Zenitus Technologies Pvt. Ltd.
-                                            </h5>
-                                        </div>
-                                        <div class="japlang">
-                                            <h5 class="break">
-                                                Zenitus Technologies Pvt. Ltd.
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="englang">
-                                    <p class="card-text">
-                                        K3, Block 5, Sabari Mondrian, <br>Wipro Street,
-                                        Sholinganallur, <br> Chennai, Tamil Nadu. <br>Pincode - 600119.
-                                    </p>
-                                </div>
-                                <div class="japlang">
-                                    <p class="card-text">
-                                        K3, Block 5, Sabari Mondrian, <br>Wipro Street,
-                                        Sholinganallur, <br> Chennai, Tamil Nadu. <br>Pincode - 600119.
-                                    </p>
-                                </div>
 
-                                <div class="boxone">
-                                    <div class="imgBxone whatsApp">
-                                        <a href="https://wa.me/919176758200">
-                                            <img src="./assets/images/whatsApp.png" alt=""
-                                                style="width:25px;height:25px;">
-                                        </a>
-                                    </div>
-                                    <div class="contentone phone">
-                                        <p style="margin: 0;">
-                                            <span>+91 91767 58200</span>
-                                        </p>
-                                        <div class="englang">
-                                            <p style="margin: 0; color: green; font-size: 12px; font-weight: bold;">
-                                                (WhatsApp communication only)
-                                            </p>
-                                        </div>
-                                        <div class="japlang">
-                                            <p style="margin: 0; color: green; font-size: 12px; font-weight: bold;">
-                                                (WhatsAppでの連絡のみ)
-                                            </p>
-                                        </div>
-                                    </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4 bg-white text-center">
+                        <div class="service-icon-box mb-3">
+                            <i class="fa-solid fa-headset fa-2x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">
+                            <span class="lang-en">Maintenance Services</span>
+                            <span class="lang-jp d-none">保守サービス</span>
+                        </h4>
+                        <p class="text-secondary small">
+                            <span class="lang-en">Strong bilingual technical engineers ready to support application
+                                maintenance onsite and offshore 24/7.</span>
+                            <span class="lang-jp d-none">24時間365日、オンサイトおよびオフショアでアプリケーション保守をサポートするバイリンガルエンジニア。</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card p-4 h-100 shadow-sm border-0 rounded-4 bg-white text-center">
+                        <div class="service-icon-box mb-3">
+                            <i class="fa-solid fa-vial-circle-check fa-2x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">
+                            <span class="lang-en">Testing Services</span>
+                            <span class="lang-jp d-none">テストサービス</span>
+                        </h4>
+                        <p class="text-secondary small">
+                            <span class="lang-en">Dedicated team providing Blackbox, Greybox, Whitebox, and security
+                                vulnerability testing.</span>
+                            <span class="lang-jp d-none">ブラックボックス、グレーボックス、ホワイトボックス、およびセキュリティ脆弱性テストを提供します。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="technology" class="py-5 bg-white">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-4 fw-bold zenitus-text mb-2">
+                        <span class="lang-en">Technologies</span>
+                        <span class="lang-jp d-none">テクノロジー</span>
+                    </h2>
+                    <div class="underline mx-auto"></div>
+                    <h3 class="fw-normal text-dark mb-3">
+                        <span class="lang-en">We help choose the right technology for your business</span>
+                        <span class="lang-jp d-none">お客様のビジネスに最適なテクノロジーの選択をサポートします</span>
+                    </h3>
+
+                </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-xl-3 col-md-6">
+                    <div class="tech-card p-4 h-100 shadow-sm rounded-4">
+                        <h5 class="fw-bold mb-4 border-bottom pb-3 text-center">UI/UX</h5>
+                        <ul class="list-unstyled tech-list">
+                            <li><i class="fa-brands fa-figma text-dark"></i> Figma</li>
+                            <li><i class="fa-solid fa-gem text-danger"></i> Adobe XD</li>
+                            <li><i class="fa-solid fa-palette text-warning"></i> Illustrator</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="tech-card p-4 h-100 shadow-sm rounded-4">
+                        <h5 class="fw-bold mb-4 border-bottom pb-3 text-center">Web Development</h5>
+                        <ul class="list-unstyled tech-list">
+                            <li><i class="fa-brands fa-html5 text-orange"></i> HTML / CSS</li>
+                            <li><i class="fa-brands fa-react text-info"></i> React / Angular / Vue</li>
+                            <li><i class="fa-brands fa-js-square text-warning"></i> JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="tech-card p-4 h-100 shadow-sm rounded-4">
+                        <h5 class="fw-bold mb-4 border-bottom pb-3 text-center">Mobile Development</h5>
+                        <ul class="list-unstyled tech-list">
+                            <li><i class="fa-solid fa-mobile text-primary"></i> Flutter / React Native</li>
+                            <li><i class="fa-brands fa-android text-success"></i> Android / iOS</li>
+                            <li><i class="fa-brands fa-swift text-danger"></i> Kotlin / Swift</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="tech-card p-4 h-100 shadow-sm rounded-4">
+                        <h5 class="fw-bold mb-4 border-bottom pb-3 text-center">Backend</h5>
+                        <ul class="list-unstyled tech-list">
+                            <li><i class="fa-brands fa-java text-danger"></i> Java</li>
+                            <li><i class="fa-solid fa-code text-info"></i> Golang</li>
+                            <li><i class="fa-brands fa-microsoft text-primary"></i> .NET Core</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-xl-3 col-md-6">
+                    <div class="tech-card p-4 h-100 shadow-sm rounded-4">
+                        <h5 class="fw-bold mb-4 border-bottom pb-3 text-center">Desktop App</h5>
+                        <ul class="list-unstyled tech-list">
+                            <li><i class="fa-solid fa-microchip"></i> Python / TypeScript</li>
+                            <li><i class="fa-brands fa-windows text-primary"></i> VB .NET</li>
+                            <li><i class="fa-solid fa-window-maximize"></i> Flutter Desktop</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="tech-card p-4 h-100 shadow-sm rounded-4">
+                        <h5 class="fw-bold mb-4 border-bottom pb-3 text-center">Software Testing</h5>
+                        <ul class="list-unstyled tech-list">
+                            <li><i class="fa-solid fa-robot text-success"></i> Selenium / Appium</li>
+                            <li><i class="fa-solid fa-shield-halved text-warning"></i> Security</li>
+                            <li><i class="fa-solid fa-magnifying-glass text-info"></i> Katalon</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="tech-card p-4 h-100 shadow-sm rounded-4">
+                        <h5 class="fw-bold mb-4 border-bottom pb-3 text-center">Cloud Services</h5>
+                        <ul class="list-unstyled tech-list">
+                            <li><i class="fa-brands fa-aws text-orange"></i> AWS</li>
+                            <li><i class="fa-solid fa-cloud text-primary"></i> Azure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="leadership" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold zenitus-text mb-2">
+                        <span class="lang-en">Leadership Team</span>
+                        <span class="lang-jp d-none">リーダーシップチーム</span>
+                    </h2>
+                    <div class="underline mx-auto"></div>
+                    <h5 class="fw-normal text-dark mb-3 py-3">
+                        <span class="lang-en">
+                            Digital transformation has become an important and inevitable part of every business across
+                            the
+                            world. Using technology, <br>we make it easier, faster and more cost effective for
+                            businesses to
+                            undertake the transformation.
+                        </span>
+
+                        <span class="lang-jp d-none">
+                            デジタルトランスフォーメーションは、世界中のあらゆるビジネスにとって重要かつ不可欠な要素となっています。
+                            私たちはテクノロジーを駆使し、企業がより簡単に、より速く、そしてより費用対効果の高い方法で変革を実現できるよう支援します。
+                        </span>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-lg-6">
+                    <div class="card leader-card-horizontal h-100 shadow-sm border-0 rounded-4 bg-white">
+                        <div class="card-body p-4 d-flex align-items-start">
+                            <div class="flex-shrink-0 me-4">
+                                <div class="leader-img-circle">
+                                    <img src="./assets/images/nidhisir.jpeg" alt="Karunanidhi">
                                 </div>
-                                <div class="boxone" style="display: flex; align-items: center;">
-                                    <div class="imgBxone">
-                                        <img src="./assets/images/tech_stack/mail-svgrepo-com.png" alt=""
-                                            style="width:25px;height:25px;">
-                                    </div>
-                                    <div class="contentone phone">
-                                        <p style="margin: 0; display: flex; align-items: center; font-weight: 600;">
-                                            <span>info@zenitus.com</span>
-                                        </p>
-                                    </div>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Karunanidhi</h5>
+                                <p class="text-primary x-small fw-bold mb-2">Director - Products & Technology - India
+                                </p>
+                                <p class="card-text small text-muted lh-sm">
+                                    Have passion towards emerging technologies and find pleasure in implementing them to
+                                    customers. Have over 20 years of IT and business experience and a good understanding
+                                    of
+                                    the Japanese culture. Have built strong technical teams as CTO. <br>
+                                    <span class="fst-italic mt-2 d-block">"Be Humble, give Respect and show
+                                        Trust."</span>
+                                </p>
+                                <a href="https://www.linkedin.com/in/karunanidhi-a/" target="_blank"
+                                    class="linkedin-link-sm"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card leader-card-horizontal h-100 shadow-sm border-0 rounded-4 bg-white">
+                        <div class="card-body p-4 d-flex align-items-start">
+                            <div class="flex-shrink-0 me-4">
+                                <div class="leader-img-circle">
+                                    <img src="./assets/images/shankarsir.png" alt="Shankar">
                                 </div>
-                                <br>
-                                <div class="englang">
-                                    <a target="_blank"
-                                        href="https://www.google.com/maps/place/Zenitus+Technologies/@12.904153,80.2240008,17z/data=!3m1!4b1!4m5!3m4!1s0x3a525dd4f268ac6f:0xdf4e07c2ffc5f376!8m2!3d12.9041886!4d80.2261942"
-                                        class="btn-get-started ctn">View on map</a>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Shankar</h5>
+                                <p class="text-primary x-small fw-bold mb-2">Director - Sales & Operations - Japan</p>
+                                <p class="card-text small text-muted lh-sm">
+                                    With Over 20 years of rich experience in Business and Technology in the Insurance
+                                    industry in Japan. Leading Major transformational projects, Building High
+                                    performance
+                                    teams in a shorter period and driving the growth. Fluent Japanese speaker and
+                                    strategic
+                                    planner.
+                                </p>
+                                <a href="https://www.linkedin.com/in/shankar-selvam-6b352914/" target="_blank"
+                                    class="linkedin-link-sm"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card leader-card-horizontal h-100 shadow-sm border-0 rounded-4 bg-white">
+                        <div class="card-body p-4 d-flex align-items-start">
+                            <div class="flex-shrink-0 me-4">
+                                <div class="leader-img-circle">
+                                    <img src="./assets/images/yogeshsir@2x.png" alt="Yogesh">
                                 </div>
-                                <div class="japlang">
-                                    <a target="_blank"
-                                        href="https://www.google.com/maps/place/Zenitus+Technologies/@12.904153,80.2240008,17z/data=!3m1!4b1!4m5!3m4!1s0x3a525dd4f268ac6f:0xdf4e07c2ffc5f376!8m2!3d12.9041886!4d80.2261942"
-                                        class="btn-get-started ctn">地図で見る</a>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Yogesh</h5>
+                                <p class="text-primary x-small fw-bold mb-2">Director - Projects & Technology - Japan
+                                </p>
+                                <p class="card-text small text-muted lh-sm">
+                                    A Technocrat with Banking/Finance industry experience with over 17 years of IT
+                                    experience spanning across multiple projects. Believes in making things happen
+                                    rather
+                                    than waiting. Expertise in building high performance teams and biz solutions.
+                                </p>
+                                <a href="https://www.linkedin.com/in/yogesh-kumar-99872925/" target="_blank"
+                                    class="linkedin-link-sm"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card leader-card-horizontal h-100 shadow-sm border-0 rounded-4 bg-white">
+                        <div class="card-body p-4 d-flex align-items-start">
+                            <div class="flex-shrink-0 me-4">
+                                <div class="leader-img-circle">
+                                    <img src="./assets/images/krish_sir@2x.png" alt="Krish">
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Krish</h5>
+                                <p class="text-primary x-small fw-bold mb-2">Board Advisor - Strategy & Innovation</p>
+                                <p class="card-text small text-muted lh-sm">
+                                    Has over 30 years CIO/ COO experience in reputed MNCs in multiple Business Domains.
+                                    Reputed companies include CMC Ltd, Akamai Technologies, Royal & Sun Alliance
+                                    Insurance
+                                    and Qatar Airways Group.
+                                </p>
+                                <a href="https://www.linkedin.com/in/krishnaiyer1/" target="_blank"
+                                    class="linkedin-link-sm"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="py-5 bg-white">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold zenitus-text mb-2">
+                        <span class="lang-en">Testimonials</span>
+                        <span class="lang-jp d-none">お客様の声</span>
+                    </h2>
+                    <div class="underline mx-auto mb-4"></div>
+
+                    <p class="text-dark mx-auto" style="max-width: 720px;">
+                        <span class="lang-en ">We place huge value on strong relationships and have seen the
+                            benefit they bring to our business. <br class=" d-md-block"> Customer feedback is
+                            vital in helping us to get it right.</span>
+
+                        <span class="lang-jp d-none">私たちは強固な関係を非常に重視しており、それがビジネスにもたらすメリットを実感しています。
+                            お客様からのフィードバックは、私たちが正しく取り組むために不可欠です。</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="swiper single-testimonial-slider pb-5">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-focus-card mx-auto shadow-sm rounded-4 border p-4 p-md-5 bg-light">
+                            <div class="stars mb-3 text-warning">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-content text-muted mb-4">
+                                "Zenitus has done a great job taking our company’s idea, vision and developing a social
+                                media mobile app as per our niche specifications. The team is technically strong and
+                                creative. They are quick to address questions/concerns and produce quality work. We look
+                                forward to working with Zenitus in the next phase of our development."
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center border-top pt-4">
+                                <img src="assets/images/Jan_Strom.png" class="rounded-circle me-3 border shadow-sm"
+                                    width="60" height="60">
+                                <div class="text-start">
+                                    <h6 class="fw-bold mb-0">Jan Strom</h6>
+                                    <small class="text-primary d-block">Founder/CEO at VojVoj AS</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 d-flex">
-                        <div class="card w-100 card__one con">
-                            <div class="card-body">
-                                <div class="englang">
-                                    <h5 class="card-title">Japan</h5>
-                                </div>
-                                <div class="japlang">
-                                    <h5 class="card-title">日本</h5>
-                                </div>
-                                <div class="box">
-                                    <div>
-                                        <img src="./assets/images/tech_stack/location-marker-svgrepo-com.png" alt=""
-                                            style="width:32px;">
-                                    </div>
-                                    <div class="content private">
-                                        <div class="englang">
-                                            <h5 class="break">
-                                                Zenitus Technologies K.K.
-                                            </h5>
-                                        </div>
-                                        <div class="japlang">
-                                            <h5 class="break">Zenitus Technologies 株式会社</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="englang">
-                                    <p class="card-text">
-                                        103-0027 Tokyo-To, Chuo-Ku, <br> Nihonbashi, 1-2-10
-                                        <br>
-                                        Toyo Building 5F
-                                    </p>
-                                </div>
-                                <div class="japlang">
-                                    <p class="card-text">
-                                        〒１０３－００２７ 東京都<br>
-                                        中央区日本橋１－２－１０<br>
-                                        東洋ビル５F<br>
-                                        &nbsp;
-                                    </p>
-                                </div>
-                                <br>
-                                <div class="boxone">
-                                    <div class="imgBxone whatsApp">
-                                        <a href="https://wa.me/919176758200">
-                                            <img src="./assets/images/whatsApp.png" alt=""
-                                                style="width:25px;height:25px;">
-                                        </a>
-                                    </div>
-                                    <div class="contentone phone">
-                                        <p style="margin: 0;">
-                                            <span>+91 91767 58200</span>
-                                        </p>
-                                        <div class="englang">
-                                            <p style="margin: 0; color: green; font-size: 12px; font-weight: bold;">
-                                                (WhatsApp communication only)
-                                            </p>
-                                        </div>
-                                        <div class="japlang">
-                                            <p style="margin: 0; color: green; font-size: 12px; font-weight: bold;">
-                                                (WhatsAppでの連絡のみ)
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="boxone">
-                                    <div class="imgBxone">
-                                        <img src="./assets/images/tech_stack/mail-svgrepo-com.png" alt=""
-                                            style="width:25px;height:25px;">
-                                    </div>
-                                    <div class="contentone phone">
-                                        <p style="margin: 0; font-weight: 600">
-                                            <span>japan_sales@zenitus.com</span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="englang jp_map_btn">
-                                    <a target="_blank"
-                                        href="https://www.google.com/maps/place/Japan,+%E3%80%92103-0027+Tokyo,+Chuo+City,+Nihonbashi,+1-ch%C5%8Dme%E2%88%922%E2%88%9210+%E6%9D%B1%E6%B4%8B%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0+5f/@35.6831569,139.7715535,17z/data=!3m1!4b1!4m5!3m4!1s0x601889563dc3a53b:0x357d983997d887b9!8m2!3d35.6831569!4d139.7737422"
-                                        class="btn-get-started ctn">View on map</a>
-                                </div>
-                                <div class="japlang">
-                                    <a target="_blank"
-                                        href="https://www.google.com/maps/place/Japan,+%E3%80%92103-0027+Tokyo,+Chuo+City,+Nihonbashi,+1-ch%C5%8Dme%E2%88%922%E2%88%9210+%E6%9D%B1%E6%B4%8B%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0+5f/@35.6831569,139.7715535,17z/data=!3m1!4b1!4m5!3m4!1s0x601889563dc3a53b:0x357d983997d887b9!8m2!3d35.6831569!4d139.7737422"
-                                        class="btn-get-started ctn">地図で見る</a>
+                    <div class="swiper-slide">
+                        <div class="testimonial-focus-card mx-auto shadow-sm rounded-4 border p-4 p-md-5 bg-light">
+                            <div class="stars mb-3 text-warning">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-content text-muted mb-4">
+                                "I have been very impressed with the quality of work delivered by Zenitus. I have worked
+                                with many web developers over the years, and Zenitus are the best. I would have no
+                                hesitation in recommending them to my network."
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center border-top pt-4">
+                                <img src="./assets/images/Mike_Gaffney.png" class="rounded-circle me-3 border shadow-sm"
+                                    width="60" height="60">
+                                <div class="text-start">
+                                    <h6 class="fw-bold mb-0">Mike Gaffney</h6>
+                                    <small class="text-primary d-block">Managing Director at GID</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 d-flex">
-                        <div class="card w-100 card__one con">
-                            <div class="card-body">
-                                <div class="englang text-center">
-                                    <h5 class="card-title">Singapore</h5>
-                                </div>
-                                <div class="japlang text-center">
-                                    <h5 class="card-title">シンガポール</h5>
-                                </div>
-                                <div class="box">
-                                    <div>
-                                        <img src="./assets/images/tech_stack/location-marker-svgrepo-com.png" alt=""
-                                            style="width:35px;">
-                                    </div>
-                                    <div class="content private">
-                                        <div class="englang">
-                                            <h5 class="break">
-                                                Zenitus Technologies Pte. Ltd.
-                                            </h5>
-                                        </div>
-                                        <div class="japlang">
-                                            <h5 class="break">
-                                                Zenitus Technologies Pte. Ltd.
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="englang">
-                                    <p class="card-text">
-                                        192 Waterloo Street #05-03
-                                        <br>
-                                        Sky Line building. <br> Singapore 187966
-                                    </p>
-                                </div>
-                                <div class="japlang">
-                                    <p class="card-text">
-                                        192 Waterloo Street #05-03
-                                        <br>
-                                        Sky Line building. <br> Singapore 187966
-                                    </p>
-                                </div>
-                                <br>
-                                <div class="boxone">
-                                    <div class="imgBxone whatsApp">
-                                        <a href="https://wa.me/919176758200">
-                                            <img src="./assets/images/whatsApp.png" alt=""
-                                                style="width:25px;height:25px;">
-                                        </a>
-                                    </div>
-                                    <div class="contentone phone">
-                                        <p style="margin: 0;">
-                                            <span>+91 91767 58200</span>
-                                        </p>
-                                        <div class="englang">
-                                            <p style="margin: 0; color: green; font-size: 12px; font-weight: bold;">
-                                                (WhatsApp communication only)
-                                            </p>
-                                        </div>
-                                        <div class="japlang">
-                                            <p style="margin: 0; color: green; font-size: 12px; font-weight: bold;">
-                                                (WhatsAppでの連絡のみ)
-                                            </p>
-                                        </div>
 
-                                    </div>
-                                </div>
-                                <div class="boxone" style="display: flex; align-items: center; padding: 10px;">
-                                    <div class="imgBxone">
-                                        <img src="./assets/images/tech_stack/mail-svgrepo-com.png" alt=""
-                                            style="width:25px;height:25px;">
-                                    </div>
-                                    <div class="contentone phone">
-                                        <p style="margin: 0; display: flex; align-items: center; font-weight: 600">
-                                            <span>info@zenitus.com</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="englang py-1">
-                                    <a target="_blank"
-                                        href="https://www.google.com/maps/place/Skyline+Building/@1.3011885,103.8529821,21z/data=!3m1!5s0x31da19a142148127:0x544c1eac966ea683!4m6!3m5!1s0x31da19bbac240001:0xcea88254048270e7!8m2!3d1.3012136!4d103.853197!16s%2Fg%2F11c67wr046?entry=ttu"
-                                        class="btn-get-started ctn">View on map</a>
-                                </div>
-                                <br>
-                                <div class="japlang">
-                                    <a target="_blank"
-                                        href="https://www.google.com/maps/place/Skyline+Building/@1.3011885,103.8529821,21z/data=!3m1!5s0x31da19a142148127:0x544c1eac966ea683!4m6!3m5!1s0x31da19bbac240001:0xcea88254048270e7!8m2!3d1.3012136!4d103.853197!16s%2Fg%2F11c67wr046?entry=ttu"
-                                        class="btn-get-started ctn">地図で見る</a>
-                                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section id="careers" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="display-4 fw-bold zenitus-text mb-2">
+                        <span class="lang-en">Join Our Team</span>
+                        <span class="lang-jp d-none">採用情報</span>
+                    </h2>
+                    <div class="underline mx-auto"></div>
+                    <h3 class="fw-normal text-black mb-3">
+                        <span class="lang-en">Build the future with us</span>
+                        <span class="lang-jp d-none">私たちと一緒に未来を築きましょう</span>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="career-content">
+                        <h2 class="fw-bold mb-4 gradient-text">
+                            <span class="lang-en">Why Work at Zenitus?</span>
+                            <span class="lang-jp d-none">Zenitusで働く理由</span>
+                        </h2>
+                        <p class="text-muted fs-5">
+                            <span class="lang-en">We believe in fostering a diverse, bilingual environment where
+                                innovation
+                                meets creativity. Our team is our greatest asset.</span>
+                            <span
+                                class="lang-jp d-none">私たちは、イノベーションと創造性が融合する、多様でバイリンガルな環境を育むことを信じています。私たちのチームは最大の資産です。</span>
+                        </p>
+
+                        <ul class="list-unstyled mt-4 career-benefits">
+                            <li class="mb-3"><i class="fa-solid fa-circle-check text-primary me-2"></i>
+                                <span class="lang-en">Global & Diverse Projects</span>
+                                <span class="lang-jp d-none">グローバルで多様なプロジェクト</span>
+                            </li>
+                            <li class="mb-3"><i class="fa-solid fa-circle-check text-primary me-2"></i>
+                                <span class="lang-en">Continuous Learning & Growth</span>
+                                <span class="lang-jp d-none">継続的な学習と成長</span>
+                            </li>
+                            <li class="mb-3"><i class="fa-solid fa-circle-check text-primary me-2"></i>
+                                <span class="lang-en">Bilingual Work Environment</span>
+                                <span class="lang-jp d-none">バイリンガルな職場環境</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5 bg-white">
+                        <div class="text-center">
+                            <div class="icon-circle bg-primary text-white mb-4 mx-auto">
+                                <i class="fa-solid fa-briefcase fa-2x"></i>
                             </div>
+                            <h4 class="fw-bold mb-3">
+                                <span class="lang-en">Current Openings</span>
+                                <span class="lang-jp d-none">募集職種</span>
+                            </h4>
+                            <p class="text-muted mb-4">
+                                <span class="lang-en">We are always looking for talented Bilingual Engineers, Project
+                                    Managers, and Tech Leads</span>
+                                <span class="lang-jp d-none">私たちは常に、才能あるバイリンガルエンジニア、プロジェクトマネージャー、技術リーダーを募集しています。</span>
+                            </p>
+                            <a href="careers.html" class="btn-custom w-100">
+                                <span class="lang-en">Apply Now</span>
+                                <span class="lang-jp d-none">今すぐ応募する</span>
+                            </a>
+                            <p class="mt-4 small text-secondary">
+                                <span class="lang-en">Or send your CV to: <strong>hr@zenitus.com</strong></span>
+                                <span class="lang-jp d-none">または履歴書をこちらまでお送りください: <strong>hr@zenitus.com</strong></span>
+                            </p>
                         </div>
                     </div>
-                    <div class="mapimage">
-                        <img src="./assets/images/3mapimg@2x.png" alt="">
-                    </div>
                 </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top">
-                    Top
-                </button>
+            </div>
+        </div>
     </section>
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold zenitus-text mb-2">
+                        <span class="lang-en">Where we are</span>
+                        <span class="lang-jp d-none">所在地</span>
+                    </h2>
+                    <div class="underline mx-auto"></div>
+                    <h3 class="fw-normal text-dark mb-3 fs-5 px-md-5 py-3">
+                        <span class="lang-en">Headquartered in Chennai—the heart of India’s IT talent. We take pride in
+                            contributing to the vibrant city that welcomed us, fostering new opportunities and 'new
+                            life'
+                            for our global team.</span>
+                        <span
+                            class="lang-jp d-none">インドのIT人材の中心地であるチェンナイに本社を置いています。私たちを迎え入れてくれたこの活気ある街に貢献し、グローバルチームに新しい機会と「新しい人生」を提供できることを誇りに思っています。</span>
+                    </h3>
+                </div>
+            </div>
 
-    <!-------------------------------------------------Certification Section---------------------------------------------->
-    <section>
-        <div class="col-12 intro">
-            <div class="englang">
-                <h1 class="heading">Certifications & Affiliations</h1>
-            </div>
-            <div class="japlang">
-                <h1 class="heading">認定資格と所属</h1>
-            </div>
-        </div>
-        <div class="row certification_section justify-content-center text-center">
-            <div class="col-lg-3 col-6 mb-1 ">
-                <img alt="ISO logo" src="./assets/img/iso_2.png" width="250px" class="img-fluid">
-            </div>
-            <div class="col-lg-3 col-6 mb-1 py-5">
-                <img alt="JETRO logo" src="./assets/img/jetro.png" width="230px" class="img-fluid">
-            </div>
-            <div class="col-lg-3 col-6 mb-1 py-5">
-                <img alt="Startup India logo" src="./assets/img/startupindia.png" width="250px" class="img-fluid">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-card p-4 h-100 shadow-sm border rounded-4 bg-white">
+                        <div class="location-header mb-3">
+                            <i class="fa-solid fa-location-dot text-danger me-2"></i>
+                            <h4 class="fw-bold d-inline-block border-bottom border-dark border-2 pb-1">
+                                <span class="lang-en">India</span>
+                                <span class="lang-jp d-none">インド</span>
+                            </h4>
+                        </div>
+                        <p class="text-muted small mb-3">
+                            <strong>Zenitus Technologies Pvt. Ltd.</strong><br>
+                            K3, Block 5, Sabari Mondrian, Wipro Street, Sholinganallur, Chennai - 600119.
+                        </p>
+                        <div class="contact-details small">
+                            <div class="mb-2 d-flex align-items-center flex-nowrap">
+                                <p class="mb-0 me-2 text-nowrap">
+                                    <i class="fa-brands fa-whatsapp text-success me-1"></i>+91 91767 58200
+                                </p>
+
+                                <span
+                                    class="badge rounded-pill bg-light text-success border d-inline-flex align-items-center px-2 py-1 text-nowrap"
+                                    style="font-size: 0.65rem; font-weight: 600; border-color: #dee2e6 !important;">
+                                    <i class="fa-solid fa-circle-info text-primary me-1"></i>
+                                    WhatApp Communication only
+                                </span>
+                            </div>
+
+                            <p class="mb-3"><i class="fa-solid fa-envelope text-primary me-2"></i>info@zenitus.com</p>
+
+                            <a target="_blank" href="https://maps.google.com/?q=192+Waterloo+Street+Singapore"
+                                class="btn-map-small btn-custom">
+                                <span class="lang-en d-none">View on map</span>
+                                <span class="lang-jp">地図を見る</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-card p-4 h-100 shadow-sm border rounded-4 bg-white">
+                        <div class="location-header mb-3">
+                            <i class="fa-solid fa-location-dot text-danger me-2"></i>
+                            <h4 class="fw-bold d-inline-block border-bottom border-dark border-2 pb-1">
+                                <span class="lang-en">Japan</span>
+                                <span class="lang-jp d-none">日本</span>
+                            </h4>
+                        </div>
+                        <p class="text-muted small mb-3">
+                            <strong>Zenitus Technologies K.K.</strong><br>
+                            <span class="lang-en">103-0027 Tokyo-To, Chuo-Ku, Nihonbashi, 1-2-10 Toyo Building 5F</span>
+                            <span class="lang-jp d-none">〒103-0027 東京都中央区日本橋 1-2-10 <br> 東洋ビル 5F</span>
+                        </p>
+                        <div class="contact-details small">
+                            <div class="mb-2 d-flex align-items-center flex-nowrap">
+                                <p class="mb-0 me-2 text-nowrap">
+                                    <i class="fa-brands fa-whatsapp text-success me-1"></i>+91 91767 58200
+                                </p>
+
+                                <span
+                                    class="badge rounded-pill bg-light text-success border d-inline-flex align-items-center px-2 py-1 text-nowrap"
+                                    style="font-size: 0.65rem; font-weight: 600; border-color: #dee2e6 !important;">
+                                    <i class="fa-solid fa-circle-info text-primary me-1"></i>
+                                    WhatApp Communication only
+                                </span>
+                            </div>
+
+                            <p class="mb-3"><i class="fa-solid fa-envelope text-primary me-2"></i>info@zenitus.com</p>
+
+                            <a target="_blank" href="https://maps.google.com/?q=192+Waterloo+Street+Singapore"
+                                class="btn-map-small btn-custom">
+                                <span class="lang-en d-none">View on map</span>
+                                <span class="lang-jp">地図を見る</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-card p-4 h-100 shadow-sm border rounded-4 bg-white">
+                        <div class="location-header mb-3">
+                            <i class="fa-solid fa-location-dot text-danger me-2"></i>
+                            <h4 class="fw-bold d-inline-block border-bottom border-dark border-2 pb-1">
+                                <span class="lang-en">Singapore</span>
+                                <span class="lang-jp d-none">シンガポール</span>
+                            </h4>
+                        </div>
+                        <p class="text-muted small mb-3">
+                            <strong>Zenitus Technologies Pte. Ltd.</strong><br>
+                            192 Waterloo Street #05-03 Sky Line building, Singapore 187966
+                        </p>
+                        <div class="contact-details small">
+                            <div class="mb-2 d-flex align-items-center flex-nowrap">
+                                <p class="mb-0 me-2 text-nowrap">
+                                    <i class="fa-brands fa-whatsapp text-success me-1"></i>+91 91767 58200
+                                </p>
+
+                                <span
+                                    class="badge rounded-pill bg-light text-success border d-inline-flex align-items-center px-2 py-1 text-nowrap"
+                                    style="font-size: 0.65rem; font-weight: 600; border-color: #dee2e6 !important;">
+                                    <i class="fa-solid fa-circle-info text-primary me-1"></i>
+                                    WhatApp Communication only
+                                </span>
+                            </div>
+
+                            <p class="mb-3"><i class="fa-solid fa-envelope text-primary me-2"></i>info@zenitus.com</p>
+
+                            <a target="_blank" href="https://maps.google.com/?q=192+Waterloo+Street+Singapore"
+                                class="btn-map-small btn-custom">
+                                <span class="lang-en d-none">View on map</span>
+                                <span class="lang-jp">地図を見る</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!------------------------------------------------------ Footer Page  -------------------------------------------------------->
-    <footer class="page-footer shadow">
-        <div class="container-fluid py-4">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-md-4 col-sm-6 text-center mb-4 mb-md-0">
-                    <a href="#home" class="d-flex align-items-center">
-                        <img alt="logo" src="./assets/images/ZenitusLogo.png" width="180px">
-                    </a>
+    <section id="certifications" class="py-5 bg-white">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold zenitus-text mb-2">
+                        <span class="lang-en">Certifications & Affiliations</span>
+                        <span class="lang-jp d-none">認定資格と所属</span>
+                    </h2>
+                    <div class="underline mx-auto"></div>
                 </div>
-                <div class="col-md-4 col-sm-6 text-center mb-4 mb-md-0">
-                    <div class="row d-flex flex-wrap align-items-center">
-                        <small class="footer_p col-12 col-md-6 mb-2 mb-md-0">Zenitus Technologies Pvt Ltd.</small>
-                        <p class="footer_p col-12 col-md-6 mb-2 mb-md-0">&copy;All rights reserved.</p>
+            </div>
+
+            <div class="row certification_section justify-content-center align-items-center text-center">
+                <div class="col-lg-3 col-6 mb-4">
+                    <div class="cert-item p-3">
+                        <img alt="ISO logo" src="./assets/images/iso_2.png" class="img-fluid cert-logo">
                     </div>
                 </div>
-                <div class="col-md-4 col-12 text-center mb-4 mb-md-0">
-                    <a href="https://www.linkedin.com/company/zenitus" target="_blank">
-                        <button class="btn btn-flat p-2">
-                            <i class="fa fa-linkedin-square" style="font-size:24px;"></i>
-                        </button>
-                    </a>
-                    <a href="https://www.instagram.com/zenitus_technologies" target="_blank" rel="noopener noreferrer">
-                        <button class="btn  btn-flat p-2">
-                            <i class="fa fa-instagram" style="font-size:24px"></i>
-                        </button>
-                    </a>
+                <div class="col-lg-3 col-6 mb-4">
+                    <div class="cert-item p-3">
+                        <img alt="JETRO logo" src="./assets/images/jetro.png" class="img-fluid cert-logo">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-4">
+                    <div class="cert-item p-3">
+                        <img alt="Startup India logo" src="./assets/images/startupindia.png"
+                            class="img-fluid cert-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5 col-md-6">
+                    <h4>
+                        <span class="lang-en">Zenitus Technologies Pvt Ltd.</span>
+                        <span class="lang-jp d-none">ゼニタス・テクノロジーズ株式会社</span>
+                    </h4>
+                    <p class="small footer-text">
+                        <span class="lang-en">Empowering businesses globally with cutting-edge IT solutions, <br>
+                            bilingual engineering excellence, and a commitment to innovation since inception.</span>
+                        <span
+                            class="lang-jp d-none">最先端のITソリューションとバイリンガル・エンジニアリングを通じて、<br>創業以来、革新への取り組みでグローバルなビジネス成長を支援しています。</span>
+                    </p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.linkedin.com/company/zenitus" target="_blank" class="me-3 text-white"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/zenitus_technologies" target="_blank" class="text-white"
+                            aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4 text-white">
+                        <span class="lang-en">Quick Links</span>
+                        <span class="lang-jp d-none">クイックリンク</span>
+                    </h5>
+                    <ul class="list-unstyled footer-links">
+                        <li>
+                            <a href="#home"><span class="lang-en">Home</span><span class="lang-jp d-none">ホーム</span></a>
+                        </li>
+                        <li>
+                            <a href="#about"><span class="lang-en">About Us</span><span
+                                    class="lang-jp d-none">会社概要</span></a>
+                        </li>
+                        <li>
+                            <a href="#service"><span class="lang-en">Services</span><span
+                                    class="lang-jp d-none">サービス</span></a>
+                        </li>
+                        <li>
+                            <a href="#technology"><span class="lang-en">Technology</span><span
+                                    class="lang-jp d-none">テクノロジー</span></a>
+                        </li>
+                        <li>
+                            <a href="#careers"><span class="lang-en">Careers</span><span
+                                    class="lang-jp d-none">採用情報</span></a>
+                        </li>
+                        <li>
+                            <a href="#contact"><span class="lang-en">Contact</span><span
+                                    class="lang-jp d-none">お問い合わせ</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-4 text-white">
+                        <span class="lang-en">Global Connectivity</span>
+                        <span class="lang-jp d-none">グローバル拠点</span>
+                    </h5>
+                    <p class="small footer-text mb-2">
+                        <i class="fa-solid fa-envelope me-2 text-orange"></i>
+                        info@zenitus.com
+                    </p>
+                    <p class="small footer-text mb-2">
+                        <i class="fa-brands fa-whatsapp me-2 text-success"></i>
+                        +91 91767 58200
+                    </p>
+                    <p class="small footer-text">
+                        <i class="fa-solid fa-earth-americas me-2 text-info"></i>
+                        <span class="lang-en">India | Japan | Singapore</span>
+                        <span class="lang-jp d-none">インド | 日本 | シンガポール</span>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-4 footer-hr">
+
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                    <p class="small mb-0 footer-text">
+                        &copy; <span id="year"></span>
+                        <span class="fw-bold text-white">Zenitus Technologies</span>.
+                        <span class="lang-en">All Rights Reserved.</span>
+                        <span class="lang-jp d-none">全著作権所有。</span>
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="./Js/main.js"></script>
-    <script src="./Js/jquery.min.js"></script>
-    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-        const swiper = new Swiper('.js-testimonials-slider', {
-            grabCursor: true,
-            spaceBetween: 30,
-            pagination: {
-                el: 'js-testimonials-pagination',
-                clickable: true,
-
-            },
-            breakpoints: {
-                767: {
-                    slidesPerView: 2
-                }
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-        })
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.single-testimonial-slider', {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        });
     </script>
+    <button type="button" class="btn btn-orange shadow" id="btn-back-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 
 </html>

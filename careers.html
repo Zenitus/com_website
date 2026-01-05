@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Zenitus Technologies provides premium IT consulting, software development, and digital transformation services globally.">
+    <meta name="keywords"
+        content="IT Consulting, Software Development, Zenitus Technologies, Tech Solutions, Careers in Tech">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zenitus.com/">
+    <meta property="og:title" content="Zenitus Technologies | Innovative IT Solutions">
+    <meta property="og:description"
+        content="Empowering businesses through cutting-edge technology and expert consulting.">
+    <meta property="og:image" content="./assets/images/ZenitusLogo.png">
+    <title>Careers | Zenitus</title>
+    <link href="./assets/images/favicon.ico" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        :root {
+            --zenitus-orange: #fa7e00;
+            --zenitus-blue: #002d5b;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            padding-top: 90px;
+        }
+
+        .job-header {
+            background: var(--zenitus-blue);
+            color: white;
+            padding: 15px 0;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #fff9f2;
+            color: var(--zenitus-orange);
+        }
+
+        .info-card {
+            background: #f1f3f5;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .badge-eval {
+            background: #d4edda;
+            color: #155724;
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/ZenitusLogo.png" alt="Zenitus Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="accordion" id="jobAccordion">
+                    <div class="text-center py-5" id="loader">
+                        <div class="spinner-border text-primary"></div>
+                        <p class="mt-2">Loading jobs...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function loadJobs() {
+            try {
+                const response = await fetch('jobs.json');
+                const jobs = await response.json();
+                const container = document.getElementById('jobAccordion');
+                container.innerHTML = ''; // Clear loader
+
+                jobs.forEach((job, index) => {
+                    const isFirst = index === 0 ? '' : ''; // You can add 'show' here to open first job
+
+                    const jobHtml = `
+                <div class="accordion-item mb-3 border-0 shadow-sm rounded-3 overflow-hidden">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}">
+                            ${job.title}
+                        </button>
+                    </h2>
+                    <div id="collapse${index}" class="accordion-collapse collapse" data-bs-parent="#jobAccordion">
+                        <div class="accordion-body p-4 bg-white">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h5 class="text-primary fw-bold mb-3">Job Description</h5>
+                                    <ul class="list-unstyled">
+                                        ${job.description.map(item => {
+                        const hasEval = item.includes('(High Evaluation)');
+                        const cleanText = item.replace('(High Evaluation)', '');
+                        return `<li class="mb-2 text-muted">
+                                                <i class="fa fa-check-circle text-success me-2"></i>
+                                                ${cleanText} ${hasEval ? '<span class="badge-eval">High Evaluation</span>' : ''}
+                                            </li>`;
+                    }).join('')}
+                                    </ul>
+                                    <div class="mt-4 p-3 border rounded">
+                                        <p class="mb-1 small fw-bold">Ready to apply?</p>
+                                        <a href="mailto:${job.hrEmail}" class="btn btn-warning btn-sm fw-bold">
+                                            Email Resume to: ${job.hrEmail}
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="info-card">
+                                        <h5 class="fw-bold mb-3">Job Information</h5>
+                                        <div class="mb-2"><small class="text-muted d-block">Country</small><strong>${job.country}</strong></div>
+                                        <div class="mb-2"><small class="text-muted d-block">Industry</small><strong>${job.industry}</strong></div>
+                                        <div class="mb-2"><small class="text-muted d-block">Japanese Level</small><strong>${job.japaneseLevel}</strong></div>
+                                        <div class="mb-2"><small class="text-muted d-block">Experience</small><strong>${job.experience}</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+                    container.innerHTML += jobHtml;
+                });
+            } catch (error) {
+                console.error("Failed to load jobs:", error);
+                document.getElementById('jobAccordion').innerHTML = `
+        <div class="text-center py-5">
+            <p class="text-muted">Currently, there are no open positions, or the listings are being updated.</p>
+            <a href="mailto:hr@zenitus.com" class="btn btn-outline-primary">Contact HR Directly</a>
+        </div>`;
+            }
+        }
+
+        window.onload = loadJobs;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

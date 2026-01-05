@@ -1,0 +1,70 @@
+[
+  {
+    "id": "senior-dev-01",
+    "title": "Senior Software Developer",
+    "hrEmail": "hr@zenitus.com",
+    "description": [
+      "Collaborate with cross-functional teams to gather and analyze software requirements.",
+      "Design, develop, test, and maintain high-quality software applications.",
+      "Write clean, efficient, and maintainable code that adheres to coding standards.",
+      "Participate in code reviews to ensure code quality, consistency, and performance.",
+      "Work closely with UI/UX designers to implement intuitive user interfaces.",
+      "Keep up-to-date with emerging technologies and trends in software development."
+    ],
+    "country": "Japan",
+    "industry": "IT Industry",
+    "japaneseLevel": "N2",
+    "experience": "5 to 10 years"
+  },
+  {
+    "id": "frontend-01",
+    "title": "VB.Net Developer",
+    "hrEmail": "hr@zenitus.com",
+    "description": [
+      "VB.NET PG class recruitment *Currently under manufacturing and unit testing",
+      "Experience with Windows Oracle ASP.NET",
+      "Collaborate with cross-functional teams to gather and define software requirements.",
+      "Design, develop, and maintain VB.NET applications and solutions.",
+      "Participate in code reviews to ensure code quality, maintainability, and performance",
+      "Stay up-to-date with industry trends and emerging technologies to suggest improvements and innovative solutions."
+    ],
+    "country": "Japan",
+    "industry": "IT Industry",
+    "japaneseLevel": "N3",
+    "experience": "2 to 5 years"
+  },
+  {
+    "id": "Project Manager-01",
+    "title": "Project Manager",
+    "hrEmail": "hr@zenitus.com",
+    "description": [
+      "Develop and manage project plans",
+      "Communicate with stakeholders and keep them updated on project progress Negotiate and manage contracts with vendors",
+      "Track and manage project budgets",
+      "Identify and mitigate risks",
+      "Resolve project issues",
+      "Ensure that projects are delivered on time, within budget, and to the required specifications"
+    ],
+    "country": "Japan",
+    "industry": "IT Industry",
+    "japaneseLevel": "N3",
+    "experience": "5 to 8 years"
+  },
+  {
+    "id": "Data Analyst-01",
+    "title": "Data Analyst",
+    "hrEmail": "hr@zenitus.com",
+    "description": [
+      "Analyze and interpret complex datasets to extract meaningful insights.",
+      "Create visualizations and reports to communicate findings effectively.",
+      "Collaborate with business stakeholders to understand data needs.",
+      "Develop and maintain data models and databases.",
+      "Ensure data quality and integrity through validation processes.",
+      "Support decision-making by providing actionable data-driven recommendations."
+    ],
+    "country": "Japan",
+    "industry": "IT Industry",
+    "japaneseLevel": "N3",
+    "experience": "2 to 5 years"
+  }
+]
